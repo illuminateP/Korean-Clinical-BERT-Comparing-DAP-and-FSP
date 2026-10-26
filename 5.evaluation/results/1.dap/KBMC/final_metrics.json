@@ -1,0 +1,18 @@
+{
+    "experiment_name": "1.baseline_DAP",
+    "dataset_name": "KBMC",
+    "eval_set": "valid",
+    "metrics": {
+        "Body_precision": 81.96,
+        "Body_recall": 80.41,
+        "Body_f1": 81.18,
+        "Disease_precision": 88.3,
+        "Disease_recall": 91.46,
+        "Disease_f1": 89.85,
+        "Treatment_precision": 69.91,
+        "Treatment_recall": 79.0,
+        "Treatment_f1": 74.18,
+        "macro_f1": 81.74,
+        "micro_f1": 86.15
+    }
+}

@@ -1,0 +1,1 @@
+python -u run_pretrain.py --epochs 20 --batch_size 32 --lr 1e-4 2>&1 | tee -a ../logs/log_dap.txt

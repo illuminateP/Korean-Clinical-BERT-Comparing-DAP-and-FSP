@@ -1,0 +1,7 @@
+# 전처리(토크나이저 학습 + MLM/NSP 데이터셋)는 2.preprocessing 단계에서 수행한다.
+#   python 2.preprocessing/1.pretrain_data/3.build_dataset_scratch.py
+
+python -u run_pretrain.py --epochs 20 --batch_size 32 --lr 1e-4 2>&1 | tee -a ../logs/log_scratch.txt
+
+# 20 epoch 완료 후 체크포인트에서 이어 30 epoch까지 학습
+python -u run_pretrain.py --epochs 30 --batch_size 32 --lr 1e-4 2>&1 | tee -a ../logs/log_scratch.txt

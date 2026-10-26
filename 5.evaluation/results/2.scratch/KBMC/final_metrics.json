@@ -1,0 +1,18 @@
+{
+    "experiment_name": "2.scratch",
+    "dataset_name": "KBMC",
+    "eval_set": "valid",
+    "metrics": {
+        "Body_precision": 82.12,
+        "Body_recall": 83.05,
+        "Body_f1": 82.58,
+        "Disease_precision": 87.6,
+        "Disease_recall": 91.17,
+        "Disease_f1": 89.35,
+        "Treatment_precision": 70.34,
+        "Treatment_recall": 83.0,
+        "Treatment_f1": 76.15,
+        "macro_f1": 82.69,
+        "micro_f1": 86.37
+    }
+}

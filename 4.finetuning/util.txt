@@ -1,0 +1,8 @@
+# 휴지통 비우기
+rm -rf ~/.local/share/Trash/files/*
+
+# hf 캐시 삭제
+rm -rf ~/.cache/huggingface/
+
+# 실행
+bash starter.bash

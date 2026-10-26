@@ -1,0 +1,3277 @@
+# [로그 정리] tqdm 진행률 갱신 229,642건을 제거하였다. 각 진행바의 시작·완료 지점과 학습 기록은 원본 그대로 보존된다.
+
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[1] KCI 기반 토크나이저 로드: ./T2/tokenizer
+    Vocab size: 32,000
+[2] 모델 초기화 완료 (from scratch)
+    파라미터 수: 111,243,010
+[3] 데이터셋 로드: ./T2/datasets
+    Train: 959,147  |  Val: 10,000
+
+[4] 학습 시작 (epochs=20, lr=0.0001, batch=32)
+
+  0%|          | 0/149880 [00:00<?, ?it/s]~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+
+0%|          | 1/149880 [00:31<1316:49:22, 31.63s/it]
+3%|          | 5000/149880 [47:18<22:33:11,  1.78it/s]
+ [FTDC] 2026-03-16 16:16:54
+ [FTDC] [Epoch 0.07] Step 500/599460 (0.1%)
+ [FTDC] Loss: 42.2679 | LR: 3.33e-06
+ [FTDC] 구간 속도: 1.60 it/s | 예상 남은 시간: 4 days, 7:58:28
+{'loss': '42.27', 'grad_norm': '1.268', 'learning_rate': '3.329e-06', 'epoch': '0.06672'}
+
+ [FTDC] 2026-03-16 16:21:35
+ [FTDC] [Epoch 0.13] Step 1000/599460 (0.2%)
+ [FTDC] Loss: 37.1782 | LR: 6.67e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 21:20:44
+{'loss': '37.18', 'grad_norm': '2.271', 'learning_rate': '6.665e-06', 'epoch': '0.1334'}
+
+ [FTDC] 2026-03-16 16:26:16
+ [FTDC] [Epoch 0.20] Step 1500/599460 (0.3%)
+ [FTDC] Loss: 34.5373 | LR: 1.00e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 21:14:06
+{'loss': '34.54', 'grad_norm': '7.258', 'learning_rate': '1e-05', 'epoch': '0.2002'}
+
+ [FTDC] 2026-03-16 16:30:56
+ [FTDC] [Epoch 0.27] Step 2000/599460 (0.3%)
+ [FTDC] Loss: 33.5524 | LR: 1.33e-05
+ [FTDC] 구간 속도: 1.79 it/s | 예상 남은 시간: 3 days, 20:57:00
+{'loss': '33.55', 'grad_norm': '9.804', 'learning_rate': '1.334e-05', 'epoch': '0.2669'}
+
+ [FTDC] 2026-03-16 16:35:36
+ [FTDC] [Epoch 0.33] Step 2500/599460 (0.4%)
+ [FTDC] Loss: 32.7016 | LR: 1.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 21:02:30
+{'loss': '32.7', 'grad_norm': '13.24', 'learning_rate': '1.667e-05', 'epoch': '0.3336'}
+
+ [FTDC] 2026-03-16 16:40:16
+ [FTDC] [Epoch 0.40] Step 3000/599460 (0.5%)
+ [FTDC] Loss: 31.9011 | LR: 2.00e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:52:06
+{'loss': '31.9', 'grad_norm': '9.225', 'learning_rate': '2.001e-05', 'epoch': '0.4003'}
+
+ [FTDC] 2026-03-16 16:44:57
+ [FTDC] [Epoch 0.47] Step 3500/599460 (0.6%)
+ [FTDC] Loss: 31.0983 | LR: 2.33e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:52:59
+{'loss': '31.1', 'grad_norm': '3.47', 'learning_rate': '2.335e-05', 'epoch': '0.4671'}
+
+ [FTDC] 2026-03-16 16:49:38
+ [FTDC] [Epoch 0.53] Step 4000/599460 (0.7%)
+ [FTDC] Loss: 30.5121 | LR: 2.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:53:27
+{'loss': '30.51', 'grad_norm': '18.1', 'learning_rate': '2.668e-05', 'epoch': '0.5338'}
+
+ [FTDC] 2026-03-16 16:54:19
+ [FTDC] [Epoch 0.60] Step 4500/599460 (0.8%)
+ [FTDC] Loss: 30.0400 | LR: 3.00e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 21:03:24
+{'loss': '30.04', 'grad_norm': '9.445', 'learning_rate': '3.002e-05', 'epoch': '0.6005'}
+
+ [FTDC] 2026-03-16 16:59:01
+ [FTDC] [Epoch 0.67] Step 5000/599460 (0.8%)
+ [FTDC] Loss: 29.6665 | LR: 3.34e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 21:01:30
+{'loss': '29.67', 'grad_norm': '3.501', 'learning_rate': '3.335e-05', 'epoch': '0.6672'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 312/313 [00:15<00:00, 20.68it/s]
+3%|          | 5000/149880 [47:34<22:33:11,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.68it/s]
+{'eval_loss': '7.351', 'eval_runtime': '16.13', 'eval_samples_per_second': '620.1', 'eval_steps_per_second': '19.41', 'epoch': '0.6672'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]
+3%|          | 5001/149880 [47:38<264:27:18,  6.57s/it]
+  5%|          | 7493/149880 [1:11:00<22:30:48,  1.76it/s]~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+
+  5%|          | 7494/149880 [1:11:38<474:12:51, 11.99s/it]
+ [FTDC] 2026-03-16 17:04:03
+ [FTDC] [Epoch 0.73] Step 5500/599460 (0.9%)
+ [FTDC] Loss: 29.2889 | LR: 3.67e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 4 days, 3:34:16
+{'loss': '29.29', 'grad_norm': '4.609', 'learning_rate': '3.669e-05', 'epoch': '0.734'}
+
+ [FTDC] 2026-03-16 17:08:44
+ [FTDC] [Epoch 0.80] Step 6000/599460 (1.0%)
+ [FTDC] Loss: 28.9574 | LR: 4.00e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:36:34
+{'loss': '28.96', 'grad_norm': '3.264', 'learning_rate': '4.003e-05', 'epoch': '0.8007'}
+
+ [FTDC] 2026-03-16 17:13:25
+ [FTDC] [Epoch 0.87] Step 6500/599460 (1.1%)
+ [FTDC] Loss: 28.6514 | LR: 4.34e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:45:00
+{'loss': '28.65', 'grad_norm': '2.159', 'learning_rate': '4.336e-05', 'epoch': '0.8674'}
+
+ [FTDC] 2026-03-16 17:18:06
+ [FTDC] [Epoch 0.93] Step 7000/599460 (1.2%)
+ [FTDC] Loss: 28.4007 | LR: 4.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:28:41
+{'loss': '28.4', 'grad_norm': '3.533', 'learning_rate': '4.67e-05', 'epoch': '0.9341'}
+
+7%|█         | 10000/149880 [1:35:11<22:03:10,  1.76it/s]
+ [FTDC] 2026-03-16 17:23:26
+ [FTDC] [Epoch 1.00] Step 7500/599460 (1.3%)
+ [FTDC] Loss: 28.1285 | LR: 5.00e-05
+ [FTDC] 구간 속도: 1.56 it/s | 예상 남은 시간: 4 days, 9:07:07
+{'loss': '28.13', 'grad_norm': '5.798', 'learning_rate': '5.003e-05', 'epoch': '1.001'}
+
+ [FTDC] 2026-03-16 17:28:06
+ [FTDC] [Epoch 1.07] Step 8000/599460 (1.3%)
+ [FTDC] Loss: 27.9430 | LR: 5.34e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:12:22
+{'loss': '27.94', 'grad_norm': '4.698', 'learning_rate': '5.337e-05', 'epoch': '1.068'}
+
+ [FTDC] 2026-03-16 17:32:48
+ [FTDC] [Epoch 1.13] Step 8500/599460 (1.4%)
+ [FTDC] Loss: 27.7367 | LR: 5.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 20:25:50
+{'loss': '27.74', 'grad_norm': '4.95', 'learning_rate': '5.671e-05', 'epoch': '1.134'}
+
+ [FTDC] 2026-03-16 17:37:30
+ [FTDC] [Epoch 1.20] Step 9000/599460 (1.5%)
+ [FTDC] Loss: 27.4964 | LR: 6.00e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 20:25:20
+{'loss': '27.5', 'grad_norm': '4.787', 'learning_rate': '6.004e-05', 'epoch': '1.201'}
+
+ [FTDC] 2026-03-16 17:42:12
+ [FTDC] [Epoch 1.27] Step 9500/599460 (1.6%)
+ [FTDC] Loss: 27.2383 | LR: 6.34e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 20:23:25
+{'loss': '27.24', 'grad_norm': '4.578', 'learning_rate': '6.338e-05', 'epoch': '1.268'}
+
+ [FTDC] 2026-03-16 17:46:55
+ [FTDC] [Epoch 1.33] Step 10000/599460 (1.7%)
+ [FTDC] Loss: 26.9178 | LR: 6.67e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 20:40:12
+{'loss': '26.92', 'grad_norm': '3.928', 'learning_rate': '6.671e-05', 'epoch': '1.334'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.72it/s]
+7%|█         | 10000/149880 [1:35:28<22:03:10,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.72it/s]
+{'eval_loss': '6.657', 'eval_runtime': '16.36', 'eval_samples_per_second': '611.2', 'eval_steps_per_second': '19.13', 'epoch': '1.334'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.59s/it]
+7%|█         | 10001/149880 [1:35:33<263:13:27,  6.77s/it]
+ 10%|█         | 14988/149880 [2:22:25<22:46:20,  1.65it/s]
+ [FTDC] 2026-03-16 17:51:58
+ [FTDC] [Epoch 1.40] Step 10500/599460 (1.8%)
+ [FTDC] Loss: 26.3360 | LR: 7.00e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 4 days, 3:22:57
+{'loss': '26.34', 'grad_norm': '3.226', 'learning_rate': '7.005e-05', 'epoch': '1.401'}
+
+ [FTDC] 2026-03-16 17:56:40
+ [FTDC] [Epoch 1.47] Step 11000/599460 (1.8%)
+ [FTDC] Loss: 24.9327 | LR: 7.34e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 19:56:18
+{'loss': '24.93', 'grad_norm': '3.433', 'learning_rate': '7.339e-05', 'epoch': '1.468'}
+
+ [FTDC] 2026-03-16 18:01:21
+ [FTDC] [Epoch 1.53] Step 11500/599460 (1.9%)
+ [FTDC] Loss: 23.1895 | LR: 7.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 19:47:50
+{'loss': '23.19', 'grad_norm': '3.357', 'learning_rate': '7.672e-05', 'epoch': '1.535'}
+
+ [FTDC] 2026-03-16 18:06:03
+ [FTDC] [Epoch 1.60] Step 12000/599460 (2.0%)
+ [FTDC] Loss: 20.7665 | LR: 8.01e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 20:01:31
+{'loss': '20.77', 'grad_norm': '4.755', 'learning_rate': '8.006e-05', 'epoch': '1.601'}
+
+ [FTDC] 2026-03-16 18:10:44
+ [FTDC] [Epoch 1.67] Step 12500/599460 (2.1%)
+ [FTDC] Loss: 18.6108 | LR: 8.34e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:56:07
+{'loss': '18.61', 'grad_norm': '3.772', 'learning_rate': '8.339e-05', 'epoch': '1.668'}
+
+ [FTDC] 2026-03-16 18:15:26
+ [FTDC] [Epoch 1.73] Step 13000/599460 (2.2%)
+ [FTDC] Loss: 17.1181 | LR: 8.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 19:39:52
+{'loss': '17.12', 'grad_norm': '5.116', 'learning_rate': '8.673e-05', 'epoch': '1.735'}
+
+ [FTDC] 2026-03-16 18:20:08
+ [FTDC] [Epoch 1.80] Step 13500/599460 (2.3%)
+ [FTDC] Loss: 15.7512 | LR: 9.01e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:50:01
+{'loss': '15.75', 'grad_norm': '1.949', 'learning_rate': '9.007e-05', 'epoch': '1.801'}
+
+ [FTDC] 2026-03-16 18:24:50
+ [FTDC] [Epoch 1.87] Step 14000/599460 (2.3%)
+ [FTDC] Loss: 14.6807 | LR: 9.34e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:49:38
+{'loss': '14.68', 'grad_norm': '1.841', 'learning_rate': '9.34e-05', 'epoch': '1.868'}
+
+ [FTDC] 2026-03-16 18:29:32
+ [FTDC] [Epoch 1.93] Step 14500/599460 (2.4%)
+ [FTDC] Loss: 13.8940 | LR: 9.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 19:29:28
+{'loss': '13.89', 'grad_norm': '2.466', 'learning_rate': '9.674e-05', 'epoch': '1.935'}
+
+10%|█         | 15000/149880 [2:22:33<21:39:15,  1.73it/s]
+ [FTDC] 2026-03-16 18:34:16
+ [FTDC] [Epoch 2.00] Step 15000/599460 (2.5%)
+ [FTDC] Loss: 13.2624 | LR: 1.00e-04
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 20:22:32
+{'loss': '13.26', 'grad_norm': '3.258', 'learning_rate': '9.999e-05', 'epoch': '2.002'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.30it/s]
+10%|█         | 15000/149880 [2:22:50<21:39:15,  1.73it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.30it/s]
+{'eval_loss': '3.079', 'eval_runtime': '16.56', 'eval_samples_per_second': '603.7', 'eval_steps_per_second': '18.9', 'epoch': '2.002'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]
+10%|█         | 15001/149880 [2:22:54<254:09:12,  6.78s/it]
+13%|█         | 20000/149880 [3:09:51<20:14:52,  1.78it/s]
+ [FTDC] 2026-03-16 18:39:19
+ [FTDC] [Epoch 2.07] Step 15500/599460 (2.6%)
+ [FTDC] Loss: 12.7855 | LR: 9.96e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 4 days, 2:03:41
+{'loss': '12.79', 'grad_norm': '5.731', 'learning_rate': '9.962e-05', 'epoch': '2.068'}
+
+ [FTDC] 2026-03-16 18:44:01
+ [FTDC] [Epoch 2.14] Step 16000/599460 (2.7%)
+ [FTDC] Loss: 12.3816 | LR: 9.93e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:36:39
+{'loss': '12.38', 'grad_norm': '2.711', 'learning_rate': '9.925e-05', 'epoch': '2.135'}
+
+ [FTDC] 2026-03-16 18:48:43
+ [FTDC] [Epoch 2.20] Step 16500/599460 (2.8%)
+ [FTDC] Loss: 12.0527 | LR: 9.89e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:18:43
+{'loss': '12.05', 'grad_norm': '2.601', 'learning_rate': '9.888e-05', 'epoch': '2.202'}
+
+ [FTDC] 2026-03-16 18:53:24
+ [FTDC] [Epoch 2.27] Step 17000/599460 (2.8%)
+ [FTDC] Loss: 11.7813 | LR: 9.85e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:54:00
+{'loss': '11.78', 'grad_norm': '3.476', 'learning_rate': '9.851e-05', 'epoch': '2.268'}
+
+ [FTDC] 2026-03-16 18:58:07
+ [FTDC] [Epoch 2.34] Step 17500/599460 (2.9%)
+ [FTDC] Loss: 11.5066 | LR: 9.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:21:34
+{'loss': '11.51', 'grad_norm': '1.443', 'learning_rate': '9.814e-05', 'epoch': '2.335'}
+
+ [FTDC] 2026-03-16 19:02:49
+ [FTDC] [Epoch 2.40] Step 18000/599460 (3.0%)
+ [FTDC] Loss: 11.2964 | LR: 9.78e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 19:20:11
+{'loss': '11.3', 'grad_norm': '2.893', 'learning_rate': '9.777e-05', 'epoch': '2.402'}
+
+ [FTDC] 2026-03-16 19:07:30
+ [FTDC] [Epoch 2.47] Step 18500/599460 (3.1%)
+ [FTDC] Loss: 11.0945 | LR: 9.74e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:38:21
+{'loss': '11.09', 'grad_norm': '2.788', 'learning_rate': '9.74e-05', 'epoch': '2.469'}
+
+ [FTDC] 2026-03-16 19:12:12
+ [FTDC] [Epoch 2.54] Step 19000/599460 (3.2%)
+ [FTDC] Loss: 10.8973 | LR: 9.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 18:52:36
+{'loss': '10.9', 'grad_norm': '1.561', 'learning_rate': '9.703e-05', 'epoch': '2.535'}
+
+ [FTDC] 2026-03-16 19:16:53
+ [FTDC] [Epoch 2.60] Step 19500/599460 (3.3%)
+ [FTDC] Loss: 10.7470 | LR: 9.67e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:39:45
+{'loss': '10.75', 'grad_norm': '2.011', 'learning_rate': '9.666e-05', 'epoch': '2.602'}
+
+ [FTDC] 2026-03-16 19:21:35
+ [FTDC] [Epoch 2.67] Step 20000/599460 (3.3%)
+ [FTDC] Loss: 10.6125 | LR: 9.63e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:30:42
+{'loss': '10.61', 'grad_norm': '1.399', 'learning_rate': '9.629e-05', 'epoch': '2.669'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:14<00:00, 20.83it/s]
+13%|█         | 20000/149880 [3:10:07<20:14:52,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.83it/s]
+{'eval_loss': '2.468', 'eval_runtime': '16.1', 'eval_samples_per_second': '621.1', 'eval_steps_per_second': '19.44', 'epoch': '2.669'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.42s/it]
+13%|█         | 20001/149880 [3:10:12<237:38:48,  6.59s/it]
+ 15%|██        | 22482/149880 [3:33:30<21:53:45,  1.62it/s]
+ [FTDC] 2026-03-16 19:26:36
+ [FTDC] [Epoch 2.74] Step 20500/599460 (3.4%)
+ [FTDC] Loss: 10.4444 | LR: 9.59e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 4 days, 0:55:50
+{'loss': '10.44', 'grad_norm': '2.53', 'learning_rate': '9.591e-05', 'epoch': '2.736'}
+
+ [FTDC] 2026-03-16 19:31:18
+ [FTDC] [Epoch 2.80] Step 21000/599460 (3.5%)
+ [FTDC] Loss: 10.3328 | LR: 9.55e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 18:36:12
+{'loss': '10.33', 'grad_norm': '1.41', 'learning_rate': '9.554e-05', 'epoch': '2.802'}
+
+ [FTDC] 2026-03-16 19:35:59
+ [FTDC] [Epoch 2.87] Step 21500/599460 (3.6%)
+ [FTDC] Loss: 10.1940 | LR: 9.52e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:23:08
+{'loss': '10.19', 'grad_norm': '1.832', 'learning_rate': '9.517e-05', 'epoch': '2.869'}
+
+ [FTDC] 2026-03-16 19:40:41
+ [FTDC] [Epoch 2.94] Step 22000/599460 (3.7%)
+ [FTDC] Loss: 10.0826 | LR: 9.48e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:21:25
+{'loss': '10.08', 'grad_norm': '1.271', 'learning_rate': '9.48e-05', 'epoch': '2.936'}
+
+17%|██        | 25000/149880 [3:57:10<19:27:22,  1.78it/s]
+ [FTDC] 2026-03-16 19:45:24
+ [FTDC] [Epoch 3.00] Step 22500/599460 (3.8%)
+ [FTDC] Loss: 9.9662 | LR: 9.44e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 18:50:24
+{'loss': '9.966', 'grad_norm': '1.331', 'learning_rate': '9.443e-05', 'epoch': '3.002'}
+
+ [FTDC] 2026-03-16 19:50:06
+ [FTDC] [Epoch 3.07] Step 23000/599460 (3.8%)
+ [FTDC] Loss: 9.8347 | LR: 9.41e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 18:05:06
+{'loss': '9.835', 'grad_norm': '2.716', 'learning_rate': '9.406e-05', 'epoch': '3.069'}
+
+ [FTDC] 2026-03-16 19:54:48
+ [FTDC] [Epoch 3.14] Step 23500/599460 (3.9%)
+ [FTDC] Loss: 9.7340 | LR: 9.37e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 18:13:14
+{'loss': '9.734', 'grad_norm': '1.298', 'learning_rate': '9.369e-05', 'epoch': '3.136'}
+
+ [FTDC] 2026-03-16 19:59:30
+ [FTDC] [Epoch 3.20] Step 24000/599460 (4.0%)
+ [FTDC] Loss: 9.6599 | LR: 9.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 18:11:32
+{'loss': '9.66', 'grad_norm': '2.838', 'learning_rate': '9.332e-05', 'epoch': '3.203'}
+
+ [FTDC] 2026-03-16 20:04:12
+ [FTDC] [Epoch 3.27] Step 24500/599460 (4.1%)
+ [FTDC] Loss: 9.5716 | LR: 9.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 18:06:23
+{'loss': '9.572', 'grad_norm': '1.983', 'learning_rate': '9.295e-05', 'epoch': '3.269'}
+
+ [FTDC] 2026-03-16 20:08:54
+ [FTDC] [Epoch 3.34] Step 25000/599460 (4.2%)
+ [FTDC] Loss: 9.4922 | LR: 9.26e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:57:49
+{'loss': '9.492', 'grad_norm': '3.39', 'learning_rate': '9.258e-05', 'epoch': '3.336'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:14<00:00, 20.82it/s]
+17%|██        | 25000/149880 [3:57:27<19:27:22,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.82it/s]
+{'eval_loss': '2.226', 'eval_runtime': '16.18', 'eval_samples_per_second': '618', 'eval_steps_per_second': '19.34', 'epoch': '3.336'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+17%|██        | 25001/149880 [3:57:31<229:09:57,  6.61s/it]
+ 20%|██        | 29976/149880 [4:44:22<20:36:00,  1.62it/s]
+ [FTDC] 2026-03-16 20:13:55
+ [FTDC] [Epoch 3.40] Step 25500/599460 (4.3%)
+ [FTDC] Loss: 9.4199 | LR: 9.22e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 4 days, 0:08:00
+{'loss': '9.42', 'grad_norm': '1.667', 'learning_rate': '9.221e-05', 'epoch': '3.403'}
+
+ [FTDC] 2026-03-16 20:18:39
+ [FTDC] [Epoch 3.47] Step 26000/599460 (4.3%)
+ [FTDC] Loss: 9.3505 | LR: 9.18e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 18:20:23
+{'loss': '9.351', 'grad_norm': '1.297', 'learning_rate': '9.184e-05', 'epoch': '3.469'}
+
+ [FTDC] 2026-03-16 20:23:22
+ [FTDC] [Epoch 3.54] Step 26500/599460 (4.4%)
+ [FTDC] Loss: 9.2820 | LR: 9.15e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 18:12:57
+{'loss': '9.282', 'grad_norm': '1.543', 'learning_rate': '9.147e-05', 'epoch': '3.536'}
+
+ [FTDC] 2026-03-16 20:28:04
+ [FTDC] [Epoch 3.60] Step 27000/599460 (4.5%)
+ [FTDC] Loss: 9.2181 | LR: 9.11e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 17:30:57
+{'loss': '9.218', 'grad_norm': '1.408', 'learning_rate': '9.11e-05', 'epoch': '3.603'}
+
+ [FTDC] 2026-03-16 20:32:45
+ [FTDC] [Epoch 3.67] Step 27500/599460 (4.6%)
+ [FTDC] Loss: 9.1628 | LR: 9.07e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 17:27:25
+{'loss': '9.163', 'grad_norm': '2.257', 'learning_rate': '9.073e-05', 'epoch': '3.67'}
+
+ [FTDC] 2026-03-16 20:37:28
+ [FTDC] [Epoch 3.74] Step 28000/599460 (4.7%)
+ [FTDC] Loss: 9.1011 | LR: 9.04e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:39:07
+{'loss': '9.101', 'grad_norm': '1.461', 'learning_rate': '9.035e-05', 'epoch': '3.736'}
+
+ [FTDC] 2026-03-16 20:42:11
+ [FTDC] [Epoch 3.80] Step 28500/599460 (4.8%)
+ [FTDC] Loss: 9.0165 | LR: 9.00e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 17:54:37
+{'loss': '9.017', 'grad_norm': '1.872', 'learning_rate': '8.998e-05', 'epoch': '3.803'}
+
+ [FTDC] 2026-03-16 20:46:53
+ [FTDC] [Epoch 3.87] Step 29000/599460 (4.8%)
+ [FTDC] Loss: 8.9845 | LR: 8.96e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:30:02
+{'loss': '8.985', 'grad_norm': '1.285', 'learning_rate': '8.961e-05', 'epoch': '3.87'}
+
+ [FTDC] 2026-03-16 20:51:35
+ [FTDC] [Epoch 3.94] Step 29500/599460 (4.9%)
+ [FTDC] Loss: 8.9262 | LR: 8.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:13:35
+{'loss': '8.926', 'grad_norm': '1.402', 'learning_rate': '8.924e-05', 'epoch': '3.937'}
+
+20%|██        | 30000/149880 [4:44:37<18:56:39,  1.76it/s]
+ [FTDC] 2026-03-16 20:56:20
+ [FTDC] [Epoch 4.00] Step 30000/599460 (5.0%)
+ [FTDC] Loss: 8.8665 | LR: 8.89e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 3 days, 18:11:22
+{'loss': '8.867', 'grad_norm': '1.243', 'learning_rate': '8.887e-05', 'epoch': '4.003'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.89it/s]
+20%|██        | 30000/149880 [4:44:53<18:56:39,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.89it/s]
+{'eval_loss': '2.064', 'eval_runtime': '16.34', 'eval_samples_per_second': '612.2', 'eval_steps_per_second': '19.16', 'epoch': '4.003'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.15s/it]
+20%|██        | 30001/149880 [4:44:57<213:51:24,  6.42s/it]
+23%|██        | 35000/149880 [5:32:04<18:04:40,  1.77it/s]
+ [FTDC] 2026-03-16 21:01:23
+ [FTDC] [Epoch 4.07] Step 30500/599460 (5.1%)
+ [FTDC] Loss: 8.7826 | LR: 8.85e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 23:36:31
+{'loss': '8.783', 'grad_norm': '1.246', 'learning_rate': '8.85e-05', 'epoch': '4.07'}
+
+ [FTDC] 2026-03-16 21:06:06
+ [FTDC] [Epoch 4.14] Step 31000/599460 (5.2%)
+ [FTDC] Loss: 8.7352 | LR: 8.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:19:44
+{'loss': '8.735', 'grad_norm': '3.263', 'learning_rate': '8.813e-05', 'epoch': '4.137'}
+
+ [FTDC] 2026-03-16 21:10:48
+ [FTDC] [Epoch 4.20] Step 31500/599460 (5.3%)
+ [FTDC] Loss: 8.6821 | LR: 8.78e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:10:21
+{'loss': '8.682', 'grad_norm': '1.275', 'learning_rate': '8.776e-05', 'epoch': '4.203'}
+
+ [FTDC] 2026-03-16 21:15:31
+ [FTDC] [Epoch 4.27] Step 32000/599460 (5.3%)
+ [FTDC] Loss: 8.6397 | LR: 8.74e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:05:43
+{'loss': '8.64', 'grad_norm': '1.298', 'learning_rate': '8.739e-05', 'epoch': '4.27'}
+
+ [FTDC] 2026-03-16 21:20:14
+ [FTDC] [Epoch 4.34] Step 32500/599460 (5.4%)
+ [FTDC] Loss: 8.6018 | LR: 8.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 17:05:05
+{'loss': '8.602', 'grad_norm': '1.306', 'learning_rate': '8.702e-05', 'epoch': '4.337'}
+
+ [FTDC] 2026-03-16 21:24:56
+ [FTDC] [Epoch 4.40] Step 33000/599460 (5.5%)
+ [FTDC] Loss: 8.5534 | LR: 8.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:42:57
+{'loss': '8.553', 'grad_norm': '1.999', 'learning_rate': '8.665e-05', 'epoch': '4.404'}
+
+ [FTDC] 2026-03-16 21:29:38
+ [FTDC] [Epoch 4.47] Step 33500/599460 (5.6%)
+ [FTDC] Loss: 8.5142 | LR: 8.63e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:46:32
+{'loss': '8.514', 'grad_norm': '1.558', 'learning_rate': '8.628e-05', 'epoch': '4.47'}
+
+ [FTDC] 2026-03-16 21:34:21
+ [FTDC] [Epoch 4.54] Step 34000/599460 (5.7%)
+ [FTDC] Loss: 8.4801 | LR: 8.59e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 17:01:11
+{'loss': '8.48', 'grad_norm': '2.864', 'learning_rate': '8.591e-05', 'epoch': '4.537'}
+
+ [FTDC] 2026-03-16 21:39:05
+ [FTDC] [Epoch 4.60] Step 34500/599460 (5.8%)
+ [FTDC] Loss: 8.4368 | LR: 8.55e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 17:04:23
+{'loss': '8.437', 'grad_norm': '1.263', 'learning_rate': '8.554e-05', 'epoch': '4.604'}
+
+ [FTDC] 2026-03-16 21:43:47
+ [FTDC] [Epoch 4.67] Step 35000/599460 (5.8%)
+ [FTDC] Loss: 8.3942 | LR: 8.52e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:29:59
+{'loss': '8.394', 'grad_norm': '1.481', 'learning_rate': '8.517e-05', 'epoch': '4.67'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.71it/s]
+23%|██        | 35000/149880 [5:32:20<18:04:40,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.71it/s]
+{'eval_loss': '1.967', 'eval_runtime': '16.35', 'eval_samples_per_second': '611.7', 'eval_steps_per_second': '19.14', 'epoch': '4.67'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]
+23%|██        | 35001/149880 [5:32:25<209:19:30,  6.56s/it]
+ 25%|██        | 37470/149880 [5:55:39<18:46:35,  1.66it/s]
+ [FTDC] 2026-03-16 21:48:50
+ [FTDC] [Epoch 4.74] Step 35500/599460 (5.9%)
+ [FTDC] Loss: 8.3839 | LR: 8.48e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 22:55:29
+{'loss': '8.384', 'grad_norm': '1.577', 'learning_rate': '8.479e-05', 'epoch': '4.737'}
+
+ [FTDC] 2026-03-16 21:53:32
+ [FTDC] [Epoch 4.80] Step 36000/599460 (6.0%)
+ [FTDC] Loss: 8.3232 | LR: 8.44e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:13:16
+{'loss': '8.323', 'grad_norm': '1.248', 'learning_rate': '8.442e-05', 'epoch': '4.804'}
+
+ [FTDC] 2026-03-16 21:58:15
+ [FTDC] [Epoch 4.87] Step 36500/599460 (6.1%)
+ [FTDC] Loss: 8.2973 | LR: 8.41e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:30:37
+{'loss': '8.297', 'grad_norm': '2.836', 'learning_rate': '8.405e-05', 'epoch': '4.871'}
+
+ [FTDC] 2026-03-16 22:02:57
+ [FTDC] [Epoch 4.94] Step 37000/599460 (6.2%)
+ [FTDC] Loss: 8.2549 | LR: 8.37e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:01:54
+{'loss': '8.255', 'grad_norm': '1.513', 'learning_rate': '8.368e-05', 'epoch': '4.937'}
+
+27%|███       | 40000/149880 [6:19:29<17:18:17,  1.76it/s]
+ [FTDC] 2026-03-16 22:07:40
+ [FTDC] [Epoch 5.00] Step 37500/599460 (6.3%)
+ [FTDC] Loss: 8.2208 | LR: 8.33e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 16:30:16
+{'loss': '8.221', 'grad_norm': '1.308', 'learning_rate': '8.331e-05', 'epoch': '5.004'}
+
+ [FTDC] 2026-03-16 22:12:23
+ [FTDC] [Epoch 5.07] Step 38000/599460 (6.3%)
+ [FTDC] Loss: 8.1371 | LR: 8.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:02:34
+{'loss': '8.137', 'grad_norm': '1.935', 'learning_rate': '8.294e-05', 'epoch': '5.071'}
+
+ [FTDC] 2026-03-16 22:17:05
+ [FTDC] [Epoch 5.14] Step 38500/599460 (6.4%)
+ [FTDC] Loss: 8.1206 | LR: 8.26e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 16:09:57
+{'loss': '8.121', 'grad_norm': '1.256', 'learning_rate': '8.257e-05', 'epoch': '5.137'}
+
+ [FTDC] 2026-03-16 22:21:47
+ [FTDC] [Epoch 5.20] Step 39000/599460 (6.5%)
+ [FTDC] Loss: 8.1021 | LR: 8.22e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:45:07
+{'loss': '8.102', 'grad_norm': '1.301', 'learning_rate': '8.22e-05', 'epoch': '5.204'}
+
+ [FTDC] 2026-03-16 22:26:30
+ [FTDC] [Epoch 5.27] Step 39500/599460 (6.6%)
+ [FTDC] Loss: 8.0554 | LR: 8.18e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:48:02
+{'loss': '8.055', 'grad_norm': '1.29', 'learning_rate': '8.183e-05', 'epoch': '5.271'}
+
+ [FTDC] 2026-03-16 22:31:12
+ [FTDC] [Epoch 5.34] Step 40000/599460 (6.7%)
+ [FTDC] Loss: 8.0408 | LR: 8.15e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:43:26
+{'loss': '8.041', 'grad_norm': '2.201', 'learning_rate': '8.146e-05', 'epoch': '5.338'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.78it/s]
+27%|███       | 40000/149880 [6:19:45<17:18:17,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.78it/s]
+{'eval_loss': '1.884', 'eval_runtime': '16.34', 'eval_samples_per_second': '612.1', 'eval_steps_per_second': '19.16', 'epoch': '5.338'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.38s/it]
+27%|███       | 40001/149880 [6:19:50<205:30:03,  6.73s/it]
+ 30%|███       | 44964/149880 [7:06:36<17:36:00,  1.66it/s]
+ [FTDC] 2026-03-16 22:36:15
+ [FTDC] [Epoch 5.40] Step 40500/599460 (6.8%)
+ [FTDC] Loss: 8.0005 | LR: 8.11e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 22:11:09
+{'loss': '8.001', 'grad_norm': '1.248', 'learning_rate': '8.109e-05', 'epoch': '5.404'}
+
+ [FTDC] 2026-03-16 22:40:58
+ [FTDC] [Epoch 5.47] Step 41000/599460 (6.8%)
+ [FTDC] Loss: 7.9912 | LR: 8.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:52:24
+{'loss': '7.991', 'grad_norm': '2.573', 'learning_rate': '8.072e-05', 'epoch': '5.471'}
+
+ [FTDC] 2026-03-16 22:45:41
+ [FTDC] [Epoch 5.54] Step 41500/599460 (6.9%)
+ [FTDC] Loss: 7.9510 | LR: 8.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:31:23
+{'loss': '7.951', 'grad_norm': '1.229', 'learning_rate': '8.035e-05', 'epoch': '5.538'}
+
+ [FTDC] 2026-03-16 22:50:24
+ [FTDC] [Epoch 5.60] Step 42000/599460 (7.0%)
+ [FTDC] Loss: 7.9267 | LR: 8.00e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:40:24
+{'loss': '7.927', 'grad_norm': '2.93', 'learning_rate': '7.998e-05', 'epoch': '5.605'}
+
+ [FTDC] 2026-03-16 22:55:07
+ [FTDC] [Epoch 5.67] Step 42500/599460 (7.1%)
+ [FTDC] Loss: 7.9096 | LR: 7.96e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 15:42:18
+{'loss': '7.91', 'grad_norm': '1.316', 'learning_rate': '7.961e-05', 'epoch': '5.671'}
+
+ [FTDC] 2026-03-16 22:59:51
+ [FTDC] [Epoch 5.74] Step 43000/599460 (7.2%)
+ [FTDC] Loss: 7.9043 | LR: 7.92e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 15:38:19
+{'loss': '7.904', 'grad_norm': '2.71', 'learning_rate': '7.923e-05', 'epoch': '5.738'}
+
+ [FTDC] 2026-03-16 23:04:33
+ [FTDC] [Epoch 5.80] Step 43500/599460 (7.3%)
+ [FTDC] Loss: 7.8558 | LR: 7.89e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:06:33
+{'loss': '7.856', 'grad_norm': '1.206', 'learning_rate': '7.886e-05', 'epoch': '5.805'}
+
+ [FTDC] 2026-03-16 23:09:15
+ [FTDC] [Epoch 5.87] Step 44000/599460 (7.3%)
+ [FTDC] Loss: 7.8241 | LR: 7.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 15:05:17
+{'loss': '7.824', 'grad_norm': '2.496', 'learning_rate': '7.849e-05', 'epoch': '5.871'}
+
+ [FTDC] 2026-03-16 23:13:57
+ [FTDC] [Epoch 5.94] Step 44500/599460 (7.4%)
+ [FTDC] Loss: 7.7925 | LR: 7.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:54:59
+{'loss': '7.793', 'grad_norm': '1.269', 'learning_rate': '7.812e-05', 'epoch': '5.938'}
+
+30%|███       | 45000/149880 [7:06:58<16:34:59,  1.76it/s]
+ [FTDC] 2026-03-16 23:18:41
+ [FTDC] [Epoch 6.00] Step 45000/599460 (7.5%)
+ [FTDC] Loss: 7.7628 | LR: 7.78e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 15:29:09
+{'loss': '7.763', 'grad_norm': '1.48', 'learning_rate': '7.775e-05', 'epoch': '6.005'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 312/313 [00:15<00:00, 20.38it/s]
+30%|███       | 45000/149880 [7:07:14<16:34:59,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.38it/s]
+{'eval_loss': '1.818', 'eval_runtime': '16.58', 'eval_samples_per_second': '603', 'eval_steps_per_second': '18.87', 'epoch': '6.005'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it]
+30%|███       | 45001/149880 [7:07:18<194:08:22,  6.66s/it]
+33%|███       | 50000/149880 [7:54:26<15:39:41,  1.77it/s]
+ [FTDC] 2026-03-16 23:23:43
+ [FTDC] [Epoch 6.07] Step 45500/599460 (7.6%)
+ [FTDC] Loss: 7.7238 | LR: 7.74e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 21:04:18
+{'loss': '7.724', 'grad_norm': '1.558', 'learning_rate': '7.738e-05', 'epoch': '6.072'}
+
+ [FTDC] 2026-03-16 23:28:27
+ [FTDC] [Epoch 6.14] Step 46000/599460 (7.7%)
+ [FTDC] Loss: 7.6977 | LR: 7.70e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 15:07:53
+{'loss': '7.698', 'grad_norm': '1.221', 'learning_rate': '7.701e-05', 'epoch': '6.138'}
+
+ [FTDC] 2026-03-16 23:33:10
+ [FTDC] [Epoch 6.20] Step 46500/599460 (7.8%)
+ [FTDC] Loss: 7.6740 | LR: 7.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:53:13
+{'loss': '7.674', 'grad_norm': '1.237', 'learning_rate': '7.664e-05', 'epoch': '6.205'}
+
+ [FTDC] 2026-03-16 23:37:52
+ [FTDC] [Epoch 6.27] Step 47000/599460 (7.8%)
+ [FTDC] Loss: 7.6556 | LR: 7.63e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:48:31
+{'loss': '7.656', 'grad_norm': '2.609', 'learning_rate': '7.627e-05', 'epoch': '6.272'}
+
+ [FTDC] 2026-03-16 23:42:36
+ [FTDC] [Epoch 6.34] Step 47500/599460 (7.9%)
+ [FTDC] Loss: 7.6443 | LR: 7.59e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 14:52:19
+{'loss': '7.644', 'grad_norm': '1.253', 'learning_rate': '7.59e-05', 'epoch': '6.338'}
+
+ [FTDC] 2026-03-16 23:47:18
+ [FTDC] [Epoch 6.41] Step 48000/599460 (8.0%)
+ [FTDC] Loss: 7.6041 | LR: 7.55e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:32:38
+{'loss': '7.604', 'grad_norm': '1.269', 'learning_rate': '7.553e-05', 'epoch': '6.405'}
+
+ [FTDC] 2026-03-16 23:52:01
+ [FTDC] [Epoch 6.47] Step 48500/599460 (8.1%)
+ [FTDC] Loss: 7.5875 | LR: 7.52e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:35:59
+{'loss': '7.587', 'grad_norm': '1.286', 'learning_rate': '7.516e-05', 'epoch': '6.472'}
+
+ [FTDC] 2026-03-16 23:56:44
+ [FTDC] [Epoch 6.54] Step 49000/599460 (8.2%)
+ [FTDC] Loss: 7.5866 | LR: 7.48e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:24:42
+{'loss': '7.587', 'grad_norm': '3.635', 'learning_rate': '7.479e-05', 'epoch': '6.539'}
+
+ [FTDC] 2026-03-17 00:01:27
+ [FTDC] [Epoch 6.61] Step 49500/599460 (8.3%)
+ [FTDC] Loss: 7.5656 | LR: 7.44e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:31:45
+{'loss': '7.566', 'grad_norm': '1.262', 'learning_rate': '7.442e-05', 'epoch': '6.605'}
+
+ [FTDC] 2026-03-17 00:06:09
+ [FTDC] [Epoch 6.67] Step 50000/599460 (8.3%)
+ [FTDC] Loss: 7.5424 | LR: 7.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:10:31
+{'loss': '7.542', 'grad_norm': '1.677', 'learning_rate': '7.405e-05', 'epoch': '6.672'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.72it/s]
+33%|███       | 50000/149880 [7:54:42<15:39:41,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.72it/s]
+{'eval_loss': '1.766', 'eval_runtime': '16.13', 'eval_samples_per_second': '620', 'eval_steps_per_second': '19.41', 'epoch': '6.672'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.46s/it]
+33%|███       | 50001/149880 [7:54:47<185:54:31,  6.70s/it]
+ 35%|████      | 52458/149880 [8:17:57<16:29:43,  1.64it/s]
+ [FTDC] 2026-03-17 00:11:13
+ [FTDC] [Epoch 6.74] Step 50500/599460 (8.4%)
+ [FTDC] Loss: 7.5109 | LR: 7.37e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 3 days, 20:47:16
+{'loss': '7.511', 'grad_norm': '1.222', 'learning_rate': '7.367e-05', 'epoch': '6.739'}
+
+ [FTDC] 2026-03-17 00:15:56
+ [FTDC] [Epoch 6.81] Step 51000/599460 (8.5%)
+ [FTDC] Loss: 7.5166 | LR: 7.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:12:51
+{'loss': '7.517', 'grad_norm': '1.382', 'learning_rate': '7.33e-05', 'epoch': '6.805'}
+
+ [FTDC] 2026-03-17 00:20:39
+ [FTDC] [Epoch 6.87] Step 51500/599460 (8.6%)
+ [FTDC] Loss: 7.4844 | LR: 7.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 14:11:10
+{'loss': '7.484', 'grad_norm': '1.541', 'learning_rate': '7.293e-05', 'epoch': '6.872'}
+
+ [FTDC] 2026-03-17 00:25:22
+ [FTDC] [Epoch 6.94] Step 52000/599460 (8.7%)
+ [FTDC] Loss: 7.4619 | LR: 7.26e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:48:10
+{'loss': '7.462', 'grad_norm': '1.242', 'learning_rate': '7.256e-05', 'epoch': '6.939'}
+
+37%|████      | 55000/149880 [8:41:54<14:49:55,  1.78it/s]
+ [FTDC] 2026-03-17 00:30:05
+ [FTDC] [Epoch 7.01] Step 52500/599460 (8.8%)
+ [FTDC] Loss: 7.4270 | LR: 7.22e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 14:14:49
+{'loss': '7.427', 'grad_norm': '2.611', 'learning_rate': '7.219e-05', 'epoch': '7.006'}
+
+ [FTDC] 2026-03-17 00:34:47
+ [FTDC] [Epoch 7.07] Step 53000/599460 (8.8%)
+ [FTDC] Loss: 7.3863 | LR: 7.18e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:38:38
+{'loss': '7.386', 'grad_norm': '1.288', 'learning_rate': '7.182e-05', 'epoch': '7.072'}
+
+ [FTDC] 2026-03-17 00:39:30
+ [FTDC] [Epoch 7.14] Step 53500/599460 (8.9%)
+ [FTDC] Loss: 7.3694 | LR: 7.15e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:35:09
+{'loss': '7.369', 'grad_norm': '1.231', 'learning_rate': '7.145e-05', 'epoch': '7.139'}
+
+ [FTDC] 2026-03-17 00:44:12
+ [FTDC] [Epoch 7.21] Step 54000/599460 (9.0%)
+ [FTDC] Loss: 7.3629 | LR: 7.11e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:27:32
+{'loss': '7.363', 'grad_norm': '1.236', 'learning_rate': '7.108e-05', 'epoch': '7.206'}
+
+ [FTDC] 2026-03-17 00:48:55
+ [FTDC] [Epoch 7.27] Step 54500/599460 (9.1%)
+ [FTDC] Loss: 7.3435 | LR: 7.07e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 13:50:25
+{'loss': '7.343', 'grad_norm': '1.343', 'learning_rate': '7.071e-05', 'epoch': '7.273'}
+
+ [FTDC] 2026-03-17 00:53:37
+ [FTDC] [Epoch 7.34] Step 55000/599460 (9.2%)
+ [FTDC] Loss: 7.3084 | LR: 7.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:15:47
+{'loss': '7.308', 'grad_norm': '2.012', 'learning_rate': '7.034e-05', 'epoch': '7.339'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.80it/s]
+37%|████      | 55000/149880 [8:42:10<14:49:55,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.80it/s]
+{'eval_loss': '1.718', 'eval_runtime': '16.19', 'eval_samples_per_second': '617.7', 'eval_steps_per_second': '19.34', 'epoch': '7.339'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+37%|████      | 55001/149880 [8:42:14<173:04:44,  6.57s/it]
+ 40%|████      | 59952/149880 [9:28:53<15:09:01,  1.65it/s]
+ [FTDC] 2026-03-17 00:58:39
+ [FTDC] [Epoch 7.41] Step 55500/599460 (9.3%)
+ [FTDC] Loss: 7.2951 | LR: 7.00e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 19:23:22
+{'loss': '7.295', 'grad_norm': '1.969', 'learning_rate': '6.997e-05', 'epoch': '7.406'}
+
+ [FTDC] 2026-03-17 01:03:23
+ [FTDC] [Epoch 7.47] Step 56000/599460 (9.3%)
+ [FTDC] Loss: 7.2852 | LR: 6.96e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 13:35:51
+{'loss': '7.285', 'grad_norm': '1.216', 'learning_rate': '6.96e-05', 'epoch': '7.473'}
+
+ [FTDC] 2026-03-17 01:08:05
+ [FTDC] [Epoch 7.54] Step 56500/599460 (9.4%)
+ [FTDC] Loss: 7.2748 | LR: 6.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:59:09
+{'loss': '7.275', 'grad_norm': '1.241', 'learning_rate': '6.923e-05', 'epoch': '7.539'}
+
+ [FTDC] 2026-03-17 01:12:46
+ [FTDC] [Epoch 7.61] Step 57000/599460 (9.5%)
+ [FTDC] Loss: 7.2739 | LR: 6.89e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 12:49:19
+{'loss': '7.274', 'grad_norm': '1.257', 'learning_rate': '6.886e-05', 'epoch': '7.606'}
+
+ [FTDC] 2026-03-17 01:17:29
+ [FTDC] [Epoch 7.67] Step 57500/599460 (9.6%)
+ [FTDC] Loss: 7.2468 | LR: 6.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 13:06:25
+{'loss': '7.247', 'grad_norm': '2.514', 'learning_rate': '6.849e-05', 'epoch': '7.673'}
+
+ [FTDC] 2026-03-17 01:22:11
+ [FTDC] [Epoch 7.74] Step 58000/599460 (9.7%)
+ [FTDC] Loss: 7.2337 | LR: 6.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:55:12
+{'loss': '7.234', 'grad_norm': '1.281', 'learning_rate': '6.811e-05', 'epoch': '7.74'}
+
+ [FTDC] 2026-03-17 01:26:54
+ [FTDC] [Epoch 7.81] Step 58500/599460 (9.8%)
+ [FTDC] Loss: 7.2241 | LR: 6.77e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:51:15
+{'loss': '7.224', 'grad_norm': '1.252', 'learning_rate': '6.774e-05', 'epoch': '7.806'}
+
+ [FTDC] 2026-03-17 01:31:37
+ [FTDC] [Epoch 7.87] Step 59000/599460 (9.8%)
+ [FTDC] Loss: 7.2061 | LR: 6.74e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 13:05:57
+{'loss': '7.206', 'grad_norm': '1.19', 'learning_rate': '6.737e-05', 'epoch': '7.873'}
+
+ [FTDC] 2026-03-17 01:36:20
+ [FTDC] [Epoch 7.94] Step 59500/599460 (9.9%)
+ [FTDC] Loss: 7.1835 | LR: 6.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:47:46
+{'loss': '7.183', 'grad_norm': '1.287', 'learning_rate': '6.7e-05', 'epoch': '7.94'}
+
+40%|████      | 60000/149880 [9:29:21<14:04:25,  1.77it/s]
+ [FTDC] 2026-03-17 01:41:04
+ [FTDC] [Epoch 8.01] Step 60000/599460 (10.0%)
+ [FTDC] Loss: 7.1735 | LR: 6.66e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 13:18:40
+{'loss': '7.174', 'grad_norm': '1.236', 'learning_rate': '6.663e-05', 'epoch': '8.006'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.63it/s]
+40%|████      | 60000/149880 [9:29:37<14:04:25,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.63it/s]
+{'eval_loss': '1.676', 'eval_runtime': '16.24', 'eval_samples_per_second': '615.7', 'eval_steps_per_second': '19.27', 'epoch': '8.006'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+40%|████      | 60001/149880 [9:29:42<164:42:21,  6.60s/it]
+43%|████      | 65000/149880 [10:16:46<13:20:19,  1.77it/s]
+ [FTDC] 2026-03-17 01:46:07
+ [FTDC] [Epoch 8.07] Step 60500/599460 (10.1%)
+ [FTDC] Loss: 7.1271 | LR: 6.63e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 18:42:56
+{'loss': '7.127', 'grad_norm': '1.23', 'learning_rate': '6.626e-05', 'epoch': '8.073'}
+
+ [FTDC] 2026-03-17 01:50:50
+ [FTDC] [Epoch 8.14] Step 61000/599460 (10.2%)
+ [FTDC] Loss: 7.1177 | LR: 6.59e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:31:05
+{'loss': '7.118', 'grad_norm': '1.262', 'learning_rate': '6.589e-05', 'epoch': '8.14'}
+
+ [FTDC] 2026-03-17 01:55:33
+ [FTDC] [Epoch 8.21] Step 61500/599460 (10.3%)
+ [FTDC] Loss: 7.0992 | LR: 6.55e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 12:39:59
+{'loss': '7.099', 'grad_norm': '1.242', 'learning_rate': '6.552e-05', 'epoch': '8.207'}
+
+ [FTDC] 2026-03-17 02:00:16
+ [FTDC] [Epoch 8.27] Step 62000/599460 (10.3%)
+ [FTDC] Loss: 7.0853 | LR: 6.51e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:20:20
+{'loss': '7.085', 'grad_norm': '1.26', 'learning_rate': '6.515e-05', 'epoch': '8.273'}
+
+ [FTDC] 2026-03-17 02:04:57
+ [FTDC] [Epoch 8.34] Step 62500/599460 (10.4%)
+ [FTDC] Loss: 7.0627 | LR: 6.48e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:02:09
+{'loss': '7.063', 'grad_norm': '1.242', 'learning_rate': '6.478e-05', 'epoch': '8.34'}
+
+ [FTDC] 2026-03-17 02:09:39
+ [FTDC] [Epoch 8.41] Step 63000/599460 (10.5%)
+ [FTDC] Loss: 7.0698 | LR: 6.44e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:05:33
+{'loss': '7.07', 'grad_norm': '1.199', 'learning_rate': '6.441e-05', 'epoch': '8.407'}
+
+ [FTDC] 2026-03-17 02:14:22
+ [FTDC] [Epoch 8.47] Step 63500/599460 (10.6%)
+ [FTDC] Loss: 7.0607 | LR: 6.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:00:36
+{'loss': '7.061', 'grad_norm': '1.758', 'learning_rate': '6.404e-05', 'epoch': '8.473'}
+
+ [FTDC] 2026-03-17 02:19:04
+ [FTDC] [Epoch 8.54] Step 64000/599460 (10.7%)
+ [FTDC] Loss: 7.0304 | LR: 6.37e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:00:48
+{'loss': '7.03', 'grad_norm': '2.009', 'learning_rate': '6.367e-05', 'epoch': '8.54'}
+
+ [FTDC] 2026-03-17 02:23:46
+ [FTDC] [Epoch 8.61] Step 64500/599460 (10.8%)
+ [FTDC] Loss: 7.0220 | LR: 6.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:56:19
+{'loss': '7.022', 'grad_norm': '1.264', 'learning_rate': '6.33e-05', 'epoch': '8.607'}
+
+ [FTDC] 2026-03-17 02:28:29
+ [FTDC] [Epoch 8.67] Step 65000/599460 (10.8%)
+ [FTDC] Loss: 6.9993 | LR: 6.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 12:01:24
+{'loss': '6.999', 'grad_norm': '1.27', 'learning_rate': '6.293e-05', 'epoch': '8.674'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.75it/s]
+43%|████      | 65000/149880 [10:17:02<13:20:19,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.75it/s]
+{'eval_loss': '1.642', 'eval_runtime': '16.31', 'eval_samples_per_second': '613', 'eval_steps_per_second': '19.19', 'epoch': '8.674'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]
+43%|████      | 65001/149880 [10:17:06<151:41:42,  6.43s/it]
+ 45%|████      | 67446/149880 [10:40:06<13:50:29,  1.65it/s]
+ [FTDC] 2026-03-17 02:33:31
+ [FTDC] [Epoch 8.74] Step 65500/599460 (10.9%)
+ [FTDC] Loss: 6.9941 | LR: 6.26e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 3 days, 17:20:32
+{'loss': '6.994', 'grad_norm': '1.562', 'learning_rate': '6.255e-05', 'epoch': '8.74'}
+
+ [FTDC] 2026-03-17 02:38:13
+ [FTDC] [Epoch 8.81] Step 66000/599460 (11.0%)
+ [FTDC] Loss: 6.9706 | LR: 6.22e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:36:32
+{'loss': '6.971', 'grad_norm': '1.227', 'learning_rate': '6.218e-05', 'epoch': '8.807'}
+
+ [FTDC] 2026-03-17 02:42:54
+ [FTDC] [Epoch 8.87] Step 66500/599460 (11.1%)
+ [FTDC] Loss: 6.9670 | LR: 6.18e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:24:53
+{'loss': '6.967', 'grad_norm': '1.549', 'learning_rate': '6.181e-05', 'epoch': '8.874'}
+
+ [FTDC] 2026-03-17 02:47:37
+ [FTDC] [Epoch 8.94] Step 67000/599460 (11.2%)
+ [FTDC] Loss: 6.9628 | LR: 6.14e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:31:44
+{'loss': '6.963', 'grad_norm': '1.264', 'learning_rate': '6.144e-05', 'epoch': '8.941'}
+
+47%|█████     | 70000/149880 [11:04:09<12:30:36,  1.77it/s]
+ [FTDC] 2026-03-17 02:52:20
+ [FTDC] [Epoch 9.01] Step 67500/599460 (11.3%)
+ [FTDC] Loss: 6.9291 | LR: 6.11e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 11:46:16
+{'loss': '6.929', 'grad_norm': '5.497', 'learning_rate': '6.107e-05', 'epoch': '9.007'}
+
+ [FTDC] 2026-03-17 02:57:02
+ [FTDC] [Epoch 9.07] Step 68000/599460 (11.3%)
+ [FTDC] Loss: 6.8981 | LR: 6.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:18:12
+{'loss': '6.898', 'grad_norm': '1.272', 'learning_rate': '6.07e-05', 'epoch': '9.074'}
+
+ [FTDC] 2026-03-17 03:01:45
+ [FTDC] [Epoch 9.14] Step 68500/599460 (11.4%)
+ [FTDC] Loss: 6.9009 | LR: 6.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:31:03
+{'loss': '6.901', 'grad_norm': '1.27', 'learning_rate': '6.033e-05', 'epoch': '9.141'}
+
+ [FTDC] 2026-03-17 03:06:28
+ [FTDC] [Epoch 9.21] Step 69000/599460 (11.5%)
+ [FTDC] Loss: 6.8817 | LR: 6.00e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:17:02
+{'loss': '6.882', 'grad_norm': '3.115', 'learning_rate': '5.996e-05', 'epoch': '9.207'}
+
+ [FTDC] 2026-03-17 03:11:10
+ [FTDC] [Epoch 9.27] Step 69500/599460 (11.6%)
+ [FTDC] Loss: 6.8762 | LR: 5.96e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 10:55:50
+{'loss': '6.876', 'grad_norm': '1.258', 'learning_rate': '5.959e-05', 'epoch': '9.274'}
+
+ [FTDC] 2026-03-17 03:15:53
+ [FTDC] [Epoch 9.34] Step 70000/599460 (11.7%)
+ [FTDC] Loss: 6.8659 | LR: 5.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 11:13:36
+{'loss': '6.866', 'grad_norm': '1.254', 'learning_rate': '5.922e-05', 'epoch': '9.341'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.14it/s]
+47%|█████     | 70000/149880 [11:04:26<12:30:36,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.14it/s]
+{'eval_loss': '1.599', 'eval_runtime': '16.27', 'eval_samples_per_second': '614.6', 'eval_steps_per_second': '19.24', 'epoch': '9.341'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+47%|█████     | 70001/149880 [11:04:30<145:54:31,  6.58s/it]
+ 50%|█████     | 74940/149880 [11:51:00<12:34:45,  1.65it/s]
+ [FTDC] 2026-03-17 03:20:55
+ [FTDC] [Epoch 9.41] Step 70500/599460 (11.8%)
+ [FTDC] Loss: 6.8376 | LR: 5.88e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 16:47:07
+{'loss': '6.838', 'grad_norm': '1.308', 'learning_rate': '5.885e-05', 'epoch': '9.408'}
+
+ [FTDC] 2026-03-17 03:25:37
+ [FTDC] [Epoch 9.47] Step 71000/599460 (11.8%)
+ [FTDC] Loss: 6.8268 | LR: 5.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:53:32
+{'loss': '6.827', 'grad_norm': '1.242', 'learning_rate': '5.848e-05', 'epoch': '9.474'}
+
+ [FTDC] 2026-03-17 03:30:19
+ [FTDC] [Epoch 9.54] Step 71500/599460 (11.9%)
+ [FTDC] Loss: 6.8117 | LR: 5.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:41:23
+{'loss': '6.812', 'grad_norm': '1.269', 'learning_rate': '5.811e-05', 'epoch': '9.541'}
+
+ [FTDC] 2026-03-17 03:35:02
+ [FTDC] [Epoch 9.61] Step 72000/599460 (12.0%)
+ [FTDC] Loss: 6.8196 | LR: 5.77e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:49:39
+{'loss': '6.82', 'grad_norm': '1.221', 'learning_rate': '5.774e-05', 'epoch': '9.608'}
+
+ [FTDC] 2026-03-17 03:39:44
+ [FTDC] [Epoch 9.67] Step 72500/599460 (12.1%)
+ [FTDC] Loss: 6.8162 | LR: 5.74e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:29:08
+{'loss': '6.816', 'grad_norm': '1.248', 'learning_rate': '5.737e-05', 'epoch': '9.674'}
+
+ [FTDC] 2026-03-17 03:44:25
+ [FTDC] [Epoch 9.74] Step 73000/599460 (12.2%)
+ [FTDC] Loss: 6.7891 | LR: 5.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:26:57
+{'loss': '6.789', 'grad_norm': '1.254', 'learning_rate': '5.699e-05', 'epoch': '9.741'}
+
+ [FTDC] 2026-03-17 03:49:08
+ [FTDC] [Epoch 9.81] Step 73500/599460 (12.3%)
+ [FTDC] Loss: 6.7847 | LR: 5.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:38:39
+{'loss': '6.785', 'grad_norm': '1.261', 'learning_rate': '5.662e-05', 'epoch': '9.808'}
+
+ [FTDC] 2026-03-17 03:53:51
+ [FTDC] [Epoch 9.87] Step 74000/599460 (12.3%)
+ [FTDC] Loss: 6.7663 | LR: 5.63e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:32:46
+{'loss': '6.766', 'grad_norm': '1.245', 'learning_rate': '5.625e-05', 'epoch': '9.875'}
+
+ [FTDC] 2026-03-17 03:58:34
+ [FTDC] [Epoch 9.94] Step 74500/599460 (12.4%)
+ [FTDC] Loss: 6.7716 | LR: 5.59e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:30:27
+{'loss': '6.772', 'grad_norm': '1.266', 'learning_rate': '5.588e-05', 'epoch': '9.941'}
+
+50%|█████     | 75000/149880 [11:51:34<11:40:12,  1.78it/s]
+ [FTDC] 2026-03-17 04:03:18
+ [FTDC] [Epoch 10.01] Step 75000/599460 (12.5%)
+ [FTDC] Loss: 6.7317 | LR: 5.55e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 10:41:57
+{'loss': '6.732', 'grad_norm': '1.254', 'learning_rate': '5.551e-05', 'epoch': '10.01'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.80it/s]
+50%|█████     | 75000/149880 [11:51:51<11:40:12,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.80it/s]
+{'eval_loss': '1.581', 'eval_runtime': '16.15', 'eval_samples_per_second': '619.3', 'eval_steps_per_second': '19.38', 'epoch': '10.01'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+50%|█████     | 75001/149880 [11:51:56<142:01:52,  6.83s/it]
+53%|█████     | 80000/149880 [12:38:56<11:01:19,  1.76it/s]
+ [FTDC] 2026-03-17 04:08:21
+ [FTDC] [Epoch 10.07] Step 75500/599460 (12.6%)
+ [FTDC] Loss: 6.7224 | LR: 5.51e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 16:13:39
+{'loss': '6.722', 'grad_norm': '1.292', 'learning_rate': '5.514e-05', 'epoch': '10.07'}
+
+ [FTDC] 2026-03-17 04:13:03
+ [FTDC] [Epoch 10.14] Step 76000/599460 (12.7%)
+ [FTDC] Loss: 6.7031 | LR: 5.48e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:55:36
+{'loss': '6.703', 'grad_norm': '1.288', 'learning_rate': '5.477e-05', 'epoch': '10.14'}
+
+ [FTDC] 2026-03-17 04:17:45
+ [FTDC] [Epoch 10.21] Step 76500/599460 (12.8%)
+ [FTDC] Loss: 6.6994 | LR: 5.44e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:06:21
+{'loss': '6.699', 'grad_norm': '1.249', 'learning_rate': '5.44e-05', 'epoch': '10.21'}
+
+ [FTDC] 2026-03-17 04:22:28
+ [FTDC] [Epoch 10.27] Step 77000/599460 (12.8%)
+ [FTDC] Loss: 6.6857 | LR: 5.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 10:02:06
+{'loss': '6.686', 'grad_norm': '1.236', 'learning_rate': '5.403e-05', 'epoch': '10.27'}
+
+ [FTDC] 2026-03-17 04:27:10
+ [FTDC] [Epoch 10.34] Step 77500/599460 (12.9%)
+ [FTDC] Loss: 6.6824 | LR: 5.37e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:58:29
+{'loss': '6.682', 'grad_norm': '1.276', 'learning_rate': '5.366e-05', 'epoch': '10.34'}
+
+ [FTDC] 2026-03-17 04:31:52
+ [FTDC] [Epoch 10.41] Step 78000/599460 (13.0%)
+ [FTDC] Loss: 6.6699 | LR: 5.33e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 9:35:46
+{'loss': '6.67', 'grad_norm': '1.269', 'learning_rate': '5.329e-05', 'epoch': '10.41'}
+
+ [FTDC] 2026-03-17 04:36:34
+ [FTDC] [Epoch 10.48] Step 78500/599460 (13.1%)
+ [FTDC] Loss: 6.6563 | LR: 5.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:41:34
+{'loss': '6.656', 'grad_norm': '1.268', 'learning_rate': '5.292e-05', 'epoch': '10.48'}
+
+ [FTDC] 2026-03-17 04:41:16
+ [FTDC] [Epoch 10.54] Step 79000/599460 (13.2%)
+ [FTDC] Loss: 6.6516 | LR: 5.25e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 9:18:08
+{'loss': '6.652', 'grad_norm': '1.249', 'learning_rate': '5.255e-05', 'epoch': '10.54'}
+
+ [FTDC] 2026-03-17 04:45:58
+ [FTDC] [Epoch 10.61] Step 79500/599460 (13.3%)
+ [FTDC] Loss: 6.6592 | LR: 5.22e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:29:22
+{'loss': '6.659', 'grad_norm': '1.299', 'learning_rate': '5.218e-05', 'epoch': '10.61'}
+
+ [FTDC] 2026-03-17 04:50:39
+ [FTDC] [Epoch 10.68] Step 80000/599460 (13.3%)
+ [FTDC] Loss: 6.6269 | LR: 5.18e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 9:09:08
+{'loss': '6.627', 'grad_norm': '1.348', 'learning_rate': '5.181e-05', 'epoch': '10.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.81it/s]
+53%|█████     | 80000/149880 [12:39:12<11:01:19,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.81it/s]
+{'eval_loss': '1.553', 'eval_runtime': '16.1', 'eval_samples_per_second': '621', 'eval_steps_per_second': '19.44', 'epoch': '10.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]
+53%|█████     | 80001/149880 [12:39:17<130:33:42,  6.73s/it]
+ 55%|██████    | 82434/149880 [13:02:12<11:10:55,  1.68it/s]
+ [FTDC] 2026-03-17 04:55:42
+ [FTDC] [Epoch 10.74] Step 80500/599460 (13.4%)
+ [FTDC] Loss: 6.6247 | LR: 5.14e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 15:21:48
+{'loss': '6.625', 'grad_norm': '1.325', 'learning_rate': '5.143e-05', 'epoch': '10.74'}
+
+ [FTDC] 2026-03-17 05:00:24
+ [FTDC] [Epoch 10.81] Step 81000/599460 (13.5%)
+ [FTDC] Loss: 6.6357 | LR: 5.11e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:21:44
+{'loss': '6.636', 'grad_norm': '1.353', 'learning_rate': '5.106e-05', 'epoch': '10.81'}
+
+ [FTDC] 2026-03-17 05:05:07
+ [FTDC] [Epoch 10.88] Step 81500/599460 (13.6%)
+ [FTDC] Loss: 6.6043 | LR: 5.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:11:30
+{'loss': '6.604', 'grad_norm': '1.319', 'learning_rate': '5.069e-05', 'epoch': '10.88'}
+
+ [FTDC] 2026-03-17 05:09:49
+ [FTDC] [Epoch 10.94] Step 82000/599460 (13.7%)
+ [FTDC] Loss: 6.5854 | LR: 5.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:06:56
+{'loss': '6.585', 'grad_norm': '1.305', 'learning_rate': '5.032e-05', 'epoch': '10.94'}
+
+57%|██████    | 85000/149880 [13:26:22<10:14:06,  1.76it/s]
+ [FTDC] 2026-03-17 05:14:33
+ [FTDC] [Epoch 11.01] Step 82500/599460 (13.8%)
+ [FTDC] Loss: 6.5662 | LR: 5.00e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 9:43:56
+{'loss': '6.566', 'grad_norm': '1.29', 'learning_rate': '4.995e-05', 'epoch': '11.01'}
+
+ [FTDC] 2026-03-17 05:19:16
+ [FTDC] [Epoch 11.08] Step 83000/599460 (13.8%)
+ [FTDC] Loss: 6.5664 | LR: 4.96e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 9:15:28
+{'loss': '6.566', 'grad_norm': '1.309', 'learning_rate': '4.958e-05', 'epoch': '11.08'}
+
+ [FTDC] 2026-03-17 05:23:59
+ [FTDC] [Epoch 11.14] Step 83500/599460 (13.9%)
+ [FTDC] Loss: 6.5492 | LR: 4.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:50:42
+{'loss': '6.549', 'grad_norm': '1.27', 'learning_rate': '4.921e-05', 'epoch': '11.14'}
+
+ [FTDC] 2026-03-17 05:28:40
+ [FTDC] [Epoch 11.21] Step 84000/599460 (14.0%)
+ [FTDC] Loss: 6.5383 | LR: 4.88e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:41:30
+{'loss': '6.538', 'grad_norm': '1.284', 'learning_rate': '4.884e-05', 'epoch': '11.21'}
+
+ [FTDC] 2026-03-17 05:33:23
+ [FTDC] [Epoch 11.28] Step 84500/599460 (14.1%)
+ [FTDC] Loss: 6.5381 | LR: 4.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:59:32
+{'loss': '6.538', 'grad_norm': '1.263', 'learning_rate': '4.847e-05', 'epoch': '11.28'}
+
+ [FTDC] 2026-03-17 05:38:06
+ [FTDC] [Epoch 11.34] Step 85000/599460 (14.2%)
+ [FTDC] Loss: 6.5177 | LR: 4.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:39:17
+{'loss': '6.518', 'grad_norm': '1.281', 'learning_rate': '4.81e-05', 'epoch': '11.34'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.59it/s]
+57%|██████    | 85000/149880 [13:26:39<10:14:06,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.59it/s]
+{'eval_loss': '1.532', 'eval_runtime': '16.16', 'eval_samples_per_second': '618.9', 'eval_steps_per_second': '19.37', 'epoch': '11.34'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+57%|██████    | 85001/149880 [13:26:43<120:07:54,  6.67s/it]
+ 60%|██████    | 89928/149880 [14:13:10<9:55:38,  1.68it/s]
+ [FTDC] 2026-03-17 05:43:09
+ [FTDC] [Epoch 11.41] Step 85500/599460 (14.3%)
+ [FTDC] Loss: 6.5183 | LR: 4.77e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 14:31:45
+{'loss': '6.518', 'grad_norm': '1.317', 'learning_rate': '4.773e-05', 'epoch': '11.41'}
+
+ [FTDC] 2026-03-17 05:47:51
+ [FTDC] [Epoch 11.48] Step 86000/599460 (14.3%)
+ [FTDC] Loss: 6.5041 | LR: 4.74e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:36:10
+{'loss': '6.504', 'grad_norm': '1.293', 'learning_rate': '4.736e-05', 'epoch': '11.48'}
+
+ [FTDC] 2026-03-17 05:52:34
+ [FTDC] [Epoch 11.54] Step 86500/599460 (14.4%)
+ [FTDC] Loss: 6.5018 | LR: 4.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:28:46
+{'loss': '6.502', 'grad_norm': '1.449', 'learning_rate': '4.699e-05', 'epoch': '11.54'}
+
+ [FTDC] 2026-03-17 05:57:16
+ [FTDC] [Epoch 11.61] Step 87000/599460 (14.5%)
+ [FTDC] Loss: 6.4976 | LR: 4.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:31:43
+{'loss': '6.498', 'grad_norm': '1.25', 'learning_rate': '4.662e-05', 'epoch': '11.61'}
+
+ [FTDC] 2026-03-17 06:01:59
+ [FTDC] [Epoch 11.68] Step 87500/599460 (14.6%)
+ [FTDC] Loss: 6.4708 | LR: 4.62e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:27:21
+{'loss': '6.471', 'grad_norm': '1.911', 'learning_rate': '4.625e-05', 'epoch': '11.68'}
+
+ [FTDC] 2026-03-17 06:06:43
+ [FTDC] [Epoch 11.74] Step 88000/599460 (14.7%)
+ [FTDC] Loss: 6.4807 | LR: 4.59e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 8:30:11
+{'loss': '6.481', 'grad_norm': '2.779', 'learning_rate': '4.587e-05', 'epoch': '11.74'}
+
+ [FTDC] 2026-03-17 06:11:25
+ [FTDC] [Epoch 11.81] Step 88500/599460 (14.8%)
+ [FTDC] Loss: 6.4685 | LR: 4.55e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:14:53
+{'loss': '6.468', 'grad_norm': '1.274', 'learning_rate': '4.55e-05', 'epoch': '11.81'}
+
+ [FTDC] 2026-03-17 06:16:08
+ [FTDC] [Epoch 11.88] Step 89000/599460 (14.8%)
+ [FTDC] Loss: 6.4548 | LR: 4.51e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:06:23
+{'loss': '6.455', 'grad_norm': '1.294', 'learning_rate': '4.513e-05', 'epoch': '11.88'}
+
+ [FTDC] 2026-03-17 06:20:51
+ [FTDC] [Epoch 11.94] Step 89500/599460 (14.9%)
+ [FTDC] Loss: 6.4426 | LR: 4.48e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 8:05:19
+{'loss': '6.443', 'grad_norm': '1.373', 'learning_rate': '4.476e-05', 'epoch': '11.94'}
+
+60%|██████    | 90000/149880 [14:13:52<9:23:33,  1.77it/s]
+ [FTDC] 2026-03-17 06:25:35
+ [FTDC] [Epoch 12.01] Step 90000/599460 (15.0%)
+ [FTDC] Loss: 6.4187 | LR: 4.44e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 8:27:45
+{'loss': '6.419', 'grad_norm': '1.403', 'learning_rate': '4.439e-05', 'epoch': '12.01'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.05it/s]
+60%|██████    | 90000/149880 [14:14:08<9:23:33,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.05it/s]
+{'eval_loss': '1.509', 'eval_runtime': '16.34', 'eval_samples_per_second': '612.2', 'eval_steps_per_second': '19.16', 'epoch': '12.01'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+60%|██████    | 90001/149880 [14:14:12<110:16:54,  6.63s/it]
+63%|██████    | 95000/149880 [15:01:14<8:36:53,  1.77it/s]
+ [FTDC] 2026-03-17 06:30:37
+ [FTDC] [Epoch 12.08] Step 90500/599460 (15.1%)
+ [FTDC] Loss: 6.4126 | LR: 4.40e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 3 days, 13:24:36
+{'loss': '6.413', 'grad_norm': '1.3', 'learning_rate': '4.402e-05', 'epoch': '12.08'}
+
+ [FTDC] 2026-03-17 06:35:20
+ [FTDC] [Epoch 12.14] Step 91000/599460 (15.2%)
+ [FTDC] Loss: 6.4029 | LR: 4.37e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:53:14
+{'loss': '6.403', 'grad_norm': '1.327', 'learning_rate': '4.365e-05', 'epoch': '12.14'}
+
+ [FTDC] 2026-03-17 06:40:02
+ [FTDC] [Epoch 12.21] Step 91500/599460 (15.3%)
+ [FTDC] Loss: 6.4004 | LR: 4.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:37:23
+{'loss': '6.4', 'grad_norm': '1.278', 'learning_rate': '4.328e-05', 'epoch': '12.21'}
+
+ [FTDC] 2026-03-17 06:44:44
+ [FTDC] [Epoch 12.28] Step 92000/599460 (15.3%)
+ [FTDC] Loss: 6.3998 | LR: 4.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:36:19
+{'loss': '6.4', 'grad_norm': '1.317', 'learning_rate': '4.291e-05', 'epoch': '12.28'}
+
+ [FTDC] 2026-03-17 06:49:27
+ [FTDC] [Epoch 12.34] Step 92500/599460 (15.4%)
+ [FTDC] Loss: 6.3763 | LR: 4.25e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:31:47
+{'loss': '6.376', 'grad_norm': '1.279', 'learning_rate': '4.254e-05', 'epoch': '12.34'}
+
+ [FTDC] 2026-03-17 06:54:09
+ [FTDC] [Epoch 12.41] Step 93000/599460 (15.5%)
+ [FTDC] Loss: 6.3836 | LR: 4.22e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:28:08
+{'loss': '6.384', 'grad_norm': '1.268', 'learning_rate': '4.217e-05', 'epoch': '12.41'}
+
+ [FTDC] 2026-03-17 06:58:51
+ [FTDC] [Epoch 12.48] Step 93500/599460 (15.6%)
+ [FTDC] Loss: 6.3596 | LR: 4.18e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:21:25
+{'loss': '6.36', 'grad_norm': '1.244', 'learning_rate': '4.18e-05', 'epoch': '12.48'}
+
+ [FTDC] 2026-03-17 07:03:33
+ [FTDC] [Epoch 12.54] Step 94000/599460 (15.7%)
+ [FTDC] Loss: 6.3673 | LR: 4.14e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:06:37
+{'loss': '6.367', 'grad_norm': '1.432', 'learning_rate': '4.143e-05', 'epoch': '12.54'}
+
+ [FTDC] 2026-03-17 07:08:15
+ [FTDC] [Epoch 12.61] Step 94500/599460 (15.8%)
+ [FTDC] Loss: 6.3580 | LR: 4.11e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:07:47
+{'loss': '6.358', 'grad_norm': '1.276', 'learning_rate': '4.106e-05', 'epoch': '12.61'}
+
+ [FTDC] 2026-03-17 07:12:57
+ [FTDC] [Epoch 12.68] Step 95000/599460 (15.8%)
+ [FTDC] Loss: 6.3430 | LR: 4.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:04:49
+{'loss': '6.343', 'grad_norm': '1.306', 'learning_rate': '4.069e-05', 'epoch': '12.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.72it/s]
+63%|██████    | 95000/149880 [15:01:30<8:36:53,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.72it/s]
+{'eval_loss': '1.487', 'eval_runtime': '16.42', 'eval_samples_per_second': '609', 'eval_steps_per_second': '19.06', 'epoch': '12.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.33s/it]
+63%|██████    | 95001/149880 [15:01:35<100:37:07,  6.60s/it]
+ 65%|██████    | 97422/149880 [15:24:23<8:54:27,  1.64it/s]
+ [FTDC] 2026-03-17 07:18:00
+ [FTDC] [Epoch 12.74] Step 95500/599460 (15.9%)
+ [FTDC] Loss: 6.3623 | LR: 4.03e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 12:44:41
+{'loss': '6.362', 'grad_norm': '1.282', 'learning_rate': '4.031e-05', 'epoch': '12.74'}
+
+ [FTDC] 2026-03-17 07:22:43
+ [FTDC] [Epoch 12.81] Step 96000/599460 (16.0%)
+ [FTDC] Loss: 6.3247 | LR: 3.99e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:07:01
+{'loss': '6.325', 'grad_norm': '4.56', 'learning_rate': '3.994e-05', 'epoch': '12.81'}
+
+ [FTDC] 2026-03-17 07:27:26
+ [FTDC] [Epoch 12.88] Step 96500/599460 (16.1%)
+ [FTDC] Loss: 6.3328 | LR: 3.96e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 7:06:36
+{'loss': '6.333', 'grad_norm': '1.304', 'learning_rate': '3.957e-05', 'epoch': '12.88'}
+
+ [FTDC] 2026-03-17 07:32:08
+ [FTDC] [Epoch 12.94] Step 97000/599460 (16.2%)
+ [FTDC] Loss: 6.3115 | LR: 3.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:45:02
+{'loss': '6.311', 'grad_norm': '1.302', 'learning_rate': '3.92e-05', 'epoch': '12.94'}
+
+67%|███████   | 100000/149880 [15:48:42<7:49:36,  1.77it/s]
+ [FTDC] 2026-03-17 07:36:52
+ [FTDC] [Epoch 13.01] Step 97500/599460 (16.3%)
+ [FTDC] Loss: 6.3071 | LR: 3.88e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 7:06:49
+{'loss': '6.307', 'grad_norm': '1.286', 'learning_rate': '3.883e-05', 'epoch': '13.01'}
+
+ [FTDC] 2026-03-17 07:41:35
+ [FTDC] [Epoch 13.08] Step 98000/599460 (16.3%)
+ [FTDC] Loss: 6.2835 | LR: 3.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:49:53
+{'loss': '6.284', 'grad_norm': '1.285', 'learning_rate': '3.846e-05', 'epoch': '13.08'}
+
+ [FTDC] 2026-03-17 07:46:18
+ [FTDC] [Epoch 13.14] Step 98500/599460 (16.4%)
+ [FTDC] Loss: 6.2755 | LR: 3.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:46:43
+{'loss': '6.276', 'grad_norm': '1.787', 'learning_rate': '3.809e-05', 'epoch': '13.14'}
+
+ [FTDC] 2026-03-17 07:51:01
+ [FTDC] [Epoch 13.21] Step 99000/599460 (16.5%)
+ [FTDC] Loss: 6.2775 | LR: 3.77e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:42:35
+{'loss': '6.277', 'grad_norm': '1.306', 'learning_rate': '3.772e-05', 'epoch': '13.21'}
+
+ [FTDC] 2026-03-17 07:55:43
+ [FTDC] [Epoch 13.28] Step 99500/599460 (16.6%)
+ [FTDC] Loss: 6.2601 | LR: 3.73e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:22:54
+{'loss': '6.26', 'grad_norm': '1.321', 'learning_rate': '3.735e-05', 'epoch': '13.28'}
+
+ [FTDC] 2026-03-17 08:00:26
+ [FTDC] [Epoch 13.34] Step 100000/599460 (16.7%)
+ [FTDC] Loss: 6.2624 | LR: 3.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:22:51
+{'loss': '6.262', 'grad_norm': '1.35', 'learning_rate': '3.698e-05', 'epoch': '13.34'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.08it/s]
+67%|███████   | 100000/149880 [15:48:59<7:49:36,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 16.08it/s]
+{'eval_loss': '1.47', 'eval_runtime': '16.21', 'eval_samples_per_second': '616.8', 'eval_steps_per_second': '19.31', 'epoch': '13.34'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]
+67%|███████   | 100001/149880 [15:49:04<93:39:12,  6.76s/it]
+ 70%|███████   | 104916/149880 [16:35:16<7:08:22,  1.75it/s]
+ [FTDC] 2026-03-17 08:05:28
+ [FTDC] [Epoch 13.41] Step 100500/599460 (16.8%)
+ [FTDC] Loss: 6.2585 | LR: 3.66e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 11:51:24
+{'loss': '6.258', 'grad_norm': '1.308', 'learning_rate': '3.661e-05', 'epoch': '13.41'}
+
+ [FTDC] 2026-03-17 08:10:10
+ [FTDC] [Epoch 13.48] Step 101000/599460 (16.8%)
+ [FTDC] Loss: 6.2538 | LR: 3.62e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:05:11
+{'loss': '6.254', 'grad_norm': '1.266', 'learning_rate': '3.624e-05', 'epoch': '13.48'}
+
+ [FTDC] 2026-03-17 08:14:52
+ [FTDC] [Epoch 13.54] Step 101500/599460 (16.9%)
+ [FTDC] Loss: 6.2539 | LR: 3.59e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 6:00:34
+{'loss': '6.254', 'grad_norm': '1.313', 'learning_rate': '3.587e-05', 'epoch': '13.54'}
+
+ [FTDC] 2026-03-17 08:19:34
+ [FTDC] [Epoch 13.61] Step 102000/599460 (17.0%)
+ [FTDC] Loss: 6.2362 | LR: 3.55e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:54:36
+{'loss': '6.236', 'grad_norm': '1.259', 'learning_rate': '3.55e-05', 'epoch': '13.61'}
+
+ [FTDC] 2026-03-17 08:24:16
+ [FTDC] [Epoch 13.68] Step 102500/599460 (17.1%)
+ [FTDC] Loss: 6.2425 | LR: 3.51e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:50:22
+{'loss': '6.243', 'grad_norm': '1.305', 'learning_rate': '3.513e-05', 'epoch': '13.68'}
+
+ [FTDC] 2026-03-17 08:28:58
+ [FTDC] [Epoch 13.74] Step 103000/599460 (17.2%)
+ [FTDC] Loss: 6.2203 | LR: 3.48e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:45:48
+{'loss': '6.22', 'grad_norm': '1.306', 'learning_rate': '3.475e-05', 'epoch': '13.74'}
+
+ [FTDC] 2026-03-17 08:33:39
+ [FTDC] [Epoch 13.81] Step 103500/599460 (17.3%)
+ [FTDC] Loss: 6.2124 | LR: 3.44e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 5:34:13
+{'loss': '6.212', 'grad_norm': '1.281', 'learning_rate': '3.438e-05', 'epoch': '13.81'}
+
+ [FTDC] 2026-03-17 08:38:22
+ [FTDC] [Epoch 13.88] Step 104000/599460 (17.3%)
+ [FTDC] Loss: 6.2270 | LR: 3.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:50:03
+{'loss': '6.227', 'grad_norm': '1.354', 'learning_rate': '3.401e-05', 'epoch': '13.88'}
+
+ [FTDC] 2026-03-17 08:43:04
+ [FTDC] [Epoch 13.94] Step 104500/599460 (17.4%)
+ [FTDC] Loss: 6.2145 | LR: 3.36e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:38:00
+{'loss': '6.215', 'grad_norm': '1.258', 'learning_rate': '3.364e-05', 'epoch': '13.94'}
+
+70%|███████   | 105000/149880 [16:36:05<7:08:40,  1.74it/s]
+ [FTDC] 2026-03-17 08:47:48
+ [FTDC] [Epoch 14.01] Step 105000/599460 (17.5%)
+ [FTDC] Loss: 6.1945 | LR: 3.33e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 5:57:30
+{'loss': '6.195', 'grad_norm': '1.3', 'learning_rate': '3.327e-05', 'epoch': '14.01'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.50it/s]
+70%|███████   | 105000/149880 [16:36:21<7:08:40,  1.74it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.50it/s]
+{'eval_loss': '1.453', 'eval_runtime': '16.47', 'eval_samples_per_second': '607.1', 'eval_steps_per_second': '19', 'epoch': '14.01'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it]
+70%|███████   | 105001/149880 [16:36:26<84:55:02,  6.81s/it]
+73%|███████   | 110000/149880 [17:23:32<6:18:31,  1.76it/s]
+ [FTDC] 2026-03-17 08:52:52
+ [FTDC] [Epoch 14.08] Step 105500/599460 (17.6%)
+ [FTDC] Loss: 6.1860 | LR: 3.29e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 3 days, 11:27:04
+{'loss': '6.186', 'grad_norm': '1.314', 'learning_rate': '3.29e-05', 'epoch': '14.08'}
+
+ [FTDC] 2026-03-17 08:57:36
+ [FTDC] [Epoch 14.14] Step 106000/599460 (17.7%)
+ [FTDC] Loss: 6.1743 | LR: 3.25e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 5:39:40
+{'loss': '6.174', 'grad_norm': '1.338', 'learning_rate': '3.253e-05', 'epoch': '14.14'}
+
+ [FTDC] 2026-03-17 09:02:18
+ [FTDC] [Epoch 14.21] Step 106500/599460 (17.8%)
+ [FTDC] Loss: 6.1634 | LR: 3.22e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:23:54
+{'loss': '6.163', 'grad_norm': '1.255', 'learning_rate': '3.216e-05', 'epoch': '14.21'}
+
+ [FTDC] 2026-03-17 09:07:00
+ [FTDC] [Epoch 14.28] Step 107000/599460 (17.8%)
+ [FTDC] Loss: 6.1664 | LR: 3.18e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 5:02:35
+{'loss': '6.166', 'grad_norm': '1.32', 'learning_rate': '3.179e-05', 'epoch': '14.28'}
+
+ [FTDC] 2026-03-17 09:11:42
+ [FTDC] [Epoch 14.34] Step 107500/599460 (17.9%)
+ [FTDC] Loss: 6.1627 | LR: 3.14e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:12:27
+{'loss': '6.163', 'grad_norm': '1.356', 'learning_rate': '3.142e-05', 'epoch': '14.34'}
+
+ [FTDC] 2026-03-17 09:16:25
+ [FTDC] [Epoch 14.41] Step 108000/599460 (18.0%)
+ [FTDC] Loss: 6.1607 | LR: 3.10e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:14:25
+{'loss': '6.161', 'grad_norm': '1.317', 'learning_rate': '3.105e-05', 'epoch': '14.41'}
+
+ [FTDC] 2026-03-17 09:21:08
+ [FTDC] [Epoch 14.48] Step 108500/599460 (18.1%)
+ [FTDC] Loss: 6.1379 | LR: 3.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:00:50
+{'loss': '6.138', 'grad_norm': '1.49', 'learning_rate': '3.068e-05', 'epoch': '14.48'}
+
+ [FTDC] 2026-03-17 09:25:51
+ [FTDC] [Epoch 14.55] Step 109000/599460 (18.2%)
+ [FTDC] Loss: 6.1416 | LR: 3.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 5:08:49
+{'loss': '6.142', 'grad_norm': '1.264', 'learning_rate': '3.031e-05', 'epoch': '14.55'}
+
+ [FTDC] 2026-03-17 09:30:33
+ [FTDC] [Epoch 14.61] Step 109500/599460 (18.3%)
+ [FTDC] Loss: 6.1469 | LR: 2.99e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:45:57
+{'loss': '6.147', 'grad_norm': '1.327', 'learning_rate': '2.994e-05', 'epoch': '14.61'}
+
+ [FTDC] 2026-03-17 09:35:16
+ [FTDC] [Epoch 14.68] Step 110000/599460 (18.3%)
+ [FTDC] Loss: 6.1165 | LR: 2.96e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:56:14
+{'loss': '6.117', 'grad_norm': '1.297', 'learning_rate': '2.957e-05', 'epoch': '14.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.94it/s]
+73%|███████   | 110000/149880 [17:23:49<6:18:31,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.94it/s]
+{'eval_loss': '1.446', 'eval_runtime': '16.31', 'eval_samples_per_second': '613.2', 'eval_steps_per_second': '19.19', 'epoch': '14.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+73%|███████   | 110001/149880 [17:23:53<73:18:42,  6.62s/it]
+ 75%|████████  | 112410/149880 [17:46:35<6:24:50,  1.62it/s]
+ [FTDC] 2026-03-17 09:40:18
+ [FTDC] [Epoch 14.75] Step 110500/599460 (18.4%)
+ [FTDC] Loss: 6.1440 | LR: 2.92e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 10:15:03
+{'loss': '6.144', 'grad_norm': '1.322', 'learning_rate': '2.919e-05', 'epoch': '14.75'}
+
+ [FTDC] 2026-03-17 09:45:02
+ [FTDC] [Epoch 14.81] Step 111000/599460 (18.5%)
+ [FTDC] Loss: 6.1121 | LR: 2.88e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 4:55:47
+{'loss': '6.112', 'grad_norm': '1.314', 'learning_rate': '2.882e-05', 'epoch': '14.81'}
+
+ [FTDC] 2026-03-17 09:49:44
+ [FTDC] [Epoch 14.88] Step 111500/599460 (18.6%)
+ [FTDC] Loss: 6.1171 | LR: 2.85e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:27:43
+{'loss': '6.117', 'grad_norm': '1.284', 'learning_rate': '2.845e-05', 'epoch': '14.88'}
+
+ [FTDC] 2026-03-17 09:54:27
+ [FTDC] [Epoch 14.95] Step 112000/599460 (18.7%)
+ [FTDC] Loss: 6.1021 | LR: 2.81e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:34:06
+{'loss': '6.102', 'grad_norm': '1.314', 'learning_rate': '2.808e-05', 'epoch': '14.95'}
+
+77%|████████  | 115000/149880 [18:10:57<5:29:22,  1.76it/s]
+ [FTDC] 2026-03-17 09:59:10
+ [FTDC] [Epoch 15.01] Step 112500/599460 (18.8%)
+ [FTDC] Loss: 6.1006 | LR: 2.77e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 4:45:10
+{'loss': '6.101', 'grad_norm': '1.32', 'learning_rate': '2.771e-05', 'epoch': '15.01'}
+
+ [FTDC] 2026-03-17 10:03:52
+ [FTDC] [Epoch 15.08] Step 113000/599460 (18.9%)
+ [FTDC] Loss: 6.0804 | LR: 2.73e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:09:41
+{'loss': '6.08', 'grad_norm': '1.355', 'learning_rate': '2.734e-05', 'epoch': '15.08'}
+
+ [FTDC] 2026-03-17 10:08:34
+ [FTDC] [Epoch 15.15] Step 113500/599460 (18.9%)
+ [FTDC] Loss: 6.0791 | LR: 2.70e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 4:02:44
+{'loss': '6.079', 'grad_norm': '1.313', 'learning_rate': '2.697e-05', 'epoch': '15.15'}
+
+ [FTDC] 2026-03-17 10:13:16
+ [FTDC] [Epoch 15.21] Step 114000/599460 (19.0%)
+ [FTDC] Loss: 6.0745 | LR: 2.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:05:12
+{'loss': '6.074', 'grad_norm': '1.283', 'learning_rate': '2.66e-05', 'epoch': '15.21'}
+
+ [FTDC] 2026-03-17 10:17:58
+ [FTDC] [Epoch 15.28] Step 114500/599460 (19.1%)
+ [FTDC] Loss: 6.0712 | LR: 2.62e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:54:31
+{'loss': '6.071', 'grad_norm': '1.252', 'learning_rate': '2.623e-05', 'epoch': '15.28'}
+
+ [FTDC] 2026-03-17 10:22:41
+ [FTDC] [Epoch 15.35] Step 115000/599460 (19.2%)
+ [FTDC] Loss: 6.0598 | LR: 2.59e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 4:06:48
+{'loss': '6.06', 'grad_norm': '1.289', 'learning_rate': '2.586e-05', 'epoch': '15.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.62it/s]
+77%|████████  | 115000/149880 [18:11:14<5:29:22,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.62it/s]
+{'eval_loss': '1.431', 'eval_runtime': '16.28', 'eval_samples_per_second': '614.1', 'eval_steps_per_second': '19.22', 'epoch': '15.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.57s/it]
+77%|████████  | 115001/149880 [18:11:19<65:34:27,  6.77s/it]
+ 80%|████████  | 119904/149880 [18:57:28<4:59:09,  1.67it/s]
+ [FTDC] 2026-03-17 10:27:43
+ [FTDC] [Epoch 15.41] Step 115500/599460 (19.3%)
+ [FTDC] Loss: 6.0429 | LR: 2.55e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 9:24:18
+{'loss': '6.043', 'grad_norm': '1.316', 'learning_rate': '2.549e-05', 'epoch': '15.41'}
+
+ [FTDC] 2026-03-17 10:32:26
+ [FTDC] [Epoch 15.48] Step 116000/599460 (19.4%)
+ [FTDC] Loss: 6.0595 | LR: 2.51e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:59:57
+{'loss': '6.059', 'grad_norm': '1.295', 'learning_rate': '2.512e-05', 'epoch': '15.48'}
+
+ [FTDC] 2026-03-17 10:37:08
+ [FTDC] [Epoch 15.55] Step 116500/599460 (19.4%)
+ [FTDC] Loss: 6.0459 | LR: 2.47e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:35:54
+{'loss': '6.046', 'grad_norm': '1.305', 'learning_rate': '2.475e-05', 'epoch': '15.55'}
+
+ [FTDC] 2026-03-17 10:41:51
+ [FTDC] [Epoch 15.61] Step 117000/599460 (19.5%)
+ [FTDC] Loss: 6.0451 | LR: 2.44e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:44:56
+{'loss': '6.045', 'grad_norm': '1.356', 'learning_rate': '2.438e-05', 'epoch': '15.61'}
+
+ [FTDC] 2026-03-17 10:46:33
+ [FTDC] [Epoch 15.68] Step 117500/599460 (19.6%)
+ [FTDC] Loss: 6.0363 | LR: 2.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:34:15
+{'loss': '6.036', 'grad_norm': '1.296', 'learning_rate': '2.401e-05', 'epoch': '15.68'}
+
+ [FTDC] 2026-03-17 10:51:16
+ [FTDC] [Epoch 15.75] Step 118000/599460 (19.7%)
+ [FTDC] Loss: 6.0360 | LR: 2.36e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:40:07
+{'loss': '6.036', 'grad_norm': '1.272', 'learning_rate': '2.363e-05', 'epoch': '15.75'}
+
+ [FTDC] 2026-03-17 10:55:58
+ [FTDC] [Epoch 15.81] Step 118500/599460 (19.8%)
+ [FTDC] Loss: 6.0345 | LR: 2.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:27:19
+{'loss': '6.034', 'grad_norm': '1.302', 'learning_rate': '2.326e-05', 'epoch': '15.81'}
+
+ [FTDC] 2026-03-17 11:00:41
+ [FTDC] [Epoch 15.88] Step 119000/599460 (19.9%)
+ [FTDC] Loss: 6.0411 | LR: 2.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:29:59
+{'loss': '6.041', 'grad_norm': '1.338', 'learning_rate': '2.289e-05', 'epoch': '15.88'}
+
+ [FTDC] 2026-03-17 11:05:23
+ [FTDC] [Epoch 15.95] Step 119500/599460 (19.9%)
+ [FTDC] Loss: 6.0123 | LR: 2.25e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:11:38
+{'loss': '6.012', 'grad_norm': '1.314', 'learning_rate': '2.252e-05', 'epoch': '15.95'}
+
+80%|████████  | 120000/149880 [18:58:23<4:40:25,  1.78it/s]
+ [FTDC] 2026-03-17 11:10:07
+ [FTDC] [Epoch 16.01] Step 120000/599460 (20.0%)
+ [FTDC] Loss: 6.0075 | LR: 2.22e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 3:29:28
+{'loss': '6.008', 'grad_norm': '1.345', 'learning_rate': '2.215e-05', 'epoch': '16.01'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.75it/s]
+80%|████████  | 120000/149880 [18:58:40<4:40:25,  1.78it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.75it/s]
+{'eval_loss': '1.414', 'eval_runtime': '16.37', 'eval_samples_per_second': '610.9', 'eval_steps_per_second': '19.12', 'epoch': '16.01'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.42s/it]
+80%|████████  | 120001/149880 [18:58:44<55:34:22,  6.70s/it]
+83%|████████  | 125000/149880 [19:45:57<3:56:18,  1.75it/s]
+ [FTDC] 2026-03-17 11:15:12
+ [FTDC] [Epoch 16.08] Step 120500/599460 (20.1%)
+ [FTDC] Loss: 6.0014 | LR: 2.18e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 3 days, 9:18:52
+{'loss': '6.001', 'grad_norm': '1.336', 'learning_rate': '2.178e-05', 'epoch': '16.08'}
+
+ [FTDC] 2026-03-17 11:19:58
+ [FTDC] [Epoch 16.15] Step 121000/599460 (20.2%)
+ [FTDC] Loss: 5.9890 | LR: 2.14e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 3 days, 3:54:01
+{'loss': '5.989', 'grad_norm': '1.312', 'learning_rate': '2.141e-05', 'epoch': '16.15'}
+
+ [FTDC] 2026-03-17 11:24:40
+ [FTDC] [Epoch 16.21] Step 121500/599460 (20.3%)
+ [FTDC] Loss: 5.9869 | LR: 2.10e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:04:52
+{'loss': '5.987', 'grad_norm': '1.326', 'learning_rate': '2.104e-05', 'epoch': '16.21'}
+
+ [FTDC] 2026-03-17 11:29:23
+ [FTDC] [Epoch 16.28] Step 122000/599460 (20.4%)
+ [FTDC] Loss: 5.9880 | LR: 2.07e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 3:01:58
+{'loss': '5.988', 'grad_norm': '1.308', 'learning_rate': '2.067e-05', 'epoch': '16.28'}
+
+ [FTDC] 2026-03-17 11:34:06
+ [FTDC] [Epoch 16.35] Step 122500/599460 (20.4%)
+ [FTDC] Loss: 5.9899 | LR: 2.03e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:56:29
+{'loss': '5.99', 'grad_norm': '1.323', 'learning_rate': '2.03e-05', 'epoch': '16.35'}
+
+ [FTDC] 2026-03-17 11:38:49
+ [FTDC] [Epoch 16.41] Step 123000/599460 (20.5%)
+ [FTDC] Loss: 5.9609 | LR: 1.99e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:58:37
+{'loss': '5.961', 'grad_norm': '1.322', 'learning_rate': '1.993e-05', 'epoch': '16.41'}
+
+ [FTDC] 2026-03-17 11:43:32
+ [FTDC] [Epoch 16.48] Step 123500/599460 (20.6%)
+ [FTDC] Loss: 5.9796 | LR: 1.96e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:47:39
+{'loss': '5.98', 'grad_norm': '1.321', 'learning_rate': '1.956e-05', 'epoch': '16.48'}
+
+ [FTDC] 2026-03-17 11:48:15
+ [FTDC] [Epoch 16.55] Step 124000/599460 (20.7%)
+ [FTDC] Loss: 5.9766 | LR: 1.92e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:42:11
+{'loss': '5.977', 'grad_norm': '1.311', 'learning_rate': '1.919e-05', 'epoch': '16.55'}
+
+ [FTDC] 2026-03-17 11:52:58
+ [FTDC] [Epoch 16.61] Step 124500/599460 (20.8%)
+ [FTDC] Loss: 5.9714 | LR: 1.88e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:35:27
+{'loss': '5.971', 'grad_norm': '1.342', 'learning_rate': '1.882e-05', 'epoch': '16.61'}
+
+ [FTDC] 2026-03-17 11:57:40
+ [FTDC] [Epoch 16.68] Step 125000/599460 (20.9%)
+ [FTDC] Loss: 5.9507 | LR: 1.84e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:26:14
+{'loss': '5.951', 'grad_norm': '1.312', 'learning_rate': '1.845e-05', 'epoch': '16.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.85it/s]
+83%|████████  | 125000/149880 [19:46:13<3:56:18,  1.75it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.85it/s]
+{'eval_loss': '1.392', 'eval_runtime': '16.35', 'eval_samples_per_second': '611.5', 'eval_steps_per_second': '19.14', 'epoch': '16.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+83%|████████  | 125001/149880 [19:46:18<46:34:58,  6.74s/it]
+ 85%|████████  | 127398/149880 [20:08:52<3:40:12,  1.70it/s]
+ [FTDC] 2026-03-17 12:02:44
+ [FTDC] [Epoch 16.75] Step 125500/599460 (20.9%)
+ [FTDC] Loss: 5.9586 | LR: 1.81e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 3 days, 8:02:16
+{'loss': '5.959', 'grad_norm': '1.308', 'learning_rate': '1.807e-05', 'epoch': '16.75'}
+
+ [FTDC] 2026-03-17 12:07:26
+ [FTDC] [Epoch 16.81] Step 126000/599460 (21.0%)
+ [FTDC] Loss: 5.9734 | LR: 1.77e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:08:29
+{'loss': '5.973', 'grad_norm': '1.369', 'learning_rate': '1.77e-05', 'epoch': '16.81'}
+
+ [FTDC] 2026-03-17 12:12:08
+ [FTDC] [Epoch 16.88] Step 126500/599460 (21.1%)
+ [FTDC] Loss: 5.9495 | LR: 1.73e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:11:43
+{'loss': '5.949', 'grad_norm': '1.286', 'learning_rate': '1.733e-05', 'epoch': '16.88'}
+
+ [FTDC] 2026-03-17 12:16:50
+ [FTDC] [Epoch 16.95] Step 127000/599460 (21.2%)
+ [FTDC] Loss: 5.9464 | LR: 1.70e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:02:36
+{'loss': '5.946', 'grad_norm': '1.359', 'learning_rate': '1.696e-05', 'epoch': '16.95'}
+
+87%|█████████ | 130000/149880 [20:33:22<3:07:08,  1.77it/s]
+ [FTDC] 2026-03-17 12:21:33
+ [FTDC] [Epoch 17.01] Step 127500/599460 (21.3%)
+ [FTDC] Loss: 5.9236 | LR: 1.66e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 2:06:47
+{'loss': '5.924', 'grad_norm': '1.313', 'learning_rate': '1.659e-05', 'epoch': '17.01'}
+
+ [FTDC] 2026-03-17 12:26:15
+ [FTDC] [Epoch 17.08] Step 128000/599460 (21.4%)
+ [FTDC] Loss: 5.9133 | LR: 1.62e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:53:07
+{'loss': '5.913', 'grad_norm': '1.328', 'learning_rate': '1.622e-05', 'epoch': '17.08'}
+
+ [FTDC] 2026-03-17 12:30:57
+ [FTDC] [Epoch 17.15] Step 128500/599460 (21.4%)
+ [FTDC] Loss: 5.9135 | LR: 1.59e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:48:05
+{'loss': '5.913', 'grad_norm': '1.311', 'learning_rate': '1.585e-05', 'epoch': '17.15'}
+
+ [FTDC] 2026-03-17 12:35:40
+ [FTDC] [Epoch 17.21] Step 129000/599460 (21.5%)
+ [FTDC] Loss: 5.9192 | LR: 1.55e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:53:18
+{'loss': '5.919', 'grad_norm': '1.323', 'learning_rate': '1.548e-05', 'epoch': '17.21'}
+
+ [FTDC] 2026-03-17 12:40:23
+ [FTDC] [Epoch 17.28] Step 129500/599460 (21.6%)
+ [FTDC] Loss: 5.9145 | LR: 1.51e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:48:24
+{'loss': '5.914', 'grad_norm': '7.87', 'learning_rate': '1.511e-05', 'epoch': '17.28'}
+
+ [FTDC] 2026-03-17 12:45:06
+ [FTDC] [Epoch 17.35] Step 130000/599460 (21.7%)
+ [FTDC] Loss: 5.9136 | LR: 1.47e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:49:06
+{'loss': '5.914', 'grad_norm': '1.338', 'learning_rate': '1.474e-05', 'epoch': '17.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.75it/s]
+87%|█████████ | 130000/149880 [20:33:39<3:07:08,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.75it/s]
+{'eval_loss': '1.391', 'eval_runtime': '16.27', 'eval_samples_per_second': '614.5', 'eval_steps_per_second': '19.23', 'epoch': '17.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it]
+87%|█████████ | 130001/149880 [20:33:43<36:32:00,  6.62s/it]
+ 90%|█████████ | 134892/149880 [21:19:44<2:32:06,  1.64it/s]
+ [FTDC] 2026-03-17 12:50:08
+ [FTDC] [Epoch 17.41] Step 130500/599460 (21.8%)
+ [FTDC] Loss: 5.9098 | LR: 1.44e-05
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 6:44:21
+{'loss': '5.91', 'grad_norm': '1.356', 'learning_rate': '1.437e-05', 'epoch': '17.41'}
+
+ [FTDC] 2026-03-17 12:54:50
+ [FTDC] [Epoch 17.48] Step 131000/599460 (21.9%)
+ [FTDC] Loss: 5.9056 | LR: 1.40e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:28:32
+{'loss': '5.906', 'grad_norm': '1.301', 'learning_rate': '1.4e-05', 'epoch': '17.48'}
+
+ [FTDC] 2026-03-17 12:59:32
+ [FTDC] [Epoch 17.55] Step 131500/599460 (21.9%)
+ [FTDC] Loss: 5.9131 | LR: 1.36e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:20:33
+{'loss': '5.913', 'grad_norm': '1.346', 'learning_rate': '1.363e-05', 'epoch': '17.55'}
+
+ [FTDC] 2026-03-17 13:04:15
+ [FTDC] [Epoch 17.61] Step 132000/599460 (22.0%)
+ [FTDC] Loss: 5.9051 | LR: 1.33e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:18:47
+{'loss': '5.905', 'grad_norm': '1.317', 'learning_rate': '1.326e-05', 'epoch': '17.61'}
+
+ [FTDC] 2026-03-17 13:08:57
+ [FTDC] [Epoch 17.68] Step 132500/599460 (22.1%)
+ [FTDC] Loss: 5.8948 | LR: 1.29e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:20:24
+{'loss': '5.895', 'grad_norm': '1.324', 'learning_rate': '1.289e-05', 'epoch': '17.68'}
+
+ [FTDC] 2026-03-17 13:13:40
+ [FTDC] [Epoch 17.75] Step 133000/599460 (22.2%)
+ [FTDC] Loss: 5.8931 | LR: 1.25e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 1:07:48
+{'loss': '5.893', 'grad_norm': '1.402', 'learning_rate': '1.251e-05', 'epoch': '17.75'}
+
+ [FTDC] 2026-03-17 13:18:21
+ [FTDC] [Epoch 17.81] Step 133500/599460 (22.3%)
+ [FTDC] Loss: 5.8841 | LR: 1.21e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:58:07
+{'loss': '5.884', 'grad_norm': '1.346', 'learning_rate': '1.214e-05', 'epoch': '17.81'}
+
+ [FTDC] 2026-03-17 13:23:03
+ [FTDC] [Epoch 17.88] Step 134000/599460 (22.4%)
+ [FTDC] Loss: 5.8961 | LR: 1.18e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:56:43
+{'loss': '5.896', 'grad_norm': '1.337', 'learning_rate': '1.177e-05', 'epoch': '17.88'}
+
+ [FTDC] 2026-03-17 13:27:46
+ [FTDC] [Epoch 17.95] Step 134500/599460 (22.4%)
+ [FTDC] Loss: 5.8819 | LR: 1.14e-05
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:55:10
+{'loss': '5.882', 'grad_norm': '1.327', 'learning_rate': '1.14e-05', 'epoch': '17.95'}
+
+90%|█████████ | 135000/149880 [21:20:46<2:19:46,  1.77it/s]
+ [FTDC] 2026-03-17 13:32:29
+ [FTDC] [Epoch 18.01] Step 135000/599460 (22.5%)
+ [FTDC] Loss: 5.8801 | LR: 1.10e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 3 days, 1:10:29
+{'loss': '5.88', 'grad_norm': '1.326', 'learning_rate': '1.103e-05', 'epoch': '18.01'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.66it/s]
+90%|█████████ | 135000/149880 [21:21:02<2:19:46,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.66it/s]
+{'eval_loss': '1.384', 'eval_runtime': '16.14', 'eval_samples_per_second': '619.6', 'eval_steps_per_second': '19.39', 'epoch': '18.01'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+90%|█████████ | 135001/149880 [21:21:06<26:48:56,  6.49s/it]
+93%|█████████ | 140000/149880 [22:08:03<1:33:20,  1.76it/s]
+ [FTDC] 2026-03-17 13:37:31
+ [FTDC] [Epoch 18.08] Step 135500/599460 (22.6%)
+ [FTDC] Loss: 5.8717 | LR: 1.07e-05
+ [FTDC] 구간 속도: 1.66 it/s | 예상 남은 시간: 3 days, 5:44:49
+{'loss': '5.872', 'grad_norm': '1.354', 'learning_rate': '1.066e-05', 'epoch': '18.08'}
+
+ [FTDC] 2026-03-17 13:42:12
+ [FTDC] [Epoch 18.15] Step 136000/599460 (22.7%)
+ [FTDC] Loss: 5.8610 | LR: 1.03e-05
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 0:24:36
+{'loss': '5.861', 'grad_norm': '1.353', 'learning_rate': '1.029e-05', 'epoch': '18.15'}
+
+ [FTDC] 2026-03-17 13:46:54
+ [FTDC] [Epoch 18.21] Step 136500/599460 (22.8%)
+ [FTDC] Loss: 5.8623 | LR: 9.92e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:28:16
+{'loss': '5.862', 'grad_norm': '1.348', 'learning_rate': '9.92e-06', 'epoch': '18.21'}
+
+ [FTDC] 2026-03-17 13:51:36
+ [FTDC] [Epoch 18.28] Step 137000/599460 (22.9%)
+ [FTDC] Loss: 5.8612 | LR: 9.55e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:26:08
+{'loss': '5.861', 'grad_norm': '1.35', 'learning_rate': '9.549e-06', 'epoch': '18.28'}
+
+ [FTDC] 2026-03-17 13:56:17
+ [FTDC] [Epoch 18.35] Step 137500/599460 (22.9%)
+ [FTDC] Loss: 5.8613 | LR: 9.18e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 0:13:51
+{'loss': '5.861', 'grad_norm': '1.35', 'learning_rate': '9.178e-06', 'epoch': '18.35'}
+
+ [FTDC] 2026-03-17 14:00:59
+ [FTDC] [Epoch 18.41] Step 138000/599460 (23.0%)
+ [FTDC] Loss: 5.8526 | LR: 8.81e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:15:22
+{'loss': '5.853', 'grad_norm': '1.327', 'learning_rate': '8.808e-06', 'epoch': '18.41'}
+
+ [FTDC] 2026-03-17 14:05:41
+ [FTDC] [Epoch 18.48] Step 138500/599460 (23.1%)
+ [FTDC] Loss: 5.8472 | LR: 8.44e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 0:02:57
+{'loss': '5.847', 'grad_norm': '1.299', 'learning_rate': '8.437e-06', 'epoch': '18.48'}
+
+ [FTDC] 2026-03-17 14:10:22
+ [FTDC] [Epoch 18.55] Step 139000/599460 (23.2%)
+ [FTDC] Loss: 5.8634 | LR: 8.07e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 3 days, 0:01:40
+{'loss': '5.863', 'grad_norm': '1.321', 'learning_rate': '8.066e-06', 'epoch': '18.55'}
+
+ [FTDC] 2026-03-17 14:15:04
+ [FTDC] [Epoch 18.61] Step 139500/599460 (23.3%)
+ [FTDC] Loss: 5.8559 | LR: 7.70e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 23:57:36
+{'loss': '5.856', 'grad_norm': '1.34', 'learning_rate': '7.696e-06', 'epoch': '18.61'}
+
+ [FTDC] 2026-03-17 14:19:46
+ [FTDC] [Epoch 18.68] Step 140000/599460 (23.4%)
+ [FTDC] Loss: 5.8325 | LR: 7.33e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 3 days, 0:03:33
+{'loss': '5.832', 'grad_norm': '1.358', 'learning_rate': '7.325e-06', 'epoch': '18.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 312/313 [00:15<00:00, 20.68it/s]
+93%|█████████ | 140000/149880 [22:08:19<1:33:20,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.68it/s]
+{'eval_loss': '1.363', 'eval_runtime': '16.32', 'eval_samples_per_second': '612.8', 'eval_steps_per_second': '19.18', 'epoch': '18.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]
+93%|█████████ | 140001/149880 [22:08:24<18:17:44,  6.67s/it]
+ 95%|██████████| 142386/149880 [22:30:49<1:14:57,  1.67it/s]
+ [FTDC] 2026-03-17 14:24:49
+ [FTDC] [Epoch 18.75] Step 140500/599460 (23.4%)
+ [FTDC] Loss: 5.8515 | LR: 6.95e-06
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 5:19:15
+{'loss': '5.851', 'grad_norm': '1.316', 'learning_rate': '6.954e-06', 'epoch': '18.75'}
+
+ [FTDC] 2026-03-17 14:29:32
+ [FTDC] [Epoch 18.82] Step 141000/599460 (23.5%)
+ [FTDC] Loss: 5.8389 | LR: 6.58e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 23:56:08
+{'loss': '5.839', 'grad_norm': '1.334', 'learning_rate': '6.584e-06', 'epoch': '18.82'}
+
+ [FTDC] 2026-03-17 14:34:13
+ [FTDC] [Epoch 18.88] Step 141500/599460 (23.6%)
+ [FTDC] Loss: 5.8253 | LR: 6.21e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 23:36:52
+{'loss': '5.825', 'grad_norm': '1.32', 'learning_rate': '6.213e-06', 'epoch': '18.88'}
+
+ [FTDC] 2026-03-17 14:38:55
+ [FTDC] [Epoch 18.95] Step 142000/599460 (23.7%)
+ [FTDC] Loss: 5.8391 | LR: 5.84e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 23:35:48
+{'loss': '5.839', 'grad_norm': '1.368', 'learning_rate': '5.842e-06', 'epoch': '18.95'}
+
+97%|██████████| 145000/149880 [22:55:22<45:59,  1.77it/s]
+ [FTDC] 2026-03-17 14:43:38
+ [FTDC] [Epoch 19.02] Step 142500/599460 (23.8%)
+ [FTDC] Loss: 5.8090 | LR: 5.47e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 23:46:25
+{'loss': '5.809', 'grad_norm': '1.341', 'learning_rate': '5.472e-06', 'epoch': '19.02'}
+
+ [FTDC] 2026-03-17 14:48:19
+ [FTDC] [Epoch 19.08] Step 143000/599460 (23.9%)
+ [FTDC] Loss: 5.8244 | LR: 5.10e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 23:23:34
+{'loss': '5.824', 'grad_norm': '1.352', 'learning_rate': '5.101e-06', 'epoch': '19.08'}
+
+ [FTDC] 2026-03-17 14:53:02
+ [FTDC] [Epoch 19.15] Step 143500/599460 (23.9%)
+ [FTDC] Loss: 5.8257 | LR: 4.73e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 23:36:16
+{'loss': '5.826', 'grad_norm': '1.33', 'learning_rate': '4.73e-06', 'epoch': '19.15'}
+
+ [FTDC] 2026-03-17 14:57:44
+ [FTDC] [Epoch 19.22] Step 144000/599460 (24.0%)
+ [FTDC] Loss: 5.8312 | LR: 4.36e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 23:19:00
+{'loss': '5.831', 'grad_norm': '1.332', 'learning_rate': '4.36e-06', 'epoch': '19.22'}
+
+ [FTDC] 2026-03-17 15:02:25
+ [FTDC] [Epoch 19.28] Step 144500/599460 (24.1%)
+ [FTDC] Loss: 5.8223 | LR: 3.99e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:59:13
+{'loss': '5.822', 'grad_norm': '1.343', 'learning_rate': '3.989e-06', 'epoch': '19.28'}
+
+ [FTDC] 2026-03-17 15:07:06
+ [FTDC] [Epoch 19.35] Step 145000/599460 (24.2%)
+ [FTDC] Loss: 5.8132 | LR: 3.62e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:57:46
+{'loss': '5.813', 'grad_norm': '1.332', 'learning_rate': '3.618e-06', 'epoch': '19.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.49it/s]
+97%|██████████| 145000/149880 [22:55:39<45:59,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.49it/s]
+{'eval_loss': '1.368', 'eval_runtime': '16.26', 'eval_samples_per_second': '615.1', 'eval_steps_per_second': '19.25', 'epoch': '19.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+97%|██████████| 145001/149880 [22:55:44<9:12:22,  6.79s/it]
+100%|██████████| 149879/149880 [23:41:31<00:00,  1.76it/s]
+100%|██████████| 149880/149880 [23:41:32<00:00,  1.66it/s]
+ [FTDC] 2026-03-17 15:12:08
+ [FTDC] [Epoch 19.42] Step 145500/599460 (24.3%)
+ [FTDC] Loss: 5.8114 | LR: 3.25e-06
+ [FTDC] 구간 속도: 1.65 it/s | 예상 남은 시간: 3 days, 4:15:53
+{'loss': '5.811', 'grad_norm': '1.335', 'learning_rate': '3.248e-06', 'epoch': '19.42'}
+
+ [FTDC] 2026-03-17 15:16:50
+ [FTDC] [Epoch 19.48] Step 146000/599460 (24.4%)
+ [FTDC] Loss: 5.8217 | LR: 2.88e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:56:11
+{'loss': '5.822', 'grad_norm': '1.352', 'learning_rate': '2.877e-06', 'epoch': '19.48'}
+
+ [FTDC] 2026-03-17 15:21:31
+ [FTDC] [Epoch 19.55] Step 146500/599460 (24.4%)
+ [FTDC] Loss: 5.8019 | LR: 2.51e-06
+ [FTDC] 구간 속도: 1.77 it/s | 예상 남은 시간: 2 days, 22:55:38
+{'loss': '5.802', 'grad_norm': '1.361', 'learning_rate': '2.506e-06', 'epoch': '19.55'}
+
+ [FTDC] 2026-03-17 15:26:13
+ [FTDC] [Epoch 19.62] Step 147000/599460 (24.5%)
+ [FTDC] Loss: 5.8123 | LR: 2.14e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:45:45
+{'loss': '5.812', 'grad_norm': '1.315', 'learning_rate': '2.136e-06', 'epoch': '19.62'}
+
+ [FTDC] 2026-03-17 15:30:54
+ [FTDC] [Epoch 19.68] Step 147500/599460 (24.6%)
+ [FTDC] Loss: 5.8084 | LR: 1.77e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:40:24
+{'loss': '5.808', 'grad_norm': '1.331', 'learning_rate': '1.765e-06', 'epoch': '19.68'}
+
+ [FTDC] 2026-03-17 15:35:36
+ [FTDC] [Epoch 19.75] Step 148000/599460 (24.7%)
+ [FTDC] Loss: 5.7867 | LR: 1.39e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:36:22
+{'loss': '5.787', 'grad_norm': '1.311', 'learning_rate': '1.394e-06', 'epoch': '19.75'}
+
+ [FTDC] 2026-03-17 15:40:18
+ [FTDC] [Epoch 19.82] Step 148500/599460 (24.8%)
+ [FTDC] Loss: 5.8086 | LR: 1.02e-06
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:32:31
+{'loss': '5.809', 'grad_norm': '1.341', 'learning_rate': '1.024e-06', 'epoch': '19.82'}
+
+ [FTDC] 2026-03-17 15:44:59
+ [FTDC] [Epoch 19.88] Step 149000/599460 (24.9%)
+ [FTDC] Loss: 5.8008 | LR: 6.53e-07
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:28:18
+{'loss': '5.801', 'grad_norm': '1.325', 'learning_rate': '6.531e-07', 'epoch': '19.88'}
+
+ [FTDC] 2026-03-17 15:49:41
+ [FTDC] [Epoch 19.95] Step 149500/599460 (24.9%)
+ [FTDC] Loss: 5.8059 | LR: 2.82e-07
+ [FTDC] 구간 속도: 1.78 it/s | 예상 남은 시간: 2 days, 22:23:43
+{'loss': '5.806', 'grad_norm': '1.332', 'learning_rate': '2.824e-07', 'epoch': '19.95'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+100%|██████████| 149880/149880 [23:41:36<00:00,  1.66it/s]There were missing keys in the checkpoint model loaded: ['cls.predictions.decoder.weight', 'cls.predictions.decoder.bias'].
+
+100%|██████████| 149880/149880 [23:41:38<00:00,  1.76it/s]
+{'train_runtime': '8.53e+04', 'train_samples_per_second': '224.9', 'train_steps_per_second': '1.757', 'train_loss': '9.03', 'epoch': '20'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]
+
+[완료] Best 모델 저장: ./T2/output/models
+[완료] 토크나이저 저장: ./T2/output/tokenizer
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+There were missing keys in the checkpoint model loaded: ['cls.predictions.decoder.weight', 'cls.predictions.decoder.bias'].
+[1] KCI 기반 토크나이저 로드: ./T2/tokenizer
+    Vocab size: 32,000
+[2] 모델 초기화 완료 (from scratch)
+    파라미터 수: 111,243,010
+[3] 데이터셋 로드: ./T2/datasets
+    Train: 959,147  |  Val: 10,000
+
+[4] 학습 시작 (epochs=30, lr=0.0001, batch=32)
+저장된 체크포인트(./T2/output/checkpoint-149880)에서 학습을 이어서 진행합니다.
+
+  0%|          | 0/224820 [00:00<?, ?it/s]~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+
+67%|███████   | 149881/224820 [00:32<00:16, 4664.33it/s]
+67%|███████   | 150000/224820 [01:39<11:49:16,  1.76it/s]
+ [FTDC] 2026-03-18 22:25:16
+ [FTDC] [Epoch 20.02] Step 150000/899190 (16.7%)
+ [FTDC] Loss: 5.8674 | LR: 3.70e-05
+ [FTDC] 구간 속도: 1425.54 it/s | 예상 남은 시간: 0:08:45
+{'loss': '5.867', 'grad_norm': '1.37', 'learning_rate': '3.698e-05', 'epoch': '20.02'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.45it/s]
+67%|███████   | 150000/224820 [01:55<11:49:16,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.45it/s]
+{'eval_loss': '1.38', 'eval_runtime': '16.11', 'eval_samples_per_second': '620.6', 'eval_steps_per_second': '19.43', 'epoch': '20.02'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it]
+67%|███████   | 150001/224820 [02:00<142:26:40,  6.85s/it]
+69%|███████   | 155000/224820 [49:27<11:01:19,  1.76it/s]
+ [FTDC] 2026-03-18 22:30:21
+ [FTDC] [Epoch 20.08] Step 150500/899190 (16.7%)
+ [FTDC] Loss: 5.9165 | LR: 3.67e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 5 days, 6:56:49
+{'loss': '5.916', 'grad_norm': '1.371', 'learning_rate': '3.673e-05', 'epoch': '20.08'}
+
+ [FTDC] 2026-03-18 22:35:06
+ [FTDC] [Epoch 20.15] Step 151000/899190 (16.8%)
+ [FTDC] Loss: 5.9440 | LR: 3.65e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 22:22:49
+{'loss': '5.944', 'grad_norm': '1.433', 'learning_rate': '3.648e-05', 'epoch': '20.15'}
+
+ [FTDC] 2026-03-18 22:39:50
+ [FTDC] [Epoch 20.22] Step 151500/899190 (16.8%)
+ [FTDC] Loss: 5.9604 | LR: 3.62e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:59:02
+{'loss': '5.96', 'grad_norm': '1.339', 'learning_rate': '3.624e-05', 'epoch': '20.22'}
+
+ [FTDC] 2026-03-18 22:44:35
+ [FTDC] [Epoch 20.28] Step 152000/899190 (16.9%)
+ [FTDC] Loss: 5.9438 | LR: 3.60e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 22:01:47
+{'loss': '5.944', 'grad_norm': '1.485', 'learning_rate': '3.599e-05', 'epoch': '20.28'}
+
+ [FTDC] 2026-03-18 22:49:19
+ [FTDC] [Epoch 20.35] Step 152500/899190 (17.0%)
+ [FTDC] Loss: 5.9552 | LR: 3.57e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:53:08
+{'loss': '5.955', 'grad_norm': '1.339', 'learning_rate': '3.574e-05', 'epoch': '20.35'}
+
+ [FTDC] 2026-03-18 22:54:04
+ [FTDC] [Epoch 20.42] Step 153000/899190 (17.0%)
+ [FTDC] Loss: 5.9527 | LR: 3.55e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 22:05:56
+{'loss': '5.953', 'grad_norm': '1.335', 'learning_rate': '3.55e-05', 'epoch': '20.42'}
+
+ [FTDC] 2026-03-18 22:58:52
+ [FTDC] [Epoch 20.48] Step 153500/899190 (17.1%)
+ [FTDC] Loss: 5.9498 | LR: 3.52e-05
+ [FTDC] 구간 속도: 1.74 it/s | 예상 남은 시간: 4 days, 23:22:50
+{'loss': '5.95', 'grad_norm': '1.391', 'learning_rate': '3.525e-05', 'epoch': '20.48'}
+
+ [FTDC] 2026-03-18 23:03:37
+ [FTDC] [Epoch 20.55] Step 154000/899190 (17.1%)
+ [FTDC] Loss: 5.9565 | LR: 3.50e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:55:34
+{'loss': '5.956', 'grad_norm': '1.359', 'learning_rate': '3.5e-05', 'epoch': '20.55'}
+
+ [FTDC] 2026-03-18 23:08:21
+ [FTDC] [Epoch 20.62] Step 154500/899190 (17.2%)
+ [FTDC] Loss: 5.9449 | LR: 3.48e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:29:28
+{'loss': '5.945', 'grad_norm': '1.302', 'learning_rate': '3.475e-05', 'epoch': '20.62'}
+
+ [FTDC] 2026-03-18 23:13:04
+ [FTDC] [Epoch 20.68] Step 155000/899190 (17.2%)
+ [FTDC] Loss: 5.9541 | LR: 3.45e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:14:19
+{'loss': '5.954', 'grad_norm': '1.38', 'learning_rate': '3.451e-05', 'epoch': '20.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.69it/s]
+69%|███████   | 155000/224820 [49:43<11:01:19,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.69it/s]
+{'eval_loss': '1.393', 'eval_runtime': '16.27', 'eval_samples_per_second': '614.8', 'eval_steps_per_second': '19.24', 'epoch': '20.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.39s/it]
+69%|███████   | 155001/224820 [49:48<129:29:38,  6.68s/it]
+ 70%|███████   | 157373/224820 [1:12:18<10:54:44,  1.72it/s]~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+~/miniconda3/envs/ML/lib/python3.10/site-packages/torch/_inductor/lowering.py:7627: UserWarning:
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+
+ 70%|███████   | 157374/224820 [1:12:57<224:53:48, 12.00s/it]
+ [FTDC] 2026-03-18 23:18:09
+ [FTDC] [Epoch 20.75] Step 155500/899190 (17.3%)
+ [FTDC] Loss: 5.9504 | LR: 3.43e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 5 days, 5:46:12
+{'loss': '5.95', 'grad_norm': '1.382', 'learning_rate': '3.426e-05', 'epoch': '20.75'}
+
+ [FTDC] 2026-03-18 23:22:53
+ [FTDC] [Epoch 20.82] Step 156000/899190 (17.3%)
+ [FTDC] Loss: 5.9489 | LR: 3.40e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:28:24
+{'loss': '5.949', 'grad_norm': '1.311', 'learning_rate': '3.401e-05', 'epoch': '20.82'}
+
+ [FTDC] 2026-03-18 23:27:38
+ [FTDC] [Epoch 20.88] Step 156500/899190 (17.4%)
+ [FTDC] Loss: 5.9504 | LR: 3.38e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 21:26:49
+{'loss': '5.95', 'grad_norm': '1.38', 'learning_rate': '3.377e-05', 'epoch': '20.88'}
+
+ [FTDC] 2026-03-18 23:32:23
+ [FTDC] [Epoch 20.95] Step 157000/899190 (17.5%)
+ [FTDC] Loss: 5.9395 | LR: 3.35e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 21:32:42
+{'loss': '5.94', 'grad_norm': '1.318', 'learning_rate': '3.352e-05', 'epoch': '20.95'}
+
+71%|███████   | 160000/224820 [1:37:59<10:15:41,  1.75it/s]
+ [FTDC] 2026-03-18 23:37:47
+ [FTDC] [Epoch 21.02] Step 157500/899190 (17.5%)
+ [FTDC] Loss: 5.9389 | LR: 3.33e-05
+ [FTDC] 구간 속도: 1.54 it/s | 예상 남은 시간: 5 days, 13:31:31
+{'loss': '5.939', 'grad_norm': '1.354', 'learning_rate': '3.327e-05', 'epoch': '21.02'}
+
+ [FTDC] 2026-03-18 23:42:32
+ [FTDC] [Epoch 21.08] Step 158000/899190 (17.6%)
+ [FTDC] Loss: 5.9199 | LR: 3.30e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 21:31:32
+{'loss': '5.92', 'grad_norm': '1.479', 'learning_rate': '3.302e-05', 'epoch': '21.08'}
+
+ [FTDC] 2026-03-18 23:47:17
+ [FTDC] [Epoch 21.15] Step 158500/899190 (17.6%)
+ [FTDC] Loss: 5.9201 | LR: 3.28e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 21:18:08
+{'loss': '5.92', 'grad_norm': '1.377', 'learning_rate': '3.278e-05', 'epoch': '21.15'}
+
+ [FTDC] 2026-03-18 23:52:03
+ [FTDC] [Epoch 21.22] Step 159000/899190 (17.7%)
+ [FTDC] Loss: 5.9122 | LR: 3.25e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 21:16:03
+{'loss': '5.912', 'grad_norm': '1.346', 'learning_rate': '3.253e-05', 'epoch': '21.22'}
+
+ [FTDC] 2026-03-18 23:56:49
+ [FTDC] [Epoch 21.28] Step 159500/899190 (17.7%)
+ [FTDC] Loss: 5.9150 | LR: 3.23e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 21:41:09
+{'loss': '5.915', 'grad_norm': '1.362', 'learning_rate': '3.228e-05', 'epoch': '21.28'}
+
+ [FTDC] 2026-03-19 00:01:36
+ [FTDC] [Epoch 21.35] Step 160000/899190 (17.8%)
+ [FTDC] Loss: 5.9056 | LR: 3.20e-05
+ [FTDC] 구간 속도: 1.74 it/s | 예상 남은 시간: 4 days, 22:04:06
+{'loss': '5.906', 'grad_norm': '1.375', 'learning_rate': '3.204e-05', 'epoch': '21.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.63it/s]
+71%|███████   | 160000/224820 [1:38:16<10:15:41,  1.75it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.63it/s]
+{'eval_loss': '1.389', 'eval_runtime': '16.46', 'eval_samples_per_second': '607.5', 'eval_steps_per_second': '19.01', 'epoch': '21.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]
+71%|███████   | 160001/224820 [1:38:21<125:07:50,  6.95s/it]
+ 73%|███████   | 164868/224820 [2:24:34<10:35:40,  1.57it/s]
+ [FTDC] 2026-03-19 00:06:44
+ [FTDC] [Epoch 21.42] Step 160500/899190 (17.8%)
+ [FTDC] Loss: 5.9091 | LR: 3.18e-05
+ [FTDC] 구간 속도: 1.63 it/s | 예상 남은 시간: 5 days, 6:00:45
+{'loss': '5.909', 'grad_norm': '1.355', 'learning_rate': '3.179e-05', 'epoch': '21.42'}
+
+ [FTDC] 2026-03-19 00:11:29
+ [FTDC] [Epoch 21.48] Step 161000/899190 (17.9%)
+ [FTDC] Loss: 5.9066 | LR: 3.15e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:53:18
+{'loss': '5.907', 'grad_norm': '1.335', 'learning_rate': '3.154e-05', 'epoch': '21.48'}
+
+ [FTDC] 2026-03-19 00:16:13
+ [FTDC] [Epoch 21.55] Step 161500/899190 (18.0%)
+ [FTDC] Loss: 5.9113 | LR: 3.13e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 20:24:42
+{'loss': '5.911', 'grad_norm': '1.338', 'learning_rate': '3.129e-05', 'epoch': '21.55'}
+
+ [FTDC] 2026-03-19 00:20:58
+ [FTDC] [Epoch 21.62] Step 162000/899190 (18.0%)
+ [FTDC] Loss: 5.8888 | LR: 3.10e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:41:28
+{'loss': '5.889', 'grad_norm': '1.312', 'learning_rate': '3.105e-05', 'epoch': '21.62'}
+
+ [FTDC] 2026-03-19 00:25:43
+ [FTDC] [Epoch 21.68] Step 162500/899190 (18.1%)
+ [FTDC] Loss: 5.8899 | LR: 3.08e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:48:47
+{'loss': '5.89', 'grad_norm': '1.391', 'learning_rate': '3.08e-05', 'epoch': '21.68'}
+
+ [FTDC] 2026-03-19 00:30:28
+ [FTDC] [Epoch 21.75] Step 163000/899190 (18.1%)
+ [FTDC] Loss: 5.8834 | LR: 3.06e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 20:25:33
+{'loss': '5.883', 'grad_norm': '1.377', 'learning_rate': '3.055e-05', 'epoch': '21.75'}
+
+ [FTDC] 2026-03-19 00:35:12
+ [FTDC] [Epoch 21.82] Step 163500/899190 (18.2%)
+ [FTDC] Loss: 5.8732 | LR: 3.03e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 20:26:02
+{'loss': '5.873', 'grad_norm': '1.327', 'learning_rate': '3.031e-05', 'epoch': '21.82'}
+
+ [FTDC] 2026-03-19 00:39:56
+ [FTDC] [Epoch 21.88] Step 164000/899190 (18.2%)
+ [FTDC] Loss: 5.8725 | LR: 3.01e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:58:35
+{'loss': '5.872', 'grad_norm': '1.371', 'learning_rate': '3.006e-05', 'epoch': '21.88'}
+
+ [FTDC] 2026-03-19 00:44:41
+ [FTDC] [Epoch 21.95] Step 164500/899190 (18.3%)
+ [FTDC] Loss: 5.8782 | LR: 2.98e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:17:42
+{'loss': '5.878', 'grad_norm': '1.304', 'learning_rate': '2.981e-05', 'epoch': '21.95'}
+
+73%|███████   | 165000/224820 [2:25:50<9:26:17,  1.76it/s]
+ [FTDC] 2026-03-19 00:49:28
+ [FTDC] [Epoch 22.02] Step 165000/899190 (18.3%)
+ [FTDC] Loss: 5.8623 | LR: 2.96e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:43:21
+{'loss': '5.862', 'grad_norm': '1.371', 'learning_rate': '2.956e-05', 'epoch': '22.02'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 14.88it/s]
+73%|███████   | 165000/224820 [2:26:07<9:26:17,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 14.88it/s]
+{'eval_loss': '1.376', 'eval_runtime': '16.31', 'eval_samples_per_second': '613.1', 'eval_steps_per_second': '19.19', 'epoch': '22.02'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]
+73%|███████   | 165001/224820 [2:26:11<112:01:02,  6.74s/it]
+76%|████████  | 170000/224820 [3:13:39<8:40:01,  1.76it/s]
+ [FTDC] 2026-03-19 00:54:32
+ [FTDC] [Epoch 22.08] Step 165500/899190 (18.4%)
+ [FTDC] Loss: 5.8554 | LR: 2.93e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 5 days, 4:17:48
+{'loss': '5.855', 'grad_norm': '1.351', 'learning_rate': '2.932e-05', 'epoch': '22.08'}
+
+ [FTDC] 2026-03-19 00:59:18
+ [FTDC] [Epoch 22.15] Step 166000/899190 (18.5%)
+ [FTDC] Loss: 5.8487 | LR: 2.91e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:17:43
+{'loss': '5.849', 'grad_norm': '1.346', 'learning_rate': '2.907e-05', 'epoch': '22.15'}
+
+ [FTDC] 2026-03-19 01:04:03
+ [FTDC] [Epoch 22.22] Step 166500/899190 (18.5%)
+ [FTDC] Loss: 5.8519 | LR: 2.88e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:51:45
+{'loss': '5.852', 'grad_norm': '1.376', 'learning_rate': '2.882e-05', 'epoch': '22.22'}
+
+ [FTDC] 2026-03-19 01:08:47
+ [FTDC] [Epoch 22.28] Step 167000/899190 (18.6%)
+ [FTDC] Loss: 5.8564 | LR: 2.86e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:45:29
+{'loss': '5.856', 'grad_norm': '1.344', 'learning_rate': '2.858e-05', 'epoch': '22.28'}
+
+ [FTDC] 2026-03-19 01:13:33
+ [FTDC] [Epoch 22.35] Step 167500/899190 (18.6%)
+ [FTDC] Loss: 5.8571 | LR: 2.83e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 20:07:44
+{'loss': '5.857', 'grad_norm': '1.392', 'learning_rate': '2.833e-05', 'epoch': '22.35'}
+
+ [FTDC] 2026-03-19 01:18:18
+ [FTDC] [Epoch 22.42] Step 168000/899190 (18.7%)
+ [FTDC] Loss: 5.8420 | LR: 2.81e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 19:58:02
+{'loss': '5.842', 'grad_norm': '1.329', 'learning_rate': '2.808e-05', 'epoch': '22.42'}
+
+ [FTDC] 2026-03-19 01:23:03
+ [FTDC] [Epoch 22.48] Step 168500/899190 (18.7%)
+ [FTDC] Loss: 5.8465 | LR: 2.78e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:31:33
+{'loss': '5.846', 'grad_norm': '1.332', 'learning_rate': '2.784e-05', 'epoch': '22.48'}
+
+ [FTDC] 2026-03-19 01:27:48
+ [FTDC] [Epoch 22.55] Step 169000/899190 (18.8%)
+ [FTDC] Loss: 5.8323 | LR: 2.76e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:26:26
+{'loss': '5.832', 'grad_norm': '1.345', 'learning_rate': '2.759e-05', 'epoch': '22.55'}
+
+ [FTDC] 2026-03-19 01:32:32
+ [FTDC] [Epoch 22.62] Step 169500/899190 (18.9%)
+ [FTDC] Loss: 5.8417 | LR: 2.73e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:21:52
+{'loss': '5.842', 'grad_norm': '1.376', 'learning_rate': '2.734e-05', 'epoch': '22.62'}
+
+ [FTDC] 2026-03-19 01:37:16
+ [FTDC] [Epoch 22.68] Step 170000/899190 (18.9%)
+ [FTDC] Loss: 5.8153 | LR: 2.71e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:08:27
+{'loss': '5.815', 'grad_norm': '1.371', 'learning_rate': '2.709e-05', 'epoch': '22.68'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 14.67it/s]
+76%|████████  | 170000/224820 [3:13:56<8:40:01,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 14.67it/s]
+{'eval_loss': '1.364', 'eval_runtime': '16.44', 'eval_samples_per_second': '608.1', 'eval_steps_per_second': '19.04', 'epoch': '22.68'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.46s/it]
+76%|████████  | 170001/224820 [3:14:01<104:36:28,  6.87s/it]
+ 77%|████████  | 172362/224820 [3:36:24<8:36:29,  1.69it/s]
+ [FTDC] 2026-03-19 01:42:22
+ [FTDC] [Epoch 22.75] Step 170500/899190 (19.0%)
+ [FTDC] Loss: 5.8218 | LR: 2.68e-05
+ [FTDC] 구간 속도: 1.63 it/s | 예상 남은 시간: 5 days, 3:48:26
+{'loss': '5.822', 'grad_norm': '1.33', 'learning_rate': '2.685e-05', 'epoch': '22.75'}
+
+ [FTDC] 2026-03-19 01:47:06
+ [FTDC] [Epoch 22.82] Step 171000/899190 (19.0%)
+ [FTDC] Loss: 5.8345 | LR: 2.66e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:59:55
+{'loss': '5.835', 'grad_norm': '1.337', 'learning_rate': '2.66e-05', 'epoch': '22.82'}
+
+ [FTDC] 2026-03-19 01:51:51
+ [FTDC] [Epoch 22.89] Step 171500/899190 (19.1%)
+ [FTDC] Loss: 5.8154 | LR: 2.64e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 19:05:14
+{'loss': '5.815', 'grad_norm': '1.338', 'learning_rate': '2.635e-05', 'epoch': '22.89'}
+
+ [FTDC] 2026-03-19 01:56:36
+ [FTDC] [Epoch 22.95] Step 172000/899190 (19.1%)
+ [FTDC] Loss: 5.8147 | LR: 2.61e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:56:51
+{'loss': '5.815', 'grad_norm': '1.349', 'learning_rate': '2.611e-05', 'epoch': '22.95'}
+
+78%|████████  | 175000/224820 [4:01:27<7:57:20,  1.74it/s]
+ 78%|████████  | 175000/224820 [4:01:28<7:57:20,  1.74it/s]
+ [FTDC] 2026-03-19 02:01:21
+ [FTDC] [Epoch 23.02] Step 172500/899190 (19.2%)
+ [FTDC] Loss: 5.7890 | LR: 2.59e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 19:09:13
+{'loss': '5.789', 'grad_norm': '1.319', 'learning_rate': '2.586e-05', 'epoch': '23.02'}
+
+ [FTDC] 2026-03-19 02:06:06
+ [FTDC] [Epoch 23.09] Step 173000/899190 (19.2%)
+ [FTDC] Loss: 5.7878 | LR: 2.56e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:54:30
+{'loss': '5.788', 'grad_norm': '1.365', 'learning_rate': '2.561e-05', 'epoch': '23.09'}
+
+ [FTDC] 2026-03-19 02:10:51
+ [FTDC] [Epoch 23.15] Step 173500/899190 (19.3%)
+ [FTDC] Loss: 5.7866 | LR: 2.54e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 18:59:06
+{'loss': '5.787', 'grad_norm': '1.393', 'learning_rate': '2.536e-05', 'epoch': '23.15'}
+
+ [FTDC] 2026-03-19 02:15:35
+ [FTDC] [Epoch 23.22] Step 174000/899190 (19.4%)
+ [FTDC] Loss: 5.7904 | LR: 2.51e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:31:21
+{'loss': '5.79', 'grad_norm': '1.335', 'learning_rate': '2.512e-05', 'epoch': '23.22'}
+
+ [FTDC] 2026-03-19 02:20:20
+ [FTDC] [Epoch 23.29] Step 174500/899190 (19.4%)
+ [FTDC] Loss: 5.7818 | LR: 2.49e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:35:30
+{'loss': '5.782', 'grad_norm': '1.415', 'learning_rate': '2.487e-05', 'epoch': '23.29'}
+
+ [FTDC] 2026-03-19 02:25:05
+ [FTDC] [Epoch 23.35] Step 175000/899190 (19.5%)
+ [FTDC] Loss: 5.7778 | LR: 2.46e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 18:40:37
+{'loss': '5.778', 'grad_norm': '1.419', 'learning_rate': '2.462e-05', 'epoch': '23.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.29it/s]
+78%|████████  | 175000/224820 [4:01:44<7:57:20,  1.74it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.29it/s]
+{'eval_loss': '1.36', 'eval_runtime': '16.41', 'eval_samples_per_second': '609.4', 'eval_steps_per_second': '19.07', 'epoch': '23.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.14s/it]
+78%|████████  | 175001/224820 [4:01:50<100:21:54,  7.25s/it]
+ 80%|████████  | 179856/224820 [4:47:56<7:46:12,  1.61it/s]
+ [FTDC] 2026-03-19 02:30:11
+ [FTDC] [Epoch 23.42] Step 175500/899190 (19.5%)
+ [FTDC] Loss: 5.7720 | LR: 2.44e-05
+ [FTDC] 구간 속도: 1.63 it/s | 예상 남은 시간: 5 days, 3:09:52
+{'loss': '5.772', 'grad_norm': '1.398', 'learning_rate': '2.438e-05', 'epoch': '23.42'}
+
+ [FTDC] 2026-03-19 02:34:55
+ [FTDC] [Epoch 23.49] Step 176000/899190 (19.6%)
+ [FTDC] Loss: 5.7825 | LR: 2.41e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:14:05
+{'loss': '5.782', 'grad_norm': '1.375', 'learning_rate': '2.413e-05', 'epoch': '23.49'}
+
+ [FTDC] 2026-03-19 02:39:40
+ [FTDC] [Epoch 23.55] Step 176500/899190 (19.6%)
+ [FTDC] Loss: 5.7749 | LR: 2.39e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:04:53
+{'loss': '5.775', 'grad_norm': '1.394', 'learning_rate': '2.388e-05', 'epoch': '23.55'}
+
+ [FTDC] 2026-03-19 02:44:24
+ [FTDC] [Epoch 23.62] Step 177000/899190 (19.7%)
+ [FTDC] Loss: 5.7594 | LR: 2.36e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 18:04:42
+{'loss': '5.759', 'grad_norm': '1.343', 'learning_rate': '2.363e-05', 'epoch': '23.62'}
+
+ [FTDC] 2026-03-19 02:49:08
+ [FTDC] [Epoch 23.69] Step 177500/899190 (19.7%)
+ [FTDC] Loss: 5.7709 | LR: 2.34e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:53:56
+{'loss': '5.771', 'grad_norm': '1.434', 'learning_rate': '2.339e-05', 'epoch': '23.69'}
+
+ [FTDC] 2026-03-19 02:53:56
+ [FTDC] [Epoch 23.75] Step 178000/899190 (19.8%)
+ [FTDC] Loss: 5.7654 | LR: 2.31e-05
+ [FTDC] 구간 속도: 1.74 it/s | 예상 남은 시간: 4 days, 19:15:23
+{'loss': '5.765', 'grad_norm': '1.339', 'learning_rate': '2.314e-05', 'epoch': '23.75'}
+
+ [FTDC] 2026-03-19 02:58:42
+ [FTDC] [Epoch 23.82] Step 178500/899190 (19.9%)
+ [FTDC] Loss: 5.7591 | LR: 2.29e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 18:27:07
+{'loss': '5.759', 'grad_norm': '1.387', 'learning_rate': '2.289e-05', 'epoch': '23.82'}
+
+ [FTDC] 2026-03-19 03:03:26
+ [FTDC] [Epoch 23.89] Step 179000/899190 (19.9%)
+ [FTDC] Loss: 5.7539 | LR: 2.26e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:39:13
+{'loss': '5.754', 'grad_norm': '1.375', 'learning_rate': '2.265e-05', 'epoch': '23.89'}
+
+ [FTDC] 2026-03-19 03:08:10
+ [FTDC] [Epoch 23.95] Step 179500/899190 (20.0%)
+ [FTDC] Loss: 5.7604 | LR: 2.24e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:44:08
+{'loss': '5.76', 'grad_norm': '1.369', 'learning_rate': '2.24e-05', 'epoch': '23.95'}
+
+80%|████████  | 180000/224820 [4:49:19<7:04:06,  1.76it/s]
+ [FTDC] 2026-03-19 03:12:56
+ [FTDC] [Epoch 24.02] Step 180000/899190 (20.0%)
+ [FTDC] Loss: 5.7323 | LR: 2.22e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 18:12:51
+{'loss': '5.732', 'grad_norm': '1.396', 'learning_rate': '2.215e-05', 'epoch': '24.02'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.64it/s]
+80%|████████  | 180000/224820 [4:49:35<7:04:06,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.64it/s]
+{'eval_loss': '1.345', 'eval_runtime': '16.32', 'eval_samples_per_second': '612.6', 'eval_steps_per_second': '19.18', 'epoch': '24.02'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.25s/it]
+80%|████████  | 180001/224820 [4:49:40<86:17:23,  6.93s/it]
+82%|████████  | 185000/224820 [5:37:06<6:17:57,  1.76it/s]
+ [FTDC] 2026-03-19 03:18:01
+ [FTDC] [Epoch 24.09] Step 180500/899190 (20.1%)
+ [FTDC] Loss: 5.7388 | LR: 2.19e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 5 days, 1:51:24
+{'loss': '5.739', 'grad_norm': '1.393', 'learning_rate': '2.19e-05', 'epoch': '24.09'}
+
+ [FTDC] 2026-03-19 03:22:45
+ [FTDC] [Epoch 24.15] Step 181000/899190 (20.1%)
+ [FTDC] Loss: 5.7318 | LR: 2.17e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:26:02
+{'loss': '5.732', 'grad_norm': '1.392', 'learning_rate': '2.166e-05', 'epoch': '24.15'}
+
+ [FTDC] 2026-03-19 03:27:31
+ [FTDC] [Epoch 24.22] Step 181500/899190 (20.2%)
+ [FTDC] Loss: 5.7341 | LR: 2.14e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 17:48:24
+{'loss': '5.734', 'grad_norm': '1.367', 'learning_rate': '2.141e-05', 'epoch': '24.22'}
+
+ [FTDC] 2026-03-19 03:32:15
+ [FTDC] [Epoch 24.29] Step 182000/899190 (20.2%)
+ [FTDC] Loss: 5.7221 | LR: 2.12e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:13:02
+{'loss': '5.722', 'grad_norm': '1.405', 'learning_rate': '2.116e-05', 'epoch': '24.29'}
+
+ [FTDC] 2026-03-19 03:37:00
+ [FTDC] [Epoch 24.35] Step 182500/899190 (20.3%)
+ [FTDC] Loss: 5.7298 | LR: 2.09e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 17:30:25
+{'loss': '5.73', 'grad_norm': '1.36', 'learning_rate': '2.092e-05', 'epoch': '24.35'}
+
+ [FTDC] 2026-03-19 03:41:45
+ [FTDC] [Epoch 24.42] Step 183000/899190 (20.4%)
+ [FTDC] Loss: 5.7099 | LR: 2.07e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:18:59
+{'loss': '5.71', 'grad_norm': '1.365', 'learning_rate': '2.067e-05', 'epoch': '24.42'}
+
+ [FTDC] 2026-03-19 03:46:30
+ [FTDC] [Epoch 24.49] Step 183500/899190 (20.4%)
+ [FTDC] Loss: 5.7202 | LR: 2.04e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:15:54
+{'loss': '5.72', 'grad_norm': '1.349', 'learning_rate': '2.042e-05', 'epoch': '24.49'}
+
+ [FTDC] 2026-03-19 03:51:14
+ [FTDC] [Epoch 24.55] Step 184000/899190 (20.5%)
+ [FTDC] Loss: 5.7123 | LR: 2.02e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 17:06:47
+{'loss': '5.712', 'grad_norm': '1.448', 'learning_rate': '2.017e-05', 'epoch': '24.55'}
+
+ [FTDC] 2026-03-19 03:55:59
+ [FTDC] [Epoch 24.62] Step 184500/899190 (20.5%)
+ [FTDC] Loss: 5.7187 | LR: 1.99e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:56:10
+{'loss': '5.719', 'grad_norm': '1.352', 'learning_rate': '1.993e-05', 'epoch': '24.62'}
+
+ [FTDC] 2026-03-19 04:00:43
+ [FTDC] [Epoch 24.69] Step 185000/899190 (20.6%)
+ [FTDC] Loss: 5.7114 | LR: 1.97e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:51:03
+{'loss': '5.711', 'grad_norm': '1.299', 'learning_rate': '1.968e-05', 'epoch': '24.69'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.63it/s]
+82%|████████  | 185000/224820 [5:37:22<6:17:57,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.63it/s]
+{'eval_loss': '1.334', 'eval_runtime': '16.27', 'eval_samples_per_second': '614.6', 'eval_steps_per_second': '19.24', 'epoch': '24.69'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it]
+82%|████████  | 185001/224820 [5:37:27<74:59:27,  6.78s/it]
+ 83%|████████  | 187350/224820 [5:59:45<6:35:22,  1.58it/s]
+ [FTDC] 2026-03-19 04:05:49
+ [FTDC] [Epoch 24.75] Step 185500/899190 (20.6%)
+ [FTDC] Loss: 5.7205 | LR: 1.94e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 5 days, 1:04:08
+{'loss': '5.721', 'grad_norm': '1.378', 'learning_rate': '1.943e-05', 'epoch': '24.75'}
+
+ [FTDC] 2026-03-19 04:10:34
+ [FTDC] [Epoch 24.82] Step 186000/899190 (20.7%)
+ [FTDC] Loss: 5.7097 | LR: 1.92e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 16:53:05
+{'loss': '5.71', 'grad_norm': '1.371', 'learning_rate': '1.919e-05', 'epoch': '24.82'}
+
+ [FTDC] 2026-03-19 04:15:18
+ [FTDC] [Epoch 24.89] Step 186500/899190 (20.7%)
+ [FTDC] Loss: 5.7062 | LR: 1.89e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:47:05
+{'loss': '5.706', 'grad_norm': '1.334', 'learning_rate': '1.894e-05', 'epoch': '24.89'}
+
+ [FTDC] 2026-03-19 04:20:03
+ [FTDC] [Epoch 24.95] Step 187000/899190 (20.8%)
+ [FTDC] Loss: 5.7220 | LR: 1.87e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:38:23
+{'loss': '5.722', 'grad_norm': '1.406', 'learning_rate': '1.869e-05', 'epoch': '24.95'}
+
+85%|████████  | 190000/224820 [6:24:54<5:30:53,  1.75it/s]
+ [FTDC] 2026-03-19 04:24:49
+ [FTDC] [Epoch 25.02] Step 187500/899190 (20.9%)
+ [FTDC] Loss: 5.6743 | LR: 1.84e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 16:53:08
+{'loss': '5.674', 'grad_norm': '1.34', 'learning_rate': '1.844e-05', 'epoch': '25.02'}
+
+ [FTDC] 2026-03-19 04:29:33
+ [FTDC] [Epoch 25.09] Step 188000/899190 (20.9%)
+ [FTDC] Loss: 5.6859 | LR: 1.82e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:18:13
+{'loss': '5.686', 'grad_norm': '1.374', 'learning_rate': '1.82e-05', 'epoch': '25.09'}
+
+ [FTDC] 2026-03-19 04:34:17
+ [FTDC] [Epoch 25.15] Step 188500/899190 (21.0%)
+ [FTDC] Loss: 5.6765 | LR: 1.80e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:16:31
+{'loss': '5.676', 'grad_norm': '1.413', 'learning_rate': '1.795e-05', 'epoch': '25.15'}
+
+ [FTDC] 2026-03-19 04:39:01
+ [FTDC] [Epoch 25.22] Step 189000/899190 (21.0%)
+ [FTDC] Loss: 5.6739 | LR: 1.77e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:05:40
+{'loss': '5.674', 'grad_norm': '1.417', 'learning_rate': '1.77e-05', 'epoch': '25.22'}
+
+ [FTDC] 2026-03-19 04:43:47
+ [FTDC] [Epoch 25.29] Step 189500/899190 (21.1%)
+ [FTDC] Loss: 5.6780 | LR: 1.75e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 16:29:15
+{'loss': '5.678', 'grad_norm': '1.441', 'learning_rate': '1.746e-05', 'epoch': '25.29'}
+
+ [FTDC] 2026-03-19 04:48:31
+ [FTDC] [Epoch 25.35] Step 190000/899190 (21.1%)
+ [FTDC] Loss: 5.6756 | LR: 1.72e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 16:03:11
+{'loss': '5.676', 'grad_norm': '1.356', 'learning_rate': '1.721e-05', 'epoch': '25.35'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.43it/s]
+85%|████████  | 190000/224820 [6:25:10<5:30:53,  1.75it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.43it/s]
+{'eval_loss': '1.33', 'eval_runtime': '16.37', 'eval_samples_per_second': '610.9', 'eval_steps_per_second': '19.12', 'epoch': '25.35'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]
+85%|████████  | 190001/224820 [6:25:15<65:50:56,  6.81s/it]
+ 87%|█████████ | 194844/224820 [7:11:14<5:14:18,  1.59it/s]
+ [FTDC] 2026-03-19 04:53:38
+ [FTDC] [Epoch 25.42] Step 190500/899190 (21.2%)
+ [FTDC] Loss: 5.6714 | LR: 1.70e-05
+ [FTDC] 구간 속도: 1.63 it/s | 예상 남은 시간: 5 days, 0:40:52
+{'loss': '5.671', 'grad_norm': '1.346', 'learning_rate': '1.696e-05', 'epoch': '25.42'}
+
+ [FTDC] 2026-03-19 04:58:22
+ [FTDC] [Epoch 25.49] Step 191000/899190 (21.2%)
+ [FTDC] Loss: 5.6643 | LR: 1.67e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 15:54:06
+{'loss': '5.664', 'grad_norm': '1.358', 'learning_rate': '1.672e-05', 'epoch': '25.49'}
+
+ [FTDC] 2026-03-19 05:03:06
+ [FTDC] [Epoch 25.55] Step 191500/899190 (21.3%)
+ [FTDC] Loss: 5.6586 | LR: 1.65e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 15:46:05
+{'loss': '5.659', 'grad_norm': '1.393', 'learning_rate': '1.647e-05', 'epoch': '25.55'}
+
+ [FTDC] 2026-03-19 05:07:51
+ [FTDC] [Epoch 25.62] Step 192000/899190 (21.4%)
+ [FTDC] Loss: 5.6629 | LR: 1.62e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 15:52:30
+{'loss': '5.663', 'grad_norm': '1.385', 'learning_rate': '1.622e-05', 'epoch': '25.62'}
+
+ [FTDC] 2026-03-19 05:12:36
+ [FTDC] [Epoch 25.69] Step 192500/899190 (21.4%)
+ [FTDC] Loss: 5.6686 | LR: 1.60e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 15:53:02
+{'loss': '5.669', 'grad_norm': '1.388', 'learning_rate': '1.597e-05', 'epoch': '25.69'}
+
+ [FTDC] 2026-03-19 05:17:21
+ [FTDC] [Epoch 25.75] Step 193000/899190 (21.5%)
+ [FTDC] Loss: 5.6684 | LR: 1.57e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 15:52:02
+{'loss': '5.668', 'grad_norm': '1.366', 'learning_rate': '1.573e-05', 'epoch': '25.75'}
+
+ [FTDC] 2026-03-19 05:22:06
+ [FTDC] [Epoch 25.82] Step 193500/899190 (21.5%)
+ [FTDC] Loss: 5.6487 | LR: 1.55e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 15:51:00
+{'loss': '5.649', 'grad_norm': '1.326', 'learning_rate': '1.548e-05', 'epoch': '25.82'}
+
+ [FTDC] 2026-03-19 05:26:51
+ [FTDC] [Epoch 25.89] Step 194000/899190 (21.6%)
+ [FTDC] Loss: 5.6504 | LR: 1.52e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 15:32:24
+{'loss': '5.65', 'grad_norm': '1.41', 'learning_rate': '1.523e-05', 'epoch': '25.89'}
+
+ [FTDC] 2026-03-19 05:31:36
+ [FTDC] [Epoch 25.95] Step 194500/899190 (21.6%)
+ [FTDC] Loss: 5.6382 | LR: 1.50e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 15:23:13
+{'loss': '5.638', 'grad_norm': '1.341', 'learning_rate': '1.499e-05', 'epoch': '25.95'}
+
+87%|█████████ | 195000/224820 [7:12:44<4:42:25,  1.76it/s]
+ [FTDC] 2026-03-19 05:36:21
+ [FTDC] [Epoch 26.02] Step 195000/899190 (21.7%)
+ [FTDC] Loss: 5.6542 | LR: 1.47e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 15:49:02
+{'loss': '5.654', 'grad_norm': '1.366', 'learning_rate': '1.474e-05', 'epoch': '26.02'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.24it/s]
+87%|█████████ | 195000/224820 [7:13:00<4:42:25,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.24it/s]
+{'eval_loss': '1.321', 'eval_runtime': '16.24', 'eval_samples_per_second': '615.8', 'eval_steps_per_second': '19.27', 'epoch': '26.02'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+87%|█████████ | 195001/224820 [7:13:05<55:46:24,  6.73s/it]
+89%|█████████ | 200000/224820 [8:00:27<3:55:05,  1.76it/s]
+ [FTDC] 2026-03-19 05:41:26
+ [FTDC] [Epoch 26.09] Step 195500/899190 (21.7%)
+ [FTDC] Loss: 5.6393 | LR: 1.45e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 23:10:40
+{'loss': '5.639', 'grad_norm': '6.251', 'learning_rate': '1.449e-05', 'epoch': '26.09'}
+
+ [FTDC] 2026-03-19 05:46:10
+ [FTDC] [Epoch 26.15] Step 196000/899190 (21.8%)
+ [FTDC] Loss: 5.6330 | LR: 1.42e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:59:23
+{'loss': '5.633', 'grad_norm': '1.375', 'learning_rate': '1.424e-05', 'epoch': '26.15'}
+
+ [FTDC] 2026-03-19 05:50:55
+ [FTDC] [Epoch 26.22] Step 196500/899190 (21.9%)
+ [FTDC] Loss: 5.6280 | LR: 1.40e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:56:33
+{'loss': '5.628', 'grad_norm': '1.417', 'learning_rate': '1.4e-05', 'epoch': '26.22'}
+
+ [FTDC] 2026-03-19 05:55:39
+ [FTDC] [Epoch 26.29] Step 197000/899190 (21.9%)
+ [FTDC] Loss: 5.6318 | LR: 1.37e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:48:34
+{'loss': '5.632', 'grad_norm': '1.374', 'learning_rate': '1.375e-05', 'epoch': '26.29'}
+
+ [FTDC] 2026-03-19 06:00:23
+ [FTDC] [Epoch 26.35] Step 197500/899190 (22.0%)
+ [FTDC] Loss: 5.6311 | LR: 1.35e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:47:49
+{'loss': '5.631', 'grad_norm': '1.416', 'learning_rate': '1.35e-05', 'epoch': '26.35'}
+
+ [FTDC] 2026-03-19 06:05:07
+ [FTDC] [Epoch 26.42] Step 198000/899190 (22.0%)
+ [FTDC] Loss: 5.6186 | LR: 1.33e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:36:04
+{'loss': '5.619', 'grad_norm': '1.325', 'learning_rate': '1.326e-05', 'epoch': '26.42'}
+
+ [FTDC] 2026-03-19 06:09:51
+ [FTDC] [Epoch 26.49] Step 198500/899190 (22.1%)
+ [FTDC] Loss: 5.6180 | LR: 1.30e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:42:17
+{'loss': '5.618', 'grad_norm': '1.406', 'learning_rate': '1.301e-05', 'epoch': '26.49'}
+
+ [FTDC] 2026-03-19 06:14:36
+ [FTDC] [Epoch 26.55] Step 199000/899190 (22.1%)
+ [FTDC] Loss: 5.6064 | LR: 1.28e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 14:49:54
+{'loss': '5.606', 'grad_norm': '1.378', 'learning_rate': '1.276e-05', 'epoch': '26.55'}
+
+ [FTDC] 2026-03-19 06:19:20
+ [FTDC] [Epoch 26.62] Step 199500/899190 (22.2%)
+ [FTDC] Loss: 5.6091 | LR: 1.25e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:26:52
+{'loss': '5.609', 'grad_norm': '1.383', 'learning_rate': '1.251e-05', 'epoch': '26.62'}
+
+ [FTDC] 2026-03-19 06:24:04
+ [FTDC] [Epoch 26.69] Step 200000/899190 (22.2%)
+ [FTDC] Loss: 5.6061 | LR: 1.23e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:14:28
+{'loss': '5.606', 'grad_norm': '1.352', 'learning_rate': '1.227e-05', 'epoch': '26.69'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.64it/s]
+89%|█████████ | 200000/224820 [8:00:43<3:55:05,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.64it/s]
+{'eval_loss': '1.318', 'eval_runtime': '16.57', 'eval_samples_per_second': '603.4', 'eval_steps_per_second': '18.89', 'epoch': '26.69'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.96s/it]
+89%|█████████ | 200001/224820 [8:00:49<48:17:20,  7.00s/it]
+ 90%|█████████ | 202338/224820 [8:22:55<3:58:18,  1.57it/s]
+ [FTDC] 2026-03-19 06:29:09
+ [FTDC] [Epoch 26.75] Step 200500/899190 (22.3%)
+ [FTDC] Loss: 5.6124 | LR: 1.20e-05
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 22:25:15
+{'loss': '5.612', 'grad_norm': '1.411', 'learning_rate': '1.202e-05', 'epoch': '26.75'}
+
+ [FTDC] 2026-03-19 06:33:53
+ [FTDC] [Epoch 26.82] Step 201000/899190 (22.4%)
+ [FTDC] Loss: 5.6197 | LR: 1.18e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 14:06:04
+{'loss': '5.62', 'grad_norm': '1.341', 'learning_rate': '1.177e-05', 'epoch': '26.82'}
+
+ [FTDC] 2026-03-19 06:38:37
+ [FTDC] [Epoch 26.89] Step 201500/899190 (22.4%)
+ [FTDC] Loss: 5.6043 | LR: 1.15e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:59:33
+{'loss': '5.604', 'grad_norm': '1.38', 'learning_rate': '1.153e-05', 'epoch': '26.89'}
+
+ [FTDC] 2026-03-19 06:43:21
+ [FTDC] [Epoch 26.95] Step 202000/899190 (22.5%)
+ [FTDC] Loss: 5.6092 | LR: 1.13e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:58:57
+{'loss': '5.609', 'grad_norm': '1.376', 'learning_rate': '1.128e-05', 'epoch': '26.95'}
+
+91%|█████████ | 205000/224820 [8:48:08<3:07:26,  1.76it/s]
+ [FTDC] 2026-03-19 06:48:06
+ [FTDC] [Epoch 27.02] Step 202500/899190 (22.5%)
+ [FTDC] Loss: 5.5861 | LR: 1.10e-05
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 14:23:38
+{'loss': '5.586', 'grad_norm': '1.33', 'learning_rate': '1.103e-05', 'epoch': '27.02'}
+
+ [FTDC] 2026-03-19 06:52:50
+ [FTDC] [Epoch 27.09] Step 203000/899190 (22.6%)
+ [FTDC] Loss: 5.6006 | LR: 1.08e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:48:55
+{'loss': '5.601', 'grad_norm': '1.36', 'learning_rate': '1.078e-05', 'epoch': '27.09'}
+
+ [FTDC] 2026-03-19 06:57:34
+ [FTDC] [Epoch 27.16] Step 203500/899190 (22.6%)
+ [FTDC] Loss: 5.5914 | LR: 1.05e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:42:46
+{'loss': '5.591', 'grad_norm': '1.441', 'learning_rate': '1.054e-05', 'epoch': '27.16'}
+
+ [FTDC] 2026-03-19 07:02:18
+ [FTDC] [Epoch 27.22] Step 204000/899190 (22.7%)
+ [FTDC] Loss: 5.5882 | LR: 1.03e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:37:05
+{'loss': '5.588', 'grad_norm': '1.405', 'learning_rate': '1.029e-05', 'epoch': '27.22'}
+
+ [FTDC] 2026-03-19 07:07:01
+ [FTDC] [Epoch 27.29] Step 204500/899190 (22.7%)
+ [FTDC] Loss: 5.5877 | LR: 1.00e-05
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:29:47
+{'loss': '5.588', 'grad_norm': '1.372', 'learning_rate': '1.004e-05', 'epoch': '27.29'}
+
+ [FTDC] 2026-03-19 07:11:45
+ [FTDC] [Epoch 27.36] Step 205000/899190 (22.8%)
+ [FTDC] Loss: 5.5862 | LR: 9.80e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:24:25
+{'loss': '5.586', 'grad_norm': '1.338', 'learning_rate': '9.796e-06', 'epoch': '27.36'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.05it/s]
+91%|█████████ | 205000/224820 [8:48:24<3:07:26,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.05it/s]
+{'eval_loss': '1.315', 'eval_runtime': '16.42', 'eval_samples_per_second': '609.1', 'eval_steps_per_second': '19.06', 'epoch': '27.36'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.53s/it]
+91%|█████████ | 205001/224820 [8:48:29<37:27:11,  6.80s/it]
+ 93%|█████████ | 209832/224820 [9:34:12<2:39:32,  1.57it/s]
+ [FTDC] 2026-03-19 07:16:50
+ [FTDC] [Epoch 27.42] Step 205500/899190 (22.9%)
+ [FTDC] Loss: 5.5823 | LR: 9.55e-06
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 21:28:09
+{'loss': '5.582', 'grad_norm': '1.411', 'learning_rate': '9.549e-06', 'epoch': '27.42'}
+
+ [FTDC] 2026-03-19 07:21:34
+ [FTDC] [Epoch 27.49] Step 206000/899190 (22.9%)
+ [FTDC] Loss: 5.5811 | LR: 9.30e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:19:04
+{'loss': '5.581', 'grad_norm': '1.349', 'learning_rate': '9.302e-06', 'epoch': '27.49'}
+
+ [FTDC] 2026-03-19 07:26:18
+ [FTDC] [Epoch 27.56] Step 206500/899190 (23.0%)
+ [FTDC] Loss: 5.5751 | LR: 9.05e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:17:05
+{'loss': '5.575', 'grad_norm': '1.42', 'learning_rate': '9.055e-06', 'epoch': '27.56'}
+
+ [FTDC] 2026-03-19 07:31:02
+ [FTDC] [Epoch 27.62] Step 207000/899190 (23.0%)
+ [FTDC] Loss: 5.5804 | LR: 8.81e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:11:25
+{'loss': '5.58', 'grad_norm': '1.436', 'learning_rate': '8.808e-06', 'epoch': '27.62'}
+
+ [FTDC] 2026-03-19 07:35:45
+ [FTDC] [Epoch 27.69] Step 207500/899190 (23.1%)
+ [FTDC] Loss: 5.5734 | LR: 8.56e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 13:04:50
+{'loss': '5.573', 'grad_norm': '1.402', 'learning_rate': '8.56e-06', 'epoch': '27.69'}
+
+ [FTDC] 2026-03-19 07:40:29
+ [FTDC] [Epoch 27.76] Step 208000/899190 (23.1%)
+ [FTDC] Loss: 5.5726 | LR: 8.31e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:57:28
+{'loss': '5.573', 'grad_norm': '1.397', 'learning_rate': '8.313e-06', 'epoch': '27.76'}
+
+ [FTDC] 2026-03-19 07:45:13
+ [FTDC] [Epoch 27.82] Step 208500/899190 (23.2%)
+ [FTDC] Loss: 5.5702 | LR: 8.07e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:52:49
+{'loss': '5.57', 'grad_norm': '1.424', 'learning_rate': '8.066e-06', 'epoch': '27.82'}
+
+ [FTDC] 2026-03-19 07:49:57
+ [FTDC] [Epoch 27.89] Step 209000/899190 (23.2%)
+ [FTDC] Loss: 5.5574 | LR: 7.82e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:52:25
+{'loss': '5.557', 'grad_norm': '1.441', 'learning_rate': '7.819e-06', 'epoch': '27.89'}
+
+ [FTDC] 2026-03-19 07:54:41
+ [FTDC] [Epoch 27.96] Step 209500/899190 (23.3%)
+ [FTDC] Loss: 5.5701 | LR: 7.57e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:46:06
+{'loss': '5.57', 'grad_norm': '1.372', 'learning_rate': '7.572e-06', 'epoch': '27.96'}
+
+93%|█████████ | 210000/224820 [9:35:49<2:20:05,  1.76it/s]
+ [FTDC] 2026-03-19 07:59:26
+ [FTDC] [Epoch 28.02] Step 210000/899190 (23.4%)
+ [FTDC] Loss: 5.5601 | LR: 7.32e-06
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 13:18:54
+{'loss': '5.56', 'grad_norm': '1.411', 'learning_rate': '7.325e-06', 'epoch': '28.02'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.66it/s]
+93%|█████████ | 210000/224820 [9:36:05<2:20:05,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.66it/s]
+{'eval_loss': '1.308', 'eval_runtime': '16.48', 'eval_samples_per_second': '606.7', 'eval_steps_per_second': '18.99', 'epoch': '28.02'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]
+93%|█████████ | 210001/224820 [9:36:10<28:08:27,  6.84s/it]
+96%|██████████| 215000/224820 [10:23:29<1:32:35,  1.77it/s]
+ [FTDC] 2026-03-19 08:04:31
+ [FTDC] [Epoch 28.09] Step 210500/899190 (23.4%)
+ [FTDC] Loss: 5.5669 | LR: 7.08e-06
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 20:35:13
+{'loss': '5.567', 'grad_norm': '1.373', 'learning_rate': '7.078e-06', 'epoch': '28.09'}
+
+ [FTDC] 2026-03-19 08:09:15
+ [FTDC] [Epoch 28.16] Step 211000/899190 (23.5%)
+ [FTDC] Loss: 5.5612 | LR: 6.83e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:32:02
+{'loss': '5.561', 'grad_norm': '1.404', 'learning_rate': '6.831e-06', 'epoch': '28.16'}
+
+ [FTDC] 2026-03-19 08:13:59
+ [FTDC] [Epoch 28.22] Step 211500/899190 (23.5%)
+ [FTDC] Loss: 5.5603 | LR: 6.58e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:28:30
+{'loss': '5.56', 'grad_norm': '1.381', 'learning_rate': '6.584e-06', 'epoch': '28.22'}
+
+ [FTDC] 2026-03-19 08:18:42
+ [FTDC] [Epoch 28.29] Step 212000/899190 (23.6%)
+ [FTDC] Loss: 5.5491 | LR: 6.34e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:18:28
+{'loss': '5.549', 'grad_norm': '1.43', 'learning_rate': '6.336e-06', 'epoch': '28.29'}
+
+ [FTDC] 2026-03-19 08:23:26
+ [FTDC] [Epoch 28.36] Step 212500/899190 (23.6%)
+ [FTDC] Loss: 5.5548 | LR: 6.09e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:14:34
+{'loss': '5.555', 'grad_norm': '1.378', 'learning_rate': '6.089e-06', 'epoch': '28.36'}
+
+ [FTDC] 2026-03-19 08:28:10
+ [FTDC] [Epoch 28.42] Step 213000/899190 (23.7%)
+ [FTDC] Loss: 5.5523 | LR: 5.84e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:13:17
+{'loss': '5.552', 'grad_norm': '1.39', 'learning_rate': '5.842e-06', 'epoch': '28.42'}
+
+ [FTDC] 2026-03-19 08:32:54
+ [FTDC] [Epoch 28.49] Step 213500/899190 (23.7%)
+ [FTDC] Loss: 5.5544 | LR: 5.60e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:12:21
+{'loss': '5.554', 'grad_norm': '1.421', 'learning_rate': '5.595e-06', 'epoch': '28.49'}
+
+ [FTDC] 2026-03-19 08:37:38
+ [FTDC] [Epoch 28.56] Step 214000/899190 (23.8%)
+ [FTDC] Loss: 5.5453 | LR: 5.35e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:05:54
+{'loss': '5.545', 'grad_norm': '1.427', 'learning_rate': '5.348e-06', 'epoch': '28.56'}
+
+ [FTDC] 2026-03-19 08:42:22
+ [FTDC] [Epoch 28.62] Step 214500/899190 (23.9%)
+ [FTDC] Loss: 5.5517 | LR: 5.10e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 12:02:36
+{'loss': '5.552', 'grad_norm': '1.372', 'learning_rate': '5.101e-06', 'epoch': '28.62'}
+
+ [FTDC] 2026-03-19 08:47:06
+ [FTDC] [Epoch 28.69] Step 215000/899190 (23.9%)
+ [FTDC] Loss: 5.5287 | LR: 4.85e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:53:01
+{'loss': '5.529', 'grad_norm': '1.339', 'learning_rate': '4.854e-06', 'epoch': '28.69'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.58it/s]
+96%|██████████| 215000/224820 [10:23:45<1:32:35,  1.77it/s]
+100%|██████████| 313/313 [00:15<00:00, 15.58it/s]
+{'eval_loss': '1.301', 'eval_runtime': '16.38', 'eval_samples_per_second': '610.3', 'eval_steps_per_second': '19.1', 'epoch': '28.69'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+96%|██████████| 215001/224820 [10:23:50<18:22:35,  6.74s/it]
+ 97%|██████████| 217326/224820 [10:45:50<1:20:53,  1.54it/s]
+ [FTDC] 2026-03-19 08:52:10
+ [FTDC] [Epoch 28.76] Step 215500/899190 (24.0%)
+ [FTDC] Loss: 5.5298 | LR: 4.61e-06
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 19:29:30
+{'loss': '5.53', 'grad_norm': '1.361', 'learning_rate': '4.607e-06', 'epoch': '28.76'}
+
+ [FTDC] 2026-03-19 08:56:54
+ [FTDC] [Epoch 28.82] Step 216000/899190 (24.0%)
+ [FTDC] Loss: 5.5372 | LR: 4.36e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:44:33
+{'loss': '5.537', 'grad_norm': '1.43', 'learning_rate': '4.36e-06', 'epoch': '28.82'}
+
+ [FTDC] 2026-03-19 09:01:39
+ [FTDC] [Epoch 28.89] Step 216500/899190 (24.1%)
+ [FTDC] Loss: 5.5365 | LR: 4.11e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:57:39
+{'loss': '5.536', 'grad_norm': '1.36', 'learning_rate': '4.112e-06', 'epoch': '28.89'}
+
+ [FTDC] 2026-03-19 09:06:22
+ [FTDC] [Epoch 28.96] Step 217000/899190 (24.1%)
+ [FTDC] Loss: 5.5195 | LR: 3.87e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:30:42
+{'loss': '5.52', 'grad_norm': '1.357', 'learning_rate': '3.865e-06', 'epoch': '28.96'}
+
+98%|██████████| 220000/224820 [11:11:11<45:36,  1.76it/s]
+ [FTDC] 2026-03-19 09:11:08
+ [FTDC] [Epoch 29.02] Step 217500/899190 (24.2%)
+ [FTDC] Loss: 5.5144 | LR: 3.62e-06
+ [FTDC] 구간 속도: 1.75 it/s | 예상 남은 시간: 4 days, 12:07:23
+{'loss': '5.514', 'grad_norm': '1.365', 'learning_rate': '3.618e-06', 'epoch': '29.02'}
+
+ [FTDC] 2026-03-19 09:15:52
+ [FTDC] [Epoch 29.09] Step 218000/899190 (24.2%)
+ [FTDC] Loss: 5.5252 | LR: 3.37e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:35:05
+{'loss': '5.525', 'grad_norm': '1.406', 'learning_rate': '3.371e-06', 'epoch': '29.09'}
+
+ [FTDC] 2026-03-19 09:20:36
+ [FTDC] [Epoch 29.16] Step 218500/899190 (24.3%)
+ [FTDC] Loss: 5.5092 | LR: 3.12e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:26:01
+{'loss': '5.509', 'grad_norm': '1.414', 'learning_rate': '3.124e-06', 'epoch': '29.16'}
+
+ [FTDC] 2026-03-19 09:25:20
+ [FTDC] [Epoch 29.22] Step 219000/899190 (24.4%)
+ [FTDC] Loss: 5.5214 | LR: 2.88e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:22:09
+{'loss': '5.521', 'grad_norm': '1.341', 'learning_rate': '2.877e-06', 'epoch': '29.22'}
+
+ [FTDC] 2026-03-19 09:30:04
+ [FTDC] [Epoch 29.29] Step 219500/899190 (24.4%)
+ [FTDC] Loss: 5.5166 | LR: 2.63e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:15:46
+{'loss': '5.517', 'grad_norm': '1.387', 'learning_rate': '2.63e-06', 'epoch': '29.29'}
+
+ [FTDC] 2026-03-19 09:34:48
+ [FTDC] [Epoch 29.36] Step 220000/899190 (24.5%)
+ [FTDC] Loss: 5.5271 | LR: 2.38e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 11:08:51
+{'loss': '5.527', 'grad_norm': '1.447', 'learning_rate': '2.383e-06', 'epoch': '29.36'}
+
+0%|          | 0/313 [00:00<?, ?it/s]
+99%|██████████| 311/313 [00:15<00:00, 20.66it/s]
+98%|██████████| 220000/224820 [11:11:27<45:36,  1.76it/s]
+100%|██████████| 313/313 [00:15<00:00, 20.66it/s]
+{'eval_loss': '1.3', 'eval_runtime': '16.43', 'eval_samples_per_second': '608.6', 'eval_steps_per_second': '19.05', 'epoch': '29.36'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.61s/it]
+98%|██████████| 220001/224820 [11:11:32<9:08:14,  6.83s/it]
+100%|██████████| 224819/224820 [11:57:09<00:00,  1.75it/s]
+100%|██████████| 224820/224820 [11:57:09<00:00,  1.62it/s]
+ [FTDC] 2026-03-19 09:39:53
+ [FTDC] [Epoch 29.42] Step 220500/899190 (24.5%)
+ [FTDC] Loss: 5.5296 | LR: 2.14e-06
+ [FTDC] 구간 속도: 1.64 it/s | 예상 남은 시간: 4 days, 18:54:00
+{'loss': '5.53', 'grad_norm': '1.431', 'learning_rate': '2.136e-06', 'epoch': '29.42'}
+
+ [FTDC] 2026-03-19 09:44:37
+ [FTDC] [Epoch 29.49] Step 221000/899190 (24.6%)
+ [FTDC] Loss: 5.5303 | LR: 1.89e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:56:41
+{'loss': '5.53', 'grad_norm': '1.404', 'learning_rate': '1.888e-06', 'epoch': '29.49'}
+
+ [FTDC] 2026-03-19 09:49:21
+ [FTDC] [Epoch 29.56] Step 221500/899190 (24.6%)
+ [FTDC] Loss: 5.5199 | LR: 1.64e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:55:25
+{'loss': '5.52', 'grad_norm': '1.396', 'learning_rate': '1.641e-06', 'epoch': '29.56'}
+
+ [FTDC] 2026-03-19 09:54:05
+ [FTDC] [Epoch 29.62] Step 222000/899190 (24.7%)
+ [FTDC] Loss: 5.5212 | LR: 1.39e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:51:11
+{'loss': '5.521', 'grad_norm': '1.383', 'learning_rate': '1.394e-06', 'epoch': '29.62'}
+
+ [FTDC] 2026-03-19 09:58:49
+ [FTDC] [Epoch 29.69] Step 222500/899190 (24.7%)
+ [FTDC] Loss: 5.5153 | LR: 1.15e-06
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:41:21
+{'loss': '5.515', 'grad_norm': '1.421', 'learning_rate': '1.147e-06', 'epoch': '29.69'}
+
+ [FTDC] 2026-03-19 10:03:33
+ [FTDC] [Epoch 29.76] Step 223000/899190 (24.8%)
+ [FTDC] Loss: 5.5095 | LR: 9.00e-07
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:41:31
+{'loss': '5.509', 'grad_norm': '1.384', 'learning_rate': '9e-07', 'epoch': '29.76'}
+
+ [FTDC] 2026-03-19 10:08:17
+ [FTDC] [Epoch 29.82] Step 223500/899190 (24.9%)
+ [FTDC] Loss: 5.5201 | LR: 6.53e-07
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:35:32
+{'loss': '5.52', 'grad_norm': '1.405', 'learning_rate': '6.529e-07', 'epoch': '29.82'}
+
+ [FTDC] 2026-03-19 10:13:01
+ [FTDC] [Epoch 29.89] Step 224000/899190 (24.9%)
+ [FTDC] Loss: 5.5248 | LR: 4.06e-07
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:34:48
+{'loss': '5.525', 'grad_norm': '1.368', 'learning_rate': '4.058e-07', 'epoch': '29.89'}
+
+ [FTDC] 2026-03-19 10:17:45
+ [FTDC] [Epoch 29.96] Step 224500/899190 (25.0%)
+ [FTDC] Loss: 5.5077 | LR: 1.59e-07
+ [FTDC] 구간 속도: 1.76 it/s | 예상 남은 시간: 4 days, 10:24:55
+{'loss': '5.508', 'grad_norm': '1.424', 'learning_rate': '1.586e-07', 'epoch': '29.96'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+100%|██████████| 224820/224820 [11:57:13<00:00,  1.62it/s]There were missing keys in the checkpoint model loaded: ['cls.predictions.decoder.weight', 'cls.predictions.decoder.bias'].
+
+100%|██████████| 224820/224820 [11:57:16<00:00,  5.22it/s]
+{'train_runtime': '4.303e+04', 'train_samples_per_second': '668.6', 'train_steps_per_second': '5.224', 'train_loss': '1.903', 'epoch': '30'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]
+
+[완료] Best 모델 저장: ./T2/output/models
+[완료] 토크나이저 저장: ./T2/output/tokenizer

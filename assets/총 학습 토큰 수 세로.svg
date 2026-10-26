@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1280 480" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Pretendard',sans-serif">
+
+  <!-- white background -->
+  <rect x="0" y="0" width="1280" height="480" fill="#FFFFFF"/>
+
+  <!-- ===== unit note (top-right) ===== -->
+  <text x="1220" y="34" text-anchor="end" font-size="16" fill="#9AA0A6">단위: 토큰 수</text>
+
+  <!-- ===== legend ===== -->
+  <rect x="400" y="40" width="26" height="20" rx="4" fill="#5B6B7B"/>
+  <text x="434" y="56" font-size="19" fill="#374151">일반 도메인 학습량</text>
+  <rect x="690" y="40" width="26" height="20" rx="4" fill="#3FD0C9"/>
+  <text x="724" y="56" font-size="19" fill="#374151">의료 데이터 학습량</text>
+
+  <!-- scale: 0 at x=250, 1B = 46.5px -->
+
+  <!-- ===================== DAP bar ===================== -->
+  <text x="60" y="158" font-size="24" font-weight="800" fill="#1F2937">BERT_Base</text>
+  <text x="60" y="186" font-size="18" fill="#6B7280">(DAP)</text>
+
+  <!-- general 11.7B -> 544px -->
+  <rect x="250" y="125" width="544" height="62" rx="6" fill="#5B6B7B"/>
+  <text x="522" y="163" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">11.7B</text>
+
+  <!-- medical 8.29B -> 385px, start 794 -->
+  <rect x="794" y="125" width="385" height="62" rx="6" fill="#3FD0C9"/>
+  <text x="986" y="163" text-anchor="middle" font-size="21" font-weight="700" fill="#0F4C4C">8.29B</text>
+
+  <text x="1200" y="163" font-size="22" font-weight="800" fill="#1F2937">총 20B</text>
+
+  <!-- ===================== FSP bar ===================== -->
+  <text x="60" y="308" font-size="24" font-weight="800" fill="#1F2937">BERT_Scratch</text>
+  <text x="60" y="336" font-size="18" fill="#6B7280">(FSP)</text>
+
+  <!-- medical only 8.27B -> 385px -->
+  <rect x="250" y="275" width="385" height="62" rx="6" fill="#3FD0C9"/>
+  <text x="442" y="313" text-anchor="middle" font-size="21" font-weight="700" fill="#0F4C4C">8.27B</text>
+
+  <text x="656" y="313" font-size="22" font-weight="800" fill="#1F2937">총 8.27B</text>
+
+  <!-- ===================== bottom takeaway ===================== -->
+  <text x="60" y="430" font-size="20" fill="#374151">
+    → 의료 데이터 학습량은 거의 동일(≈8.28B) · 일반 도메인 학습 차이로 <tspan font-weight="800" fill="#1A6E6E">총 학습량은 FSP가 2.4배 적음</tspan>
+  </text>
+
+</svg>

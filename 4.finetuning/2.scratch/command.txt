@@ -1,0 +1,1 @@
+python -u run_finetuning.py 2>&1 | tee -a ../logs/log_scratch.txt

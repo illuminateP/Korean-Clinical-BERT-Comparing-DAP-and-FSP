@@ -1,0 +1,322 @@
+# [로그 정리] tqdm 진행률 갱신 4,449건을 제거하였다. 각 진행바의 시작·완료 지점과 학습 기록은 원본 그대로 보존된다.
+
+============================================================
+[DEBUG] Start Fine-tuning: KorMedQA
+============================================================
+[HPARAMS] Applied: Task=KorMedQA, Epochs=20, BS=4, LR=5e-05, GA=16, TB=100
+ >> Task Hyperparameters:
+    - max_epochs                  : 20
+    - batch_size                  : 4
+    - gradient_accumulation_steps : 16
+    - learning_rate               : 5e-05
+    - dropout_prob                : 0.1
+    - warmup_ratio                : 0.1
+    - max_seq_len                 : 512
+    - tb_interval                 : 100
+    - weight_decay                : 0.01
+    - adam_epsilon                : 1e-06
+[Data] KorMedQA: Loading and Merging ALL subsets for Joint Training
+  [train] 3401 joint samples loaded
+  [dev] 1059 joint samples loaded
+ - Train: 3401
+ - Valid: 1059
+[Model] Loading model from ./2.Finetuning_Final/2.scratch/models
+Some weights of BertForMultipleChoice were not initialized from the model checkpoint at ./2.Finetuning_Final/2.scratch/models and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+[Verification] Inspecting Model Head for KorMedQA...
+   -> Config num_labels: 5
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[Train] Starting training for KorMedQA...
+
+0%|          | 0/1060 [00:00<?, ?it/s]
+5%|          | 53/1060 [03:10<1:00:01,  3.58s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.51it/s]
+{'eval_loss': 1.6065495014190674, 'eval_accuracy': 0.2190745986779981, 'eval_f1': 0.21940502808486606, 'eval_runtime': 18.2792, 'eval_samples_per_second': 57.935, 'eval_steps_per_second': 14.497, 'epoch': 1.0}
+
+5%|          | 53/1060 [03:29<1:00:01,  3.58s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.51it/s]
+5%|          | 54/1060 [03:33<2:38:37,  9.46s/it]
+{'loss': 1.5984, 'grad_norm': 3.0502185821533203, 'learning_rate': 4.716981132075472e-05, 'epoch': 1.88}
+
+10%|█         | 106/1060 [06:39<56:53,  3.58s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 1.5988107919692993, 'eval_accuracy': 0.23984891406987724, 'eval_f1': 0.2385854522693204, 'eval_runtime': 18.2648, 'eval_samples_per_second': 57.98, 'eval_steps_per_second': 14.509, 'epoch': 1.99}
+
+10%|█         | 106/1060 [06:58<56:53,  3.58s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+10%|█         | 107/1060 [07:02<2:31:05,  9.51s/it]
+15%|██        | 159/1060 [10:08<53:42,  3.58s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.51it/s]
+{'eval_loss': 1.6736271381378174, 'eval_accuracy': 0.24268177525967893, 'eval_f1': 0.2384734412597791, 'eval_runtime': 18.2602, 'eval_samples_per_second': 57.995, 'eval_steps_per_second': 14.512, 'epoch': 2.99}
+
+15%|██        | 159/1060 [10:28<53:42,  3.58s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.51it/s]
+15%|██        | 160/1060 [10:32<2:22:58,  9.53s/it]
+{'loss': 1.2907, 'grad_norm': 8.489599227905273, 'learning_rate': 4.5073375262054504e-05, 'epoch': 3.76}
+
+20%|██        | 212/1060 [13:38<50:32,  3.58s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.39it/s]
+{'eval_loss': 1.9943020343780518, 'eval_accuracy': 0.2559017941454202, 'eval_f1': 0.251567579377293, 'eval_runtime': 18.3878, 'eval_samples_per_second': 57.592, 'eval_steps_per_second': 14.412, 'epoch': 3.99}
+
+20%|██        | 212/1060 [13:59<50:32,  3.58s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.39it/s]
+20%|██        | 213/1060 [14:01<2:14:53,  9.56s/it]
+25%|██        | 265/1060 [17:04<47:21,  3.57s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 2.594433307647705, 'eval_accuracy': 0.2521246458923513, 'eval_f1': 0.24993015741195507, 'eval_runtime': 18.2673, 'eval_samples_per_second': 57.972, 'eval_steps_per_second': 14.507, 'epoch': 4.98}
+
+25%|██        | 265/1060 [17:26<47:21,  3.57s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+25%|██        | 266/1060 [17:27<2:05:08,  9.46s/it]
+{'loss': 0.5659, 'grad_norm': 14.42257022857666, 'learning_rate': 3.983228511530399e-05, 'epoch': 5.64}
+
+30%|███       | 319/1060 [20:37<44:02,  3.57s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 2.885235071182251, 'eval_accuracy': 0.2587346553352219, 'eval_f1': 0.2542268529472096, 'eval_runtime': 18.2569, 'eval_samples_per_second': 58.006, 'eval_steps_per_second': 14.515, 'epoch': 6.0}
+
+30%|███       | 319/1060 [20:55<44:02,  3.57s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+30%|███       | 320/1060 [21:00<1:57:41,  9.54s/it]
+35%|████      | 372/1060 [24:06<40:59,  3.57s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.41it/s]
+{'eval_loss': 3.4237582683563232, 'eval_accuracy': 0.2700661000944287, 'eval_f1': 0.2667986863076343, 'eval_runtime': 18.2957, 'eval_samples_per_second': 57.882, 'eval_steps_per_second': 14.484, 'epoch': 6.99}
+
+35%|████      | 372/1060 [24:25<40:59,  3.57s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.41it/s]
+35%|████      | 373/1060 [24:29<1:48:51,  9.51s/it]
+{'loss': 0.2433, 'grad_norm': 13.220446586608887, 'learning_rate': 3.4591194968553456e-05, 'epoch': 7.52}
+
+40%|████      | 425/1060 [27:29<36:35,  3.46s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 3.7156331539154053, 'eval_accuracy': 0.2728989612842304, 'eval_f1': 0.26900564490217127, 'eval_runtime': 18.2579, 'eval_samples_per_second': 58.002, 'eval_steps_per_second': 14.514, 'epoch': 7.99}
+
+40%|████      | 425/1060 [27:49<36:35,  3.46s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+40%|████      | 426/1060 [27:52<1:39:31,  9.42s/it]
+45%|████      | 478/1060 [30:52<33:26,  3.45s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.51it/s]
+{'eval_loss': 3.7486181259155273, 'eval_accuracy': 0.25967894239848915, 'eval_f1': 0.2562683970638796, 'eval_runtime': 18.2662, 'eval_samples_per_second': 57.976, 'eval_steps_per_second': 14.508, 'epoch': 8.99}
+
+45%|████      | 478/1060 [31:12<33:26,  3.45s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.51it/s]
+45%|████      | 479/1060 [31:15<1:30:25,  9.34s/it]
+{'loss': 0.128, 'grad_norm': 6.62035608291626, 'learning_rate': 2.935010482180294e-05, 'epoch': 9.4}
+
+50%|█████     | 531/1060 [34:18<30:52,  3.50s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 3.9430675506591797, 'eval_accuracy': 0.26534466477809254, 'eval_f1': 0.2623744427774524, 'eval_runtime': 18.2698, 'eval_samples_per_second': 57.964, 'eval_steps_per_second': 14.505, 'epoch': 9.98}
+
+50%|█████     | 531/1060 [34:39<30:52,  3.50s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+50%|█████     | 532/1060 [34:41<1:23:01,  9.44s/it]
+55%|██████    | 585/1060 [37:45<27:26,  3.47s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 4.594513416290283, 'eval_accuracy': 0.2700661000944287, 'eval_f1': 0.26667151592774585, 'eval_runtime': 18.2411, 'eval_samples_per_second': 58.056, 'eval_steps_per_second': 14.528, 'epoch': 11.0}
+
+55%|██████    | 585/1060 [38:03<27:26,  3.47s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+55%|██████    | 586/1060 [38:08<1:14:08,  9.39s/it]
+{'loss': 0.0758, 'grad_norm': 4.57916259765625, 'learning_rate': 2.4109014675052412e-05, 'epoch': 11.28}
+
+60%|██████    | 638/1060 [41:11<24:21,  3.46s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 4.434690475463867, 'eval_accuracy': 0.28800755429650615, 'eval_f1': 0.2857204171477858, 'eval_runtime': 18.2423, 'eval_samples_per_second': 58.052, 'eval_steps_per_second': 14.527, 'epoch': 12.0}
+
+60%|██████    | 638/1060 [41:30<24:21,  3.46s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+60%|██████    | 639/1060 [41:34<1:06:14,  9.44s/it]
+65%|██████    | 691/1060 [44:36<21:23,  3.48s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 4.689963340759277, 'eval_accuracy': 0.2766761095372993, 'eval_f1': 0.2722731709393826, 'eval_runtime': 18.3331, 'eval_samples_per_second': 57.764, 'eval_steps_per_second': 14.455, 'epoch': 12.99}
+
+65%|██████    | 691/1060 [44:55<21:23,  3.48s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+65%|██████    | 692/1060 [44:59<57:40,  9.40s/it]
+{'loss': 0.0527, 'grad_norm': 5.900026321411133, 'learning_rate': 1.8867924528301888e-05, 'epoch': 13.16}
+
+70%|███████   | 744/1060 [48:01<18:42,  3.55s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 4.483173370361328, 'eval_accuracy': 0.2747875354107649, 'eval_f1': 0.27086289137048164, 'eval_runtime': 18.2498, 'eval_samples_per_second': 58.028, 'eval_steps_per_second': 14.521, 'epoch': 13.99}
+
+70%|███████   | 744/1060 [48:21<18:42,  3.55s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+70%|███████   | 745/1060 [48:24<49:45,  9.48s/it]
+75%|████████  | 797/1060 [51:24<15:07,  3.45s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.54it/s]
+{'eval_loss': 4.786969184875488, 'eval_accuracy': 0.26628895184135976, 'eval_f1': 0.26309531556522486, 'eval_runtime': 18.2309, 'eval_samples_per_second': 58.088, 'eval_steps_per_second': 14.536, 'epoch': 14.98}
+
+75%|████████  | 797/1060 [51:45<15:07,  3.45s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.54it/s]
+75%|████████  | 798/1060 [51:47<40:53,  9.36s/it]
+{'loss': 0.0247, 'grad_norm': 1.8617639541625977, 'learning_rate': 1.3626834381551362e-05, 'epoch': 15.04}
+
+80%|████████  | 851/1060 [54:51<11:53,  3.42s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.50it/s]
+{'eval_loss': 4.90482759475708, 'eval_accuracy': 0.2804532577903683, 'eval_f1': 0.27736279516570106, 'eval_runtime': 18.2504, 'eval_samples_per_second': 58.026, 'eval_steps_per_second': 14.52, 'epoch': 16.0}
+
+80%|████████  | 851/1060 [55:09<11:53,  3.42s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.50it/s]
+80%|████████  | 852/1060 [55:15<32:41,  9.43s/it]
+{'loss': 0.0188, 'grad_norm': 9.54281234741211, 'learning_rate': 8.38574423480084e-06, 'epoch': 16.92}
+
+85%|████████  | 904/1060 [58:14<08:58,  3.45s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 4.916788578033447, 'eval_accuracy': 0.2776203966005666, 'eval_f1': 0.2742038477248562, 'eval_runtime': 18.2257, 'eval_samples_per_second': 58.105, 'eval_steps_per_second': 14.54, 'epoch': 17.0}
+
+85%|████████  | 904/1060 [58:33<08:58,  3.45s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+85%|████████  | 905/1060 [58:37<24:13,  9.38s/it]
+90%|█████████ | 957/1060 [1:01:37<05:54,  3.44s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.52it/s]
+{'eval_loss': 5.082005500793457, 'eval_accuracy': 0.2785646836638338, 'eval_f1': 0.2741331187609172, 'eval_runtime': 18.2481, 'eval_samples_per_second': 58.034, 'eval_steps_per_second': 14.522, 'epoch': 17.99}
+
+90%|█████████ | 957/1060 [1:01:56<05:54,  3.44s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.52it/s]
+90%|█████████ | 958/1060 [1:02:00<15:57,  9.39s/it]
+{'loss': 0.0092, 'grad_norm': 1.424433708190918, 'learning_rate': 3.1446540880503146e-06, 'epoch': 18.8}
+
+95%|██████████| 1010/1060 [1:04:59<02:52,  3.44s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.53it/s]
+{'eval_loss': 5.175450801849365, 'eval_accuracy': 0.2719546742209632, 'eval_f1': 0.268464248909945, 'eval_runtime': 18.232, 'eval_samples_per_second': 58.085, 'eval_steps_per_second': 14.535, 'epoch': 18.99}
+
+95%|██████████| 1010/1060 [1:05:19<02:52,  3.44s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.53it/s]
+95%|██████████| 1011/1060 [1:05:23<07:40,  9.39s/it]
+100%|██████████| 1060/1060 [1:08:13<00:00,  3.46s/it]
+0%|          | 0/265 [00:00<?, ?it/s]
+100%|██████████| 264/265 [00:18<00:00, 14.42it/s]
+{'eval_loss': 5.11361837387085, 'eval_accuracy': 0.2776203966005666, 'eval_f1': 0.27327770412434366, 'eval_runtime': 18.3745, 'eval_samples_per_second': 57.634, 'eval_steps_per_second': 14.422, 'epoch': 19.93}
+
+100%|██████████| 1060/1060 [1:08:31<00:00,  3.46s/it]
+100%|██████████| 265/265 [00:18<00:00, 14.42it/s]
+{'train_runtime': 4113.3847, 'train_samples_per_second': 16.536, 'train_steps_per_second': 0.258, 'train_loss': 0.3784401216596927, 'epoch': 19.93}
+
+100%|██████████| 1060/1060 [1:08:33<00:00,  3.46s/it]
+100%|██████████| 1060/1060 [1:08:33<00:00,  3.88s/it]
+[Eval] Final evaluation for KorMedQA...
+
+0%|          | 0/109 [00:00<?, ?it/s]
+99%|██████████| 108/109 [00:07<00:00, 14.57it/s]
+100%|██████████| 109/109 [00:07<00:00, 14.71it/s]
+  -> doctor: 29.89% (130/435)
+
+0%|          | 0/220 [00:00<?, ?it/s]
+100%|██████████| 220/220 [00:15<00:00, 15.60it/s]
+100%|██████████| 220/220 [00:15<00:00, 14.66it/s]
+  -> nurse: 31.89% (280/878)
+
+0%|          | 0/222 [00:00<?, ?it/s]
+99%|██████████| 220/222 [00:15<00:00, 14.57it/s]
+100%|██████████| 222/222 [00:15<00:00, 14.68it/s]
+  -> pharm: 23.5% (208/885)
+
+0%|          | 0/203 [00:00<?, ?it/s]
+100%|██████████| 202/203 [00:13<00:00, 14.54it/s]
+100%|██████████| 203/203 [00:13<00:00, 14.63it/s]
+  -> dentist: 24.54% (199/811)
+  -> overall: 27.15% (817/3009)
+
+============================================================
+[DEBUG] Start Fine-tuning: KBMC
+============================================================
+[HPARAMS] Applied: Task=KBMC, Epochs=5, BS=32, LR=0.0001, GA=2, TB=50
+ >> Task Hyperparameters:
+    - max_epochs                  : 5
+    - batch_size                  : 32
+    - gradient_accumulation_steps : 2
+    - learning_rate               : 0.0001
+    - dropout_prob                : 0.1
+    - warmup_ratio                : 0.1
+    - max_seq_len                 : 128
+    - tb_interval                 : 50
+    - weight_decay                : 0.01
+    - adam_epsilon                : 1e-06
+[Data] KBMC: Loading from saved dataset with word_ids mapping
+  [train] 5535 samples loaded
+  [valid] 615 samples loaded
+ - Train: 5535
+ - Valid: 615
+[Model] Loading model from ./2.Finetuning_Final/2.scratch/models
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at ./2.Finetuning_Final/2.scratch/models and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+[Verification] Inspecting Model Head for KBMC...
+   -> Config num_labels: 4
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[Train] Starting training for KBMC...
+
+0%|          | 0/430 [00:00<?, ?it/s]
+{'loss': 0.3888, 'grad_norm': 0.5912756323814392, 'learning_rate': 9.819121447028425e-05, 'epoch': 0.58}
+
+20%|██        | 86/430 [00:14<00:53,  6.47it/s]
+0%|          | 0/20 [00:00<?, ?it/s]
+{'eval_loss': 0.09678363054990768, 'eval_f1': 0.7871028564359673, 'eval_runtime': 0.5207, 'eval_samples_per_second': 1180.996, 'eval_steps_per_second': 38.406, 'epoch': 0.99}
+
+100%|██████████| 20/20 [00:00<00:00, 44.87it/s]
+20%|██        | 86/430 [00:15<00:53,  6.47it/s]
+{'loss': 0.0979, 'grad_norm': 0.584544837474823, 'learning_rate': 8.527131782945736e-05, 'epoch': 1.16}
+
+{'loss': 0.0771, 'grad_norm': 0.8080452084541321, 'learning_rate': 7.23514211886305e-05, 'epoch': 1.73}
+
+40%|████      | 173/430 [00:30<00:39,  6.51it/s]
+0%|          | 0/20 [00:00<?, ?it/s]
+{'eval_loss': 0.0930694118142128, 'eval_f1': 0.8009121742995804, 'eval_runtime': 0.5222, 'eval_samples_per_second': 1177.747, 'eval_steps_per_second': 38.301, 'epoch': 2.0}
+
+100%|██████████| 20/20 [00:00<00:00, 44.55it/s]
+40%|████      | 173/430 [00:30<00:39,  6.51it/s]
+{'loss': 0.0629, 'grad_norm': 0.46749505400657654, 'learning_rate': 5.943152454780362e-05, 'epoch': 2.31}
+
+{'loss': 0.0484, 'grad_norm': 0.632744550704956, 'learning_rate': 4.651162790697675e-05, 'epoch': 2.89}
+
+60%|██████    | 259/430 [00:45<00:26,  6.48it/s]
+0%|          | 0/20 [00:00<?, ?it/s]
+{'eval_loss': 0.09214209765195847, 'eval_f1': 0.8170355521462467, 'eval_runtime': 0.5163, 'eval_samples_per_second': 1191.199, 'eval_steps_per_second': 38.738, 'epoch': 2.99}
+
+100%|██████████| 20/20 [00:00<00:00, 44.88it/s]
+60%|██████    | 259/430 [00:46<00:26,  6.48it/s]
+{'loss': 0.0368, 'grad_norm': 0.4793533980846405, 'learning_rate': 3.359173126614987e-05, 'epoch': 3.47}
+
+80%|████████  | 346/430 [01:01<00:12,  6.70it/s]
+0%|          | 0/20 [00:00<?, ?it/s]
+{'eval_loss': 0.10024320334196091, 'eval_f1': 0.8204019138998859, 'eval_runtime': 0.5175, 'eval_samples_per_second': 1188.31, 'eval_steps_per_second': 38.644, 'epoch': 4.0}
+
+100%|██████████| 20/20 [00:00<00:00, 44.97it/s]
+80%|████████  | 346/430 [01:02<00:12,  6.70it/s]
+{'loss': 0.0314, 'grad_norm': 0.2962905168533325, 'learning_rate': 2.0671834625323e-05, 'epoch': 4.05}
+
+{'loss': 0.0229, 'grad_norm': 0.344364732503891, 'learning_rate': 7.751937984496124e-06, 'epoch': 4.62}
+
+100%|██████████| 430/430 [01:16<00:00,  6.44it/s]
+0%|          | 0/20 [00:00<?, ?it/s]
+{'eval_loss': 0.10714977234601974, 'eval_f1': 0.8269489027368246, 'eval_runtime': 0.517, 'eval_samples_per_second': 1189.563, 'eval_steps_per_second': 38.685, 'epoch': 4.97}
+
+100%|██████████| 20/20 [00:00<00:00, 44.94it/s]
+100%|██████████| 430/430 [01:17<00:00,  6.44it/s]
+{'train_runtime': 78.99, 'train_samples_per_second': 350.361, 'train_steps_per_second': 5.444, 'train_loss': 0.09043215929075729, 'epoch': 4.97}
+
+100%|██████████| 430/430 [01:18<00:00,  6.44it/s]
+100%|██████████| 430/430 [01:18<00:00,  5.44it/s]
+[Eval] Final evaluation for KBMC...
+
+0%|          | 0/20 [00:00<?, ?it/s]
+100%|██████████| 20/20 [00:00<00:00, 40.48it/s]

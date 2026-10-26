@@ -1,0 +1,12 @@
+{
+    "experiment_name": "1.baseline_DAP",
+    "dataset_name": "KorMedQA",
+    "eval_set": "test (all subsets)",
+    "metrics": {
+        "doctor_acc": 28.74,
+        "nurse_acc": 31.44,
+        "pharm_acc": 23.5,
+        "dentist_acc": 20.59,
+        "accuracy": 25.79
+    }
+}

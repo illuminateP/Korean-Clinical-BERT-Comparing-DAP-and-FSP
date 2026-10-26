@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1280 470" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Pretendard',sans-serif">
+
+  <rect x="0" y="0" width="1280" height="470" fill="#FFFFFF"/>
+
+  <!-- divider -->
+  <line x1="640" y1="40" x2="640" y2="430" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- ================= LEFT : KorMedQA ================= -->
+  <text x="48" y="64" font-size="27" font-weight="800" fill="#1F2937">KorMedQA</text>
+  <text x="48" y="96" font-size="18" fill="#374151">의사·간호사·약사·치과의사 국가시험 기반 5지선다 의료 QA</text>
+
+  <rect x="48" y="122" width="548" height="86" rx="10" fill="#F8FAFC" stroke="#E0E3E7" stroke-width="1"/>
+  <text x="68" y="157" font-size="17" fill="#1F2937">Q. 25세 남자가 헌혈을 하고자 한다. 「혈액관리법」에</text>
+  <text x="68" y="184" font-size="17" fill="#1F2937">따라 채혈 전 시행해야 하는 건강진단 항목은?</text>
+
+  <text x="68" y="244" font-size="17" fill="#4B5563">1. 소변검사</text>
+  <text x="230" y="244" font-size="17" fill="#4B5563">2. 가슴 X선</text>
+  <rect x="392" y="226" width="150" height="28" rx="6" fill="#E7F2F1" stroke="#1A9E94" stroke-width="1.3"/>
+  <text x="408" y="244" font-size="17" font-weight="700" fill="#0F4C4C">3. 혈압 측정</text>
+  <text x="68" y="280" font-size="17" fill="#4B5563">4. 심전도검사</text>
+  <text x="230" y="280" font-size="17" fill="#4B5563">5. 컴퓨터단층촬영</text>
+
+  <text x="68" y="326" font-size="19" fill="#1F2937">→ 정답: <tspan font-weight="800" fill="#1A9E94">3</tspan> (혈압 측정)</text>
+
+  <text x="48" y="382" font-size="16" fill="#6B7280">보기 5개 중 정답 1개 선택</text>
+
+  <!-- ================= RIGHT : KBMC ================= -->
+  <text x="688" y="64" font-size="27" font-weight="800" fill="#1F2937">KBMC</text>
+  <text x="688" y="96" font-size="18" fill="#374151">임상 문장의 각 어절에 의료 개체명 태그 부여 (NER)</text>
+
+  <!-- legend (bilingual) -->
+  <rect x="688" y="120" width="14" height="14" rx="3" fill="#D97706"/>
+  <text x="708" y="132" font-size="15" fill="#374151">질환(Disease)</text>
+  <rect x="838" y="120" width="14" height="14" rx="3" fill="#2563EB"/>
+  <text x="858" y="132" font-size="15" fill="#374151">신체(Body)</text>
+  <rect x="960" y="120" width="14" height="14" rx="3" fill="#1A9E94"/>
+  <text x="980" y="132" font-size="15" fill="#374151">치료(Treatment)</text>
+  <rect x="1130" y="120" width="14" height="14" rx="3" fill="#9AA0A6"/>
+  <text x="1150" y="132" font-size="15" fill="#374151">기타(O)</text>
+
+  <!-- row 1 -->
+  <rect x="688" y="170" width="98" height="36" rx="6" fill="#FCEBD6" stroke="#D97706" stroke-width="1.2"/>
+  <text x="737" y="194" text-anchor="middle" font-size="18" fill="#1F2937">심근경색</text>
+  <text x="737" y="226" text-anchor="middle" font-size="13" fill="#D97706" font-weight="700">Disease</text>
+
+  <rect x="794" y="170" width="44" height="36" rx="6" fill="#F3F4F6" stroke="#C7CDD3" stroke-width="1.2"/>
+  <text x="816" y="194" text-anchor="middle" font-size="18" fill="#1F2937">후</text>
+  <text x="816" y="226" text-anchor="middle" font-size="13" fill="#9AA0A6">O</text>
+
+  <rect x="846" y="170" width="74" height="36" rx="6" fill="#F3F4F6" stroke="#C7CDD3" stroke-width="1.2"/>
+  <text x="883" y="194" text-anchor="middle" font-size="18" fill="#1F2937">발생한</text>
+  <text x="883" y="226" text-anchor="middle" font-size="13" fill="#9AA0A6">O</text>
+
+  <rect x="928" y="170" width="58" height="36" rx="6" fill="#E3ECFB" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="957" y="194" text-anchor="middle" font-size="18" fill="#1F2937">심장</text>
+  <text x="957" y="226" text-anchor="middle" font-size="13" fill="#2563EB" font-weight="700">Body</text>
+
+  <rect x="994" y="170" width="58" height="36" rx="6" fill="#F3F4F6" stroke="#C7CDD3" stroke-width="1.2"/>
+  <text x="1023" y="194" text-anchor="middle" font-size="18" fill="#1F2937">주변</text>
+  <text x="1023" y="226" text-anchor="middle" font-size="13" fill="#9AA0A6">O</text>
+
+  <rect x="1060" y="170" width="98" height="36" rx="6" fill="#FCEBD6" stroke="#D97706" stroke-width="1.2"/>
+  <text x="1109" y="194" text-anchor="middle" font-size="18" fill="#1F2937">심막염에</text>
+  <text x="1109" y="226" text-anchor="middle" font-size="13" fill="#D97706" font-weight="700">Disease</text>
+
+  <!-- row 2 -->
+  <rect x="688" y="262" width="320" height="36" rx="6" fill="#E7F2F1" stroke="#1A9E94" stroke-width="1.2"/>
+  <text x="848" y="286" text-anchor="middle" font-size="18" fill="#1F2937">methylprednisolone을</text>
+  <text x="848" y="318" text-anchor="middle" font-size="13" fill="#0F8077" font-weight="700">Treatment</text>
+
+  <rect x="1016" y="262" width="58" height="36" rx="6" fill="#F3F4F6" stroke="#C7CDD3" stroke-width="1.2"/>
+  <text x="1045" y="286" text-anchor="middle" font-size="18" fill="#1F2937">정맥</text>
+  <text x="1045" y="318" text-anchor="middle" font-size="13" fill="#9AA0A6">O</text>
+
+  <rect x="1082" y="262" width="106" height="36" rx="6" fill="#F3F4F6" stroke="#C7CDD3" stroke-width="1.2"/>
+  <text x="1135" y="286" text-anchor="middle" font-size="18" fill="#1F2937">투여하였다</text>
+  <text x="1135" y="318" text-anchor="middle" font-size="13" fill="#9AA0A6">O</text>
+
+  <text x="688" y="384" font-size="16" fill="#6B7280">어절마다 4개 태그 중 하나로 분류</text>
+
+</svg>

@@ -1,0 +1,33 @@
+============================================================
+[KBMC] 9:1 분할 및 저장 (seed=42)
+============================================================
+  데이터 경로: ./2.Finetuning/datasets/json/KBMC/train.json
+  전체 샘플 수: 6150
+  태그 분포:
+    Body-B         :    5,215
+    Body-I         :    1,158
+    Disease-B      :   10,595
+    Disease-I      :   10,089
+    O              :  124,882
+    Treatment-B    :    1,193
+    Treatment-I    :      839
+  [train] 5535 samples (entity ratio: 18.9%) → ./2.Finetuning/datasets/saved/KBMC/train
+  [valid] 615 samples (entity ratio: 19.1%) → ./2.Finetuning/datasets/saved/KBMC/valid
+
+============================================================
+[KorMedQA] 서브셋별 저장
+============================================================
+  [doctor/train] 1890 samples → ./2.Finetuning/datasets/saved/KorMedQA/doctor/train
+  [doctor/dev] 164 samples → ./2.Finetuning/datasets/saved/KorMedQA/doctor/dev
+  [doctor/test] 435 samples → ./2.Finetuning/datasets/saved/KorMedQA/doctor/test
+  [nurse/train] 582 samples → ./2.Finetuning/datasets/saved/KorMedQA/nurse/train
+  [nurse/dev] 291 samples → ./2.Finetuning/datasets/saved/KorMedQA/nurse/dev
+  [nurse/test] 878 samples → ./2.Finetuning/datasets/saved/KorMedQA/nurse/test
+  [pharm/train] 632 samples → ./2.Finetuning/datasets/saved/KorMedQA/pharm/train
+  [pharm/dev] 300 samples → ./2.Finetuning/datasets/saved/KorMedQA/pharm/dev
+  [pharm/test] 885 samples → ./2.Finetuning/datasets/saved/KorMedQA/pharm/test
+  [dentist/train] 297 samples → ./2.Finetuning/datasets/saved/KorMedQA/dentist/train
+  [dentist/dev] 304 samples → ./2.Finetuning/datasets/saved/KorMedQA/dentist/dev
+  [dentist/test] 811 samples → ./2.Finetuning/datasets/saved/KorMedQA/dentist/test
+
+[완료] 저장 경로: ./2.Finetuning/datasets/saved

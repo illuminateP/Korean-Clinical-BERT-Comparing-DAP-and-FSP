@@ -1,0 +1,47 @@
+[origin] ./2.Finetuning/datasets/origin
+[json]   ./2.Finetuning/datasets/json
+
+============================================================
+[KorMedQA] Korean Medical MCQA (국시 5지선다)
+  repo:   sean0042/KorMedMCQA
+  origin: ./2.Finetuning/datasets/origin/KorMedQA
+  json:   ./2.Finetuning/datasets/json/KorMedQA
+============================================================
+  [doctor] 다운로드 중...
+    train: 1,890건
+    dev: 164건
+    test: 435건
+    fewshot: 5건
+  [nurse] 다운로드 중...
+    train: 582건
+    dev: 291건
+    test: 878건
+    fewshot: 5건
+  [pharm] 다운로드 중...
+    train: 632건
+    dev: 300건
+    test: 885건
+    fewshot: 5건
+  [dentist] 다운로드 중...
+    train: 297건
+    dev: 304건
+    test: 811건
+    fewshot: 5건
+[KorMedQA] 완료
+
+
+============================================================
+[KBMC] Korean Medical NER (B-BD, B-DS, B-ST 등 BIO 태깅)
+  repo:   SungJoo/KBMC
+  origin: ./2.Finetuning/datasets/origin/KBMC
+  json:   ./2.Finetuning/datasets/json/KBMC
+============================================================
+  다운로드 중...
+    train: 6,150건
+[KBMC] 완료
+
+============================================================
+[요약] 다운로드 결과:
+  KorMedQA     → origin: OK, json: OK
+  KBMC         → origin: OK, json: OK
+============================================================

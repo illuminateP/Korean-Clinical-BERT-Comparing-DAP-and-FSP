@@ -1,0 +1,62 @@
+<svg viewBox="0 0 420 640" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Pretendard',sans-serif">
+
+  <!-- white background -->
+  <rect x="0" y="0" width="420" height="640" fill="#FFFFFF"/>
+
+  <!-- title -->
+  <text x="210" y="40" text-anchor="middle" font-size="24" font-weight="800" fill="#1F2937">총 학습 토큰 수</text>
+  <text x="210" y="66" text-anchor="middle" font-size="15" fill="#9AA0A6">단위: 토큰 수</text>
+
+  <!-- ===== legend ===== -->
+  <rect x="70" y="92" width="20" height="16" rx="3" fill="#5B6B7B"/>
+  <text x="96" y="106" font-size="15" fill="#374151">일반 도메인</text>
+  <rect x="225" y="92" width="20" height="16" rx="3" fill="#3FD0C9"/>
+  <text x="251" y="106" font-size="15" fill="#374151">의료 데이터</text>
+
+  <!-- baseline -->
+  <line x1="70" y1="500" x2="350" y2="500" stroke="#D9DEDC" stroke-width="1.5"/>
+
+  <!-- ===== DAP stacked bar (class=dap) ===== -->
+  <rect class="dap" y="289" height="211" width="64" fill="#5B6B7B"/>
+  <rect class="dap" y="140" height="149" width="64" fill="#3FD0C9"/>
+  <text x="150" y="400" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">11.7B</text>
+  <text x="150" y="220" text-anchor="middle" font-size="15" font-weight="700" fill="#0F4C4C">8.29B</text>
+  <text x="150" y="125" text-anchor="middle" font-size="18" font-weight="800" fill="#1F2937">20B</text>
+  <text x="150" y="524" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">BERT_Base</text>
+  <text x="150" y="544" text-anchor="middle" font-size="14" fill="#6B7280">(DAP)</text>
+
+  <!-- ===== FSP stacked bar (class=fsp) ===== -->
+  <rect class="fsp" y="351" height="149" width="64" fill="#3FD0C9"/>
+  <text x="290" y="431" text-anchor="middle" font-size="15" font-weight="700" fill="#0F4C4C">8.27B</text>
+  <text x="290" y="336" text-anchor="middle" font-size="18" font-weight="800" fill="#1F2937">8.27B</text>
+  <text x="290" y="524" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">BERT_Scratch</text>
+  <text x="290" y="544" text-anchor="middle" font-size="14" fill="#6B7280">(FSP)</text>
+
+  <!-- ===== 2.4x callout ===== -->
+  <rect x="70" y="580" width="280" height="42" rx="8" fill="#EAF5F4"/>
+  <text x="210" y="607" text-anchor="middle" font-size="18" font-weight="800" fill="#1A6E6E">FSP가 2.4배 적게 학습</text>
+
+  <script type="text/javascript"><![CDATA[
+    // ====== 여기만 수정하세요 ======
+    var CONFIG = {
+      barWidth: 40,    // 막대 너비 (이 값만 바꾸면 x가 자동 중심정렬됨)
+      dapCenter: 150,  // BERT_Base 막대 중심 x (좌우로 옮기려면 변경)
+      fspCenter: 290   // BERT_Scratch 막대 중심 x
+    };
+    // ==============================
+
+    function applyConfig() {
+      var w = CONFIG.barWidth;
+      document.querySelectorAll('rect.dap').forEach(function(r){
+        r.setAttribute('width', w);
+        r.setAttribute('x', CONFIG.dapCenter - w/2);
+      });
+      document.querySelectorAll('rect.fsp').forEach(function(r){
+        r.setAttribute('width', w);
+        r.setAttribute('x', CONFIG.fspCenter - w/2);
+      });
+    }
+    applyConfig();
+  ]]></script>
+
+</svg>

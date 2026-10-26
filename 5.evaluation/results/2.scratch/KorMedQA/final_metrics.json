@@ -1,0 +1,12 @@
+{
+    "experiment_name": "2.scratch",
+    "dataset_name": "KorMedQA",
+    "eval_set": "test (all subsets)",
+    "metrics": {
+        "doctor_acc": 29.89,
+        "nurse_acc": 31.89,
+        "pharm_acc": 23.5,
+        "dentist_acc": 24.54,
+        "accuracy": 27.15
+    }
+}
