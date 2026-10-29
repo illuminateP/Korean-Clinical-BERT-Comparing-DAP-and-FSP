@@ -1,4 +1,4 @@
-# 한국어 임상 NLP를 위한 사전학습 전략 비교: Domain-Adaptive vs From-Scratch
+# 한국어 임상 NLP를 위한 사전학습 전략 비교: <br>Domain-Adaptive vs From-Scratch
 
 > 한국어 의료 말뭉치만으로 BERT를 처음부터 사전학습했다. 이 모델은 일반 도메인 BERT에 같은 의료 말뭉치를 추가 학습시킨 모델보다 총 학습량이 2.4배 적은데도, 두 다운스트림 과제에서 모두 앞섰다.
 
@@ -420,7 +420,7 @@ head 5.evaluation/results/2.scratch/KBMC/training_log.csv  # 학습 곡선
 
 <a id="english"></a>
 
-# Korean Clinical NLP: Domain-Adaptive vs From-Scratch Pretraining
+# Korean Clinical NLP: <br>Domain-Adaptive vs From-Scratch Pretraining
 
 > We pretrained a BERT from scratch on a Korean medical corpus alone. Compared with a model that took a general-domain BERT and continued training it on the same medical corpus, it had seen 2.4× fewer tokens in total — and still did better on both downstream tasks.
 
