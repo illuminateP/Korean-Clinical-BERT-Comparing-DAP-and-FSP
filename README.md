@@ -461,7 +461,7 @@ BERT learns from large amounts of unlabeled text through two objectives at once.
 
 ![DAP versus FSP](assets/fig2_dap_vs_fsp.png)
 
-*Figure 2. The two strategies. They differ in which corpus builds the vocabulary and where training starts.*
+*Figure 2. The two pretraining strategies. They differ in which corpus builds the vocabulary and where training starts.*
 
 The upper path is DAP. A vocabulary is built from general-domain text such as Wikipedia and books, a General BERT is trained with it, and the medical corpus is then used for further training to obtain `BERT_Base`. The weights and vocabulary of an existing general model are inherited as-is and adapted toward medicine.
 
